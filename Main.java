@@ -1,12 +1,8 @@
+import java.util.ArrayList;
+
 class Main
 {
-    enum State
-    {
-        IDLE,
-        BLOCKED,
-        WORKING;
-    }
-    
+
     public static void main(String[] args) 
     {
         // File file = new File("")
@@ -16,5 +12,54 @@ class Main
         //     // process the line.
         //     }
         //}
+
+        Buffer b1 = new Buffer();
+        Buffer b2 = new Buffer();
+        Buffer b3 = new Buffer();
+        Buffer b4 = new Buffer();
+        Buffer b5 = new Buffer();
+
+        ArrayList<Buffer> buffers = new ArrayList<Buffer>();
+        buffers.add(b1);
+        buffers.add(b2);
+        buffers.add(b4);
+        Inspector1 ins1 = new Inspector1(buffers);
+        buffers.clear();
+        buffers.add(b3);
+        buffers.add(b5);
+        Inspector1 ins2 = new Inspector1(buffers);
+
+        buffers.clear();
+        buffers.add(b1);
+        WorkStation w1 = new WorkStation(buffers);
+        buffers.clear();
+        buffers.add(b2);
+        buffers.add(b3);
+        WorkStation w2 = new WorkStation(buffers);
+        buffers.clear();
+        buffers.add(b4);
+        buffers.add(b5);
+        WorkStation w3 = new WorkStation(buffers);
+
+        while(true)
+        {
+            State state1 = ins1.work();
+            State state2 = ins2.work();
+            State state3 = w1.produce();
+            State state4 = w2.produce();
+            State state5 = w3.produce();
+            if(state1 == State.BLOCKED)
+                ins1.work();
+            if(state2 == State.BLOCKED)
+                ins2.work();
+                
+            if(state3 == State.BLOCKED)
+                w1.produce();
+            if(state4 == State.BLOCKED)
+                w2.produce();
+            if(state5 == State.BLOCKED)
+                w3.produce();
+            
+        }
     }
 }

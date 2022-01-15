@@ -3,18 +3,20 @@ import java.util.List;
 
 public class Inspector1 extends Inspector
 {
-    public Inspector1(List<Buffer> buffers, List<Component> components)
+    public Inspector1(List<Buffer> buffers)
     {
         buffers = new ArrayList<Buffer>(buffers);
-        components = new ArrayList<Component>(components);
         timeLeft = 0;
         state =State.IDLE;
     }
-    public void work()
+    public State work()
     {
         //case of still working, not finished
         if( timeLeft != 0 && --timeLeft > 0)
-            return;
+        {
+            state = State.WORKING;
+            return state;
+        }
 
         // initial case
         if(state == State.IDLE)
@@ -22,7 +24,7 @@ public class Inspector1 extends Inspector
             // read from file or generate statistically
             timeLeft = 100;
             state = State.WORKING;
-            return;
+            return state;
         }
         
         int i;
@@ -33,14 +35,14 @@ public class Inspector1 extends Inspector
                 buffers.get(0).addComponent();
                 break;
             }
-            else if(buffers.get(0).getSize() == i )
+            else if(buffers.get(1).getSize() == i )
             {
-                buffers.get(0).addComponent();
+                buffers.get(1).addComponent();
                 break;
             }
-            else if(buffers.get(0).getSize() == i )
+            else if(buffers.get(2).getSize() == i )
             {
-                buffers.get(0).addComponent();
+                buffers.get(2).addComponent();
                 break;
             }
         }
@@ -56,8 +58,8 @@ public class Inspector1 extends Inspector
             state = State.WORKING;
             // read from file or generate statistically
             timeLeft = 100;
-
         }
+        return state;
 
         
     }

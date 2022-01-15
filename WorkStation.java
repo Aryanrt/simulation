@@ -3,12 +3,6 @@ import java.util.List;
 
 public class WorkStation
 {
-    enum State
-    {
-        IDLE,
-        BLOCKED,
-        WORKING;
-    }
     public String id;
     public List<Buffer> buffers;
     public int timeLeft;
@@ -17,14 +11,14 @@ public class WorkStation
     public WorkStation(List<Buffer> buffers)
     {
         buffers = new ArrayList<Buffer>(buffers);
-        timeLeft = 0;
-        state =State.IDLE;
+        timeLeft = 100;
+        state =State.WORKING;
     }
-    public void produce()
+    public State produce()
     {
         //case of still working, not finished
         if( timeLeft != 0 && --timeLeft > 0)
-            return;
+            return State.WORKING;
 
         //case of w1
         if(buffers.size() == 1)
@@ -35,7 +29,7 @@ public class WorkStation
                 // read from file or generate statistically
                 timeLeft = 100;
                 state=State.WORKING;
-                return;
+                return state;
             }
         }
     
@@ -46,7 +40,9 @@ public class WorkStation
             // read from file or generate statistically
             timeLeft = 100;
             state=State.WORKING;
+            return state;
         }
+        return State.BLOCKED;
             
     }
 }

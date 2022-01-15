@@ -14,11 +14,14 @@ class Inspector2 extends Inspector
         state =State.IDLE;
         rand = new Random();
     }
-    public void work()
+    public State work()
     {
         //case of still working, not finished
         if( timeLeft != 0 && --timeLeft > 0)
-            return;
+        {
+            state = State.WORKING;
+            return state;
+        }
 
         // initial case
         if(state == State.IDLE)
@@ -27,27 +30,29 @@ class Inspector2 extends Inspector
             timeLeft = 100;
             currentComponent= components.get(rand.nextInt(2));
             state = State.WORKING;
-            return;
+            return state;
         }
         
-       //case of finished or blocked
+       //case of finished or blocked for C2
        if(curreComponent.getName() == "C2" && buffers.get(0).getSize() < 2)
        {
             buffers.get(0).addComponent();
             state = State.WORKING;
             // read from file or generate statistically
             timeLeft = 100;
-            return;
+            return state;
        }
-        //case of finished or blocked
+        //case of finished or blocked for C3
         if(curreComponent.getName() == "C3" && buffers.get(1).getSize() < 2)
         {
-            buffers.get(0).addComponent();
+            buffers.get(1).addComponent();
             state = State.WORKING;
             // read from file or generate statistically
             timeLeft = 100;
-            return;
+            return state;
         }
+
+        return State.BLOCKED;
         
     }
 
