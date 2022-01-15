@@ -1,10 +1,8 @@
 public class Buffer 
 {
 
-    public Component c;
-    private int size;
-    private int capacity;
-    public WorkStation w;
+    public int size = 0;
+    public int capacity = 2;
 
     public void addComponent()
     {

@@ -8,7 +8,10 @@ abstract class Inspector
         BLOCKED,
         WORKING;
     }
+    public void work()
+    {
 
+    }
     protected String id;
     protected List<Buffer> buffers;
     protected List<Component> components;

@@ -1,5 +1,12 @@
 class Main
 {
+    enum State
+    {
+        IDLE,
+        BLOCKED,
+        WORKING;
+    }
+    
     public static void main(String[] args) 
     {
         // File file = new File("")
