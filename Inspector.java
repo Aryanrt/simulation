@@ -1,17 +1,21 @@
 import java.util.List;
 
-public class Inspector
+abstract class Inspector
 {
-    private String id;
-    private List<Buffer> buffers;
-    private List<Component> component;
-    private Component curreComponent;
-    
-    public void work()
+    enum State
     {
-
+        IDLE,
+        BLOCKED,
+        WORKING;
     }
 
-    
+    protected String id;
+    protected List<Buffer> buffers;
+    protected List<Component> components;
+    protected Component curreComponent;
+    protected Component currentComponent;
+    protected int timeLeft;
+    protected State state;
+  
     
 }
