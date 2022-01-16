@@ -5,9 +5,9 @@ public class Inspector1 extends Inspector
 {
     public Inspector1(List<Buffer> buffers)
     {
-        buffers = new ArrayList<Buffer>(buffers);
-        timeLeft = 0;
-        state =State.IDLE;
+        this.buffers = new ArrayList<Buffer>(buffers);
+        this.timeLeft = 0;
+        this.state =State.IDLE;
     }
     public State work()
     {
@@ -28,21 +28,22 @@ public class Inspector1 extends Inspector
         }
         
         int i;
+        //System.out.println("ins1"+this.buffers.get(0).getSize()+"|"+this.buffers.get(1).getSize()+"|"+this.buffers.get(2).getSize());
         for(i=0; i < 2;i++)
         {
-            if(buffers.get(0).getSize() == i )
+            if(this.buffers.get(0).getSize() == i )
             {
-                buffers.get(0).addComponent();
+                this.buffers.get(0).addComponent();
                 break;
             }
-            else if(buffers.get(1).getSize() == i )
+            else if(this.buffers.get(1).getSize() == i )
             {
-                buffers.get(1).addComponent();
+                this.buffers.get(1).addComponent();
                 break;
             }
-            else if(buffers.get(2).getSize() == i )
+            else if(this.buffers.get(2).getSize() == i )
             {
-                buffers.get(2).addComponent();
+                this.buffers.get(2).addComponent();
                 break;
             }
         }
@@ -55,6 +56,7 @@ public class Inspector1 extends Inspector
         // case of cpmponent placed in queue
         else    
         {
+            System.out.println("adding C1");
             state = State.WORKING;
             // read from file or generate statistically
             timeLeft = 100;

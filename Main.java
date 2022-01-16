@@ -18,6 +18,11 @@ class Main
         Buffer b3 = new Buffer();
         Buffer b4 = new Buffer();
         Buffer b5 = new Buffer();
+        Component c2 = new Component("c2");
+        Component c3 = new Component("c3");
+        ArrayList<Component> components = new ArrayList<Component>();
+        components.add(c2);
+        components.add(c3);
 
         ArrayList<Buffer> buffers = new ArrayList<Buffer>();
         buffers.add(b1);
@@ -27,19 +32,19 @@ class Main
         buffers.clear();
         buffers.add(b3);
         buffers.add(b5);
-        Inspector1 ins2 = new Inspector1(buffers);
+        Inspector2 ins2 = new Inspector2(buffers,components);
 
         buffers.clear();
         buffers.add(b1);
-        WorkStation w1 = new WorkStation(buffers);
+        WorkStation w1 = new WorkStation(buffers,1);
         buffers.clear();
         buffers.add(b2);
         buffers.add(b3);
-        WorkStation w2 = new WorkStation(buffers);
+        WorkStation w2 = new WorkStation(buffers,2);
         buffers.clear();
         buffers.add(b4);
         buffers.add(b5);
-        WorkStation w3 = new WorkStation(buffers);
+        WorkStation w3 = new WorkStation(buffers,3);
 
         while(true)
         {
@@ -59,6 +64,8 @@ class Main
                 w2.produce();
             if(state5 == State.BLOCKED)
                 w3.produce();
+
+            System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
             
         }
     }
