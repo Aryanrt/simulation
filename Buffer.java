@@ -1,9 +1,13 @@
 public class Buffer 
 {
-
     public int size = 0;
     public int capacity = 2;
+    public int productID;
 
+    public Buffer(int productID)
+    {
+        this.productID = productID;
+    }
     public void addComponent()
     {
         this.size++;
@@ -19,6 +23,10 @@ public class Buffer
     public int getCapacity()
     {
         return this.capacity;
+    }
+    public int getProductID()
+    {
+        return this.productID;
     }
 
 }

@@ -3,11 +3,20 @@ import java.util.List;
 
 public class Inspector1 extends Inspector
 {
+    public boolean created =false;
     public Inspector1(List<Buffer> buffers)
     {
         this.buffers = new ArrayList<Buffer>(buffers);
         this.timeLeft = 0;
         this.state =State.IDLE;
+    }
+    public double bootrap()
+    {
+        // read from file or generate statistically
+        timeLeft = 100;
+        state = State.WORKING;
+        this.created = true;
+        return timeLeft;        
     }
     public double work()
     {
@@ -20,14 +29,19 @@ public class Inspector1 extends Inspector
         // }
 
         // initial case
-        if(state == State.IDLE)
-        {
-            // read from file or generate statistically
-            timeLeft = 100;
-            state = State.WORKING;
-            return timeLeft;
-        }
+        // if(state == State.IDLE)
+        // {
+        //     // read from file or generate statistically
+        //     timeLeft = 100;
+        //     state = State.WORKING;
+        //     return timeLeft;
+        // }
         
+        if(created)
+        {
+            System.out.println("inspected c1");
+            created = false;
+        }
         int i;
         //System.out.println("ins1"+this.buffers.get(0).getSize()+"|"+this.buffers.get(1).getSize()+"|"+this.buffers.get(2).getSize());
         for(i=0; i < 2;i++)
@@ -58,7 +72,7 @@ public class Inspector1 extends Inspector
         // case of component placed in queue
         else    
         {
-            System.out.println("produced C1");
+            created = true;
             state = State.WORKING;
             // read from file or generate statistically
             timeLeft = 100;
