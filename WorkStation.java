@@ -11,7 +11,7 @@ public class WorkStation
 
     public WorkStation(List<Buffer> buffers, int id)
     {
-        this.buffers = new ArrayList<Buffer>(buffers);
+        this.buffers = buffers;
         this.id = id;
         this.state =State.WORKING;
         
@@ -30,15 +30,21 @@ public class WorkStation
                 // read from file or generate statistically
                 timeLeft = 1000;
                 state=State.WORKING;
+                System.out.println(Main.globalTime+": W1 starting");
             }
         //0 means idle
         }
         else if(buffers.get(0).getSize() > 0 && buffers.get(1).getSize() > 0)
         {
+            if(buffers.get(1).productID == 2)
+                System.out.println(Main.globalTime+": W2 starting");
+            else
+                System.out.println(Main.globalTime+": W3 starting");
+            
             buffers.get(0).removeComponent();
             buffers.get(1).removeComponent(); 
             // read from file or generate statistically
-            timeLeft = 2000;
+            timeLeft = 500;
             state=State.WORKING;
         }
         if( this.timeLeft != -1)
@@ -50,12 +56,6 @@ public class WorkStation
     public double produce()
     {
         timeLeft =0;
-        //case of still working, not finished
-        // if( timeLeft != 0 && --timeLeft > 0)
-        // {
-        //     System.out.println("should never happen!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        //     return null;
-        // }
 
         //case of w1
         if(buffers.size() == 1)
@@ -63,11 +63,12 @@ public class WorkStation
             if(this.created)
             {
                 created = false;
-                System.out.println("produced p1");
+                System.out.println(Main.globalTime+": w1 produced p1");
             }
             // System.out.println("produced p1");
             if(buffers.get(0).getSize() > 0)
             {
+                System.out.println(Main.globalTime+": w1 starting");
                 buffers.get(0).removeComponent();
                 // read from file or generate statistically
                 timeLeft = 1000;
@@ -77,26 +78,28 @@ public class WorkStation
             //0 means idle
             return timeLeft;  
         }
-        // if(buffers.size()> 1)
-        //     System.out.println(id+" "+buffers.get(0).getSize()+" | "+ buffers.get(1).getSize());
 
         if(this.created)
         {
             created = false;
-            if(buffers.get(0).productID == 2)
-                System.out.println("produced p2");
+            if(buffers.get(1).productID == 2)
+                System.out.println(Main.globalTime+": w2 produced p2");
             else
-                System.out.println("produced p3");
+                System.out.println(Main.globalTime+": w3 produced p3");
         }
 
         else if(buffers.get(0).getSize() > 0 && buffers.get(1).getSize() > 0)
         {
-            
+            if(buffers.get(1).productID == 2)
+                System.out.println(Main.globalTime+": w2 starting");
+            else
+                System.out.println(Main.globalTime+": w3 starting");
+
             created=true;
             buffers.get(0).removeComponent();
             buffers.get(1).removeComponent(); 
             // read from file or generate statistically
-            timeLeft = 1000;
+            timeLeft = 500;
             state=State.WORKING;
         }
 
