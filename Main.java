@@ -61,7 +61,7 @@ class Main
         double timeLeft1 = ins1.bootrap();
         double timeLeft2 = ins2.bootrap();
         double timeLeft3=-1, timeLeft4=-1, timeLeft5=-1;
-        System.out.println("Addining event for " + (globalTime + timeLeft1) + " and " + (globalTime + timeLeft2));
+        // System.out.println("Addining event for " + (globalTime + timeLeft1) + " and " + (globalTime + timeLeft2));
         fel.add(new MyEvent(1, globalTime + timeLeft1));
         fel.add(new MyEvent(2, globalTime + timeLeft2));
         List<MyEvent> toBeRemoved = new ArrayList<MyEvent>();
@@ -92,7 +92,7 @@ class Main
                         timeLeft1 = ins1.work();
                         if(timeLeft1 != 0)
                         {
-                            System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                            // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(1, (globalTime + timeLeft1)));
                         }
                         break;
@@ -100,10 +100,10 @@ class Main
                     case 2:
                         toBeRemoved.add(e);
                         timeLeft2 = ins2.work();
-                        System.out.println("time2 "+timeLeft2);
+                        // System.out.println("time2 "+timeLeft2);
                         if(timeLeft2 != 0)
                         {
-                            System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                            // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(2, (globalTime + timeLeft2)));
                         }
                         break;
@@ -113,7 +113,7 @@ class Main
                         timeLeft3 = w1.produce();
                         if(timeLeft3 != 0)
                         {
-                            System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                            // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(3, (globalTime + timeLeft3)));
                         }
                         break;
@@ -123,7 +123,7 @@ class Main
                         timeLeft4 = w2.produce();
                         if(timeLeft4 != 0)
                         {
-                            System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                            // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(4, (globalTime + timeLeft4)));
                         }
                         break;
@@ -133,7 +133,7 @@ class Main
                         timeLeft5 = w3.produce();
                         if(timeLeft5 != 0)
                         {
-                            System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                            // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(5, (globalTime + timeLeft5)));
                         }
                         break;
@@ -153,7 +153,7 @@ class Main
                     timeLeft3 = w1.produce();
                 if(timeLeft3 != 0 && timeLeft3 != -1)
                 {
-                    System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                    // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                     fel.add(new MyEvent(3, globalTime + timeLeft3));
                 }
             }
@@ -165,8 +165,8 @@ class Main
                 timeLeft4 = w2.produce();
                 if(timeLeft4 != 0 && timeLeft4 != -1)
                 {
-                    System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
-                    System.out.println("adding finish time for w2 "+ (globalTime + timeLeft4));
+                    // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                    // System.out.println("adding finish time for w2 "+ (globalTime + timeLeft4));
                     fel.add(new MyEvent(4, globalTime + timeLeft4));                    
                 }
             }
@@ -178,8 +178,8 @@ class Main
                     timeLeft5 = w3.produce();
                 if(timeLeft5 != 0 && timeLeft5 != -1)
                 {
-                    System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
-                    System.out.println("adding finish time for w3 "+ (globalTime + timeLeft5));
+                    // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                    // System.out.println("adding finish time for w3 "+ (globalTime + timeLeft5));
                     fel.add(new MyEvent(5, globalTime + timeLeft5));                    
                 }
             }
@@ -188,7 +188,7 @@ class Main
                 timeLeft1 = ins1.work();
                 if(timeLeft1 != 0)
                 {
-                    System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+             //       System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                     fel.add(new MyEvent(1, globalTime + timeLeft1));
                 }
             }
@@ -197,13 +197,13 @@ class Main
                 timeLeft2= ins2.work();
                 if(timeLeft2 != 0)
                 {
-                    System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                 //   System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                     fel.add(new MyEvent(2, globalTime + timeLeft2));
                 }
             }
 
 
-            //System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+            System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
             
         }
     }
