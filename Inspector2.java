@@ -14,14 +14,15 @@ class Inspector2 extends Inspector
         this.state =State.IDLE;
         this.rand = new Random();
     }
-    public State work()
+    public double work()
     {
         //case of still working, not finished
-        if( timeLeft != 0 && --timeLeft > 0)
-        {
-            state = State.WORKING;
-            return state;
-        }
+        // if( timeLeft != 0 && --timeLeft > 0)
+        // {
+        //     state = State.WORKING;
+        //     System.out.println("should never happen!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        //     return null;
+        // }
 
         // initial case
         if(state == State.IDLE)
@@ -30,20 +31,24 @@ class Inspector2 extends Inspector
             timeLeft = 100;
             this.currentComponent= components.get(rand.nextInt(2));
             this.state = State.WORKING;
-            return state;
+            return timeLeft;
         }
         
         //System.out.println("ins2"+this.buffers.get(0).getSize()+"|"+this.buffers.get(1).getSize());
+
+        if(currentComponent.getName().equalsIgnoreCase("C2"))
+            System.out.println("produced C2");
+        else
+            System.out.println("produced C3");
+
        //case of finished or blocked for C2
        if(currentComponent.getName().equalsIgnoreCase("C2") && buffers.get(0).getSize() < 2)
        {
-           System.out.println("adding C2");
             this.buffers.get(0).addComponent();
             this.state = State.WORKING;
             // read from file or generate statistically
             this.timeLeft = 100;
             this.currentComponent= components.get(rand.nextInt(2));
-            return state;
        }
         //case of finished or blocked for C3
         if(currentComponent.getName().equalsIgnoreCase("C3") && buffers.get(1).getSize() < 2)
@@ -54,10 +59,10 @@ class Inspector2 extends Inspector
             // read from file or generate statistically
             this.timeLeft = 100;
             this.currentComponent= components.get(rand.nextInt(2));
-            return state;
         }
 
-        return State.BLOCKED;
+        // return 0 means I'm blocked!
+        return timeLeft;
         
     }
 

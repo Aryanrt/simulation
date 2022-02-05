@@ -9,14 +9,15 @@ public class Inspector1 extends Inspector
         this.timeLeft = 0;
         this.state =State.IDLE;
     }
-    public State work()
+    public double work()
     {
-        //case of still working, not finished
-        if( timeLeft != 0 && --timeLeft > 0)
-        {
-            state = State.WORKING;
-            return state;
-        }
+        // //case of still working, not finished
+        // if( timeLeft != 0 && --timeLeft > 0)
+        // {
+        //     System.out.println("should never happen!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        //     state = State.WORKING;
+        //     return null;
+        // }
 
         // initial case
         if(state == State.IDLE)
@@ -24,7 +25,7 @@ public class Inspector1 extends Inspector
             // read from file or generate statistically
             timeLeft = 100;
             state = State.WORKING;
-            return state;
+            return timeLeft;
         }
         
         int i;
@@ -52,16 +53,19 @@ public class Inspector1 extends Inspector
         if(i == 2)
         {
             state=State.BLOCKED;
+            timeLeft=0;
         }
-        // case of cpmponent placed in queue
+        // case of component placed in queue
         else    
         {
-            System.out.println("adding C1");
+            System.out.println("produced C1");
             state = State.WORKING;
             // read from file or generate statistically
             timeLeft = 100;
         }
-        return state;
+
+        //return 0 means blocked 
+        return timeLeft;
 
         
     }

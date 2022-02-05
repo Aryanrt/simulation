@@ -7,7 +7,7 @@ abstract class Inspector
     protected List<Buffer> buffers;
     protected List<Component> components;
     protected Component currentComponent;
-    protected int timeLeft;
+    protected double timeLeft;
     protected State state;
   
     
