@@ -11,6 +11,7 @@ public class Inspector1 extends Inspector
     public boolean created =false;
     List<Double> serviceTime;
     public int index=0;
+
     public Inspector1(List<Buffer> buffers) throws FileNotFoundException, IOException
     {
         this.serviceTime = new ArrayList<Double>();
