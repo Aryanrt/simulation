@@ -68,11 +68,12 @@ class Main
         fel.add(new MyEvent(2, globalTime + timeLeft2));
         List<MyEvent> toBeRemoved = new ArrayList<MyEvent>();
         List<MyEvent> toBeAdded = new ArrayList<MyEvent>();
-        boolean flag1=false, flag2=false, flag3=false, flag4=false, flag5=false;
+        
         while(true)
         {
             System.out.println( ins1.index +" "+ins2.index2  +" "+ins2.index3+" "+w1.index+" "+w2.index+" "+w3.index);
-            if(ins1.index == 300 && ins2.index2 == 300 && ins2.index3 == 300 )
+            System.out.println( fel);
+            if(fel.size() == 0)
                // && w1.index == 300 && w2.index == 300 && w3.index == 300 )
             {
                 System.out.println("all done");
@@ -99,9 +100,7 @@ class Main
                     case 1:
                         toBeRemoved.add(e);
                         timeLeft1 = ins1.work();
-                        if( timeLeft1 == -2 )
-                            flag1 = true;
-                        if(timeLeft1 != 0)
+                        if(timeLeft1 != 0 && timeLeft1 != -2)
                         {
                             // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(1, (globalTime + timeLeft1)));
@@ -122,7 +121,7 @@ class Main
                     case 3:
                         toBeRemoved.add(e);
                         timeLeft3 = w1.produce();
-                        if(timeLeft3 != 0)
+                        if(timeLeft3 != 0 && timeLeft3 != -2)
                         {
                             // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(3, (globalTime + timeLeft3)));
