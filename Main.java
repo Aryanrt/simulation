@@ -1,4 +1,6 @@
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,7 +8,7 @@ import java.util.List;
 class Main
 {
     public static double globalTime = 0;
-    public static void main(String[] args) 
+    public static void main(String[] args) throws FileNotFoundException, IOException 
     {
         // File file = new File("")
         // try (BufferedReader br = new BufferedReader(new FileReader(file))) {
@@ -66,9 +68,16 @@ class Main
         fel.add(new MyEvent(2, globalTime + timeLeft2));
         List<MyEvent> toBeRemoved = new ArrayList<MyEvent>();
         List<MyEvent> toBeAdded = new ArrayList<MyEvent>();
+        boolean flag1=false, flag2=false, flag3=false, flag4=false, flag5=false;
         while(true)
         {
-            
+            System.out.println( ins1.index +" "+ins2.index2  +" "+ins2.index3+" "+w1.index+" "+w2.index+" "+w3.index);
+            if(ins1.index == 300 && ins2.index2 == 300 && ins2.index3 == 300 )
+               // && w1.index == 300 && w2.index == 300 && w3.index == 300 )
+            {
+                System.out.println("all done");
+                break;
+            }    
             double min = 10000 + globalTime;
             for(MyEvent e: fel)
                 min = Math.min(min, e.getTime());
@@ -90,6 +99,8 @@ class Main
                     case 1:
                         toBeRemoved.add(e);
                         timeLeft1 = ins1.work();
+                        if( timeLeft1 == -2 )
+                            flag1 = true;
                         if(timeLeft1 != 0)
                         {
                             // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");

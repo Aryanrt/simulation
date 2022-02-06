@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,12 +10,27 @@ public class WorkStation
 {
     public int id;
     public List<Buffer> buffers;
-    public int timeLeft;
+    public double timeLeft;
     public State state;
     public boolean created=false;
+    List<Double> serviceTime;
+    public int index =0;
 
-    public WorkStation(List<Buffer> buffers, int id)
+    public WorkStation(List<Buffer> buffers, int id) throws FileNotFoundException, IOException
     {
+        this.serviceTime = new ArrayList<Double>();
+        try (BufferedReader br = new BufferedReader(new FileReader(new File("ws"+id+".dat")))) 
+        {
+            String line;
+            int i=0;
+            while ((line = br.readLine()) != null) 
+            {
+                if (i++ == 300)
+                    break;
+                this.serviceTime.add(Double.parseDouble(line));
+            }
+        }
+
         this.buffers = buffers;
         this.id = id;
         this.state =State.WORKING;
@@ -28,7 +48,7 @@ public class WorkStation
             {
                 buffers.get(0).removeComponent();
                 // read from file or generate statistically
-                timeLeft = 1000;
+                this.timeLeft = this.serviceTime.get(index++);
                 state=State.WORKING;
                 System.out.println(Main.globalTime+": W1 starting");
             }
@@ -44,7 +64,7 @@ public class WorkStation
             buffers.get(0).removeComponent();
             buffers.get(1).removeComponent(); 
             // read from file or generate statistically
-            timeLeft = 500;
+            this.timeLeft = this.serviceTime.get(index++);
             state=State.WORKING;
         }
         if( this.timeLeft != -1)
@@ -68,10 +88,14 @@ public class WorkStation
             // System.out.println("produced p1");
             if(buffers.get(0).getSize() > 0)
             {
+                if(index == 300)
+                    return -2;
+
                 System.out.println(Main.globalTime+": w1 starting");
                 buffers.get(0).removeComponent();
+                
                 // read from file or generate statistically
-                timeLeft = 1000;
+                this.timeLeft = this.serviceTime.get(this.index++);
                 state=State.WORKING;
                 this.created =true;
             }
@@ -99,7 +123,7 @@ public class WorkStation
             buffers.get(0).removeComponent();
             buffers.get(1).removeComponent(); 
             // read from file or generate statistically
-            timeLeft = 500;
+            this.timeLeft = this.serviceTime.get(index++);
             state=State.WORKING;
         }
 

@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -6,9 +11,38 @@ class Inspector2 extends Inspector
 {
     Random rand;
     public boolean created =false;
+    List<Double> serviceTime2;
+    List<Double> serviceTime3;
+    public int index2 =0;
+    public int index3 =0;
 
-    public Inspector2(List<Buffer> buffers, List<Component> components)
+    public Inspector2(List<Buffer> buffers, List<Component> components) throws FileNotFoundException, IOException
     {
+        this.serviceTime2 = new ArrayList<Double>();
+        try (BufferedReader br = new BufferedReader(new FileReader(new File("servinsp22.dat")))) 
+        {
+            String line;
+            int i=0;
+            while ((line = br.readLine()) != null) 
+            {
+                if (i++ == 300)
+                    break;
+                this.serviceTime2.add(Double.parseDouble(line));
+            }
+        }
+        this.serviceTime3 = new ArrayList<Double>();
+        try (BufferedReader br = new BufferedReader(new FileReader(new File("servinsp23.dat")))) 
+        {
+            String line;
+            int i=0;
+            while ((line = br.readLine()) != null) 
+            {
+                if (i++ == 300)
+                    break;
+                this.serviceTime3.add(Double.parseDouble(line));
+            }
+        }
+
         this.buffers = buffers;
         this.components = new ArrayList<Component>(components);
         this.timeLeft = 0;
@@ -18,13 +52,19 @@ class Inspector2 extends Inspector
     public double bootrap()
     {
         // read from file or generate statistically
-        timeLeft = 100;
+        
         state = State.WORKING;
         this.currentComponent= components.get(rand.nextInt(2));
+        if(currentComponent.getName().equalsIgnoreCase("C2"))
+            this.timeLeft = this.serviceTime2.get(index2++);
+        else
+            this.timeLeft = this.serviceTime3.get(index3++); 
+
         System.out.println(Main.globalTime+": ins2 starting to inspect "+ this.currentComponent.getName());
         this.created = true;
         return timeLeft;        
     }
+
     public double work()
     {
         this.timeLeft=0;
@@ -39,10 +79,13 @@ class Inspector2 extends Inspector
             this.buffers.get(0).addComponent();
             this.currentComponent= components.get(rand.nextInt(2));
             System.out.println(Main.globalTime+": ins2 adding C2 to queue 3");
+            
+            if(index2 == 300)
+                return -2;
             System.out.println(Main.globalTime+": ins2 starting to inspect "+ this.currentComponent.getName());
             this.state = State.WORKING;
             // read from file or generate statistically
-            this.timeLeft = 100;
+            this.timeLeft = this.serviceTime2.get(index2++);
             
             this.created = true;
        }
@@ -51,11 +94,13 @@ class Inspector2 extends Inspector
         {
             this.currentComponent= components.get(rand.nextInt(2));
             System.out.println(Main.globalTime+": ins2 adding C3 to queue 5");
+            if(index3 == 300)
+                return -2;
             System.out.println(Main.globalTime+": ins2 starting to inspect "+ this.currentComponent.getName());
             this.buffers.get(1).addComponent();
             this.state = State.WORKING;
             // read from file or generate statistically
-            this.timeLeft = 100;            
+            this.timeLeft = this.serviceTime3.get(index3++);
             this.created = true;
         }
 

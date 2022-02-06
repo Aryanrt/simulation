@@ -1,10 +1,31 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Inspector1 extends Inspector
 {
     public boolean created =false;
-    public Inspector1(List<Buffer> buffers)
+    List<Double> serviceTime;
+    public int index=0;
+    public Inspector1(List<Buffer> buffers) throws FileNotFoundException, IOException
     {
+        this.serviceTime = new ArrayList<Double>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(new File("servinsp1.dat")))) 
+        {
+            String line;
+            int i=0;
+            while ((line = br.readLine()) != null) 
+            {
+                if (i++ == 300)
+                    break;
+                this.serviceTime.add(Double.parseDouble(line));
+            }
+        }
         this.buffers = buffers;
         this.timeLeft = 0;
         this.state =State.IDLE;
@@ -12,7 +33,7 @@ public class Inspector1 extends Inspector
     public double bootrap()
     {
         // read from file or generate statistically
-        timeLeft = 100;
+        timeLeft = this.serviceTime.get(index++);
         state = State.WORKING;
         this.created = true;
         System.out.println(Main.globalTime+": ins1 starting to inspect c1");
@@ -20,7 +41,7 @@ public class Inspector1 extends Inspector
     }
     public double work()
     {
-        
+
         if(created)
         {
             System.out.println(Main.globalTime+": ins1 inspected c1");
@@ -60,11 +81,14 @@ public class Inspector1 extends Inspector
         else    
         {
             System.out.println(Main.globalTime+": ins1 adding C1 to queue " + j);
+            if(index == 300)
+                return -2; 
             System.out.println(Main.globalTime+": ins1 starting to inspect c1");
             created = true;
             state = State.WORKING;
+            
             // read from file or generate statistically
-            timeLeft = 100;
+            timeLeft = this.serviceTime.get(index++);
         }
 
         //return 0 means blocked 
