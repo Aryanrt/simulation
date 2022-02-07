@@ -1,0 +1,3471 @@
+10.16: ins1 inspected 2th c1
+10.16: ins1 adding C1 to queue 1
+10.16: ins1 starting to inspect c1
+10.16: W1 starting
+10.16: Future Event List[Ins2 for time:102.11, Ins1 for time:23.67, w1 for time:11.01]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+11.01: w1 produced 2th p1
+11.01: Future Event List[Ins2 for time:102.11, Ins1 for time:23.67]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+23.67: ins1 inspected 3th c1
+23.67: ins1 adding C1 to queue 1
+23.67: ins1 starting to inspect c1
+23.67: w1 starting
+23.67: Future Event List[Ins2 for time:102.11, Ins1 for time:25.25, w1 for time:24.14]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+24.14: w1 produced 3th p1
+24.14: Future Event List[Ins2 for time:102.11, Ins1 for time:25.25]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+25.25: ins1 inspected 4th c1
+25.25: ins1 adding C1 to queue 1
+25.25: ins1 starting to inspect c1
+25.25: w1 starting
+25.25: Future Event List[Ins2 for time:102.11, Ins1 for time:41.96, w1 for time:28.27]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+28.27: w1 produced 4th p1
+28.27: Future Event List[Ins2 for time:102.11, Ins1 for time:41.96]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+41.96: ins1 inspected 5th c1
+41.96: ins1 adding C1 to queue 1
+41.96: ins1 starting to inspect c1
+41.96: w1 starting
+41.96: Future Event List[Ins2 for time:102.11, Ins1 for time:46.51, w1 for time:49.29]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+46.51: ins1 inspected 6th c1
+46.51: ins1 adding C1 to queue 1
+46.51: ins1 starting to inspect c1
+46.51: Future Event List[Ins2 for time:102.11, w1 for time:49.29, Ins1 for time:52.33]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+49.29: w1 produced 5th p1
+49.29: w1 starting
+49.29: Future Event List[Ins2 for time:102.11, Ins1 for time:52.33, w1 for time:50.24]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+50.24: w1 produced 6th p1
+50.24: Future Event List[Ins2 for time:102.11, Ins1 for time:52.33]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+52.33: ins1 inspected 7th c1
+52.33: ins1 adding C1 to queue 1
+52.33: ins1 starting to inspect c1
+52.33: w1 starting
+52.33: Future Event List[Ins2 for time:102.11, Ins1 for time:52.69, w1 for time:56.53]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+52.69: ins1 inspected 8th c1
+52.69: ins1 adding C1 to queue 1
+52.69: ins1 starting to inspect c1
+52.69: Future Event List[Ins2 for time:102.11, w1 for time:56.53, Ins1 for time:59.79]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+56.53: w1 produced 7th p1
+56.53: w1 starting
+56.53: Future Event List[Ins2 for time:102.11, Ins1 for time:59.79, w1 for time:57.48]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+57.48: w1 produced 8th p1
+57.48: Future Event List[Ins2 for time:102.11, Ins1 for time:59.79]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+59.79: ins1 inspected 9th c1
+59.79: ins1 adding C1 to queue 1
+59.79: ins1 starting to inspect c1
+59.79: w1 starting
+59.79: Future Event List[Ins2 for time:102.11, Ins1 for time:68.77, w1 for time:60.03]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+60.03: w1 produced 9th p1
+60.03: Future Event List[Ins2 for time:102.11, Ins1 for time:68.77]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+68.77: ins1 inspected 10th c1
+68.77: ins1 adding C1 to queue 1
+68.77: ins1 starting to inspect c1
+68.77: w1 starting
+68.77: Future Event List[Ins2 for time:102.11, Ins1 for time:69.13, w1 for time:72.03]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+69.13: ins1 inspected 11th c1
+69.13: ins1 adding C1 to queue 1
+69.13: ins1 starting to inspect c1
+69.13: Future Event List[Ins2 for time:102.11, w1 for time:72.03, Ins1 for time:71.39]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:0
+
+71.39: ins1 inspected 12th c1
+71.39: ins1 adding C1 to queue 2
+71.39: ins1 starting to inspect c1
+71.39: Future Event List[Ins2 for time:102.11, w1 for time:72.03, Ins1 for time:105.08]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:0
+
+72.03: w1 produced 10th p1
+72.03: w1 starting
+72.03: Future Event List[Ins2 for time:102.11, Ins1 for time:105.08, w1 for time:75.38]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:0
+
+75.38: w1 produced 11th p1
+75.38: Future Event List[Ins2 for time:102.11, Ins1 for time:105.08]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:0
+
+102.11: ins2 inspected  2th c3
+102.11: ins2 adding C3 to queue 5
+102.11: ins2 starting to inspect c2
+102.11: Future Event List[Ins1 for time:105.08, Ins2 for time:105.93]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:1
+
+105.08: ins1 inspected 13th c1
+105.08: ins1 adding C1 to queue 1
+105.08: ins1 starting to inspect c1
+105.08: w1 starting
+105.08: Future Event List[Ins2 for time:105.93, Ins1 for time:117.42, w1 for time:116.04]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:1
+
+105.93: ins2 inspected  3th c2
+105.93: ins2 adding C2 to queue 3
+105.93: ins2 starting to inspect c3
+105.93: W2 starting
+105.93: Future Event List[Ins1 for time:117.42, w1 for time:116.04, Ins2 for time:121.17, w2 for time:119.36]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:1
+
+116.04: w1 produced 12th p1
+116.04: Future Event List[Ins1 for time:117.42, Ins2 for time:121.17, w2 for time:119.36]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:1
+
+117.42: ins1 inspected 14th c1
+117.42: ins1 adding C1 to queue 1
+117.42: ins1 starting to inspect c1
+117.42: w1 starting
+117.42: Future Event List[Ins2 for time:121.17, w2 for time:119.36, Ins1 for time:145.44, w1 for time:124.42]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:1
+
+119.36: w2 produced 2th p2
+119.36: Future Event List[Ins2 for time:121.17, Ins1 for time:145.44, w1 for time:124.42]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:1
+
+121.17: ins2 inspected  3th c3
+121.17: ins2 adding C3 to queue 5
+121.17: ins2 starting to inspect c3
+121.17: Future Event List[Ins1 for time:145.44, w1 for time:124.42, Ins2 for time:127.78]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+124.42: w1 produced 13th p1
+124.42: Future Event List[Ins1 for time:145.44, Ins2 for time:127.78]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+127.78: ins2 inspected  4th c3
+127.78: Future Event List[Ins1 for time:145.44]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+145.44: ins1 inspected 15th c1
+145.44: ins1 adding C1 to queue 1
+145.44: ins1 starting to inspect c1
+145.44: w1 starting
+145.44: Future Event List[Ins1 for time:149.29, w1 for time:147.18]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+147.18: w1 produced 14th p1
+147.18: Future Event List[Ins1 for time:149.29]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+149.29: ins1 inspected 16th c1
+149.29: ins1 adding C1 to queue 1
+149.29: ins1 starting to inspect c1
+149.29: w1 starting
+149.29: Future Event List[Ins1 for time:163.47, w1 for time:149.58]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+149.58: w1 produced 15th p1
+149.58: Future Event List[Ins1 for time:163.47]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+163.47: ins1 inspected 17th c1
+163.47: ins1 adding C1 to queue 1
+163.47: ins1 starting to inspect c1
+163.47: w1 starting
+163.47: Future Event List[Ins1 for time:169.34, w1 for time:166.98]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+166.98: w1 produced 16th p1
+166.98: Future Event List[Ins1 for time:169.34]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+169.34: ins1 inspected 18th c1
+169.34: ins1 adding C1 to queue 1
+169.34: ins1 starting to inspect c1
+169.34: w1 starting
+169.34: Future Event List[Ins1 for time:185.86, w1 for time:171.83]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+171.83: w1 produced 17th p1
+171.83: Future Event List[Ins1 for time:185.86]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+185.86: ins1 inspected 19th c1
+185.86: ins1 adding C1 to queue 1
+185.86: ins1 starting to inspect c1
+185.86: w1 starting
+185.86: Future Event List[Ins1 for time:187.08, w1 for time:187.68]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+187.08: ins1 inspected 20th c1
+187.08: ins1 adding C1 to queue 1
+187.08: ins1 starting to inspect c1
+187.08: Future Event List[w1 for time:187.68, Ins1 for time:219.19]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+187.68: w1 produced 18th p1
+187.68: w1 starting
+187.68: Future Event List[Ins1 for time:219.19, w1 for time:193.75]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+193.75: w1 produced 19th p1
+193.75: Future Event List[Ins1 for time:219.19]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+219.19: ins1 inspected 21th c1
+219.19: ins1 adding C1 to queue 1
+219.19: ins1 starting to inspect c1
+219.19: w1 starting
+219.19: Future Event List[Ins1 for time:226.06, w1 for time:220.63]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+220.63: w1 produced 20th p1
+220.63: Future Event List[Ins1 for time:226.06]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+226.06: ins1 inspected 22th c1
+226.06: ins1 adding C1 to queue 1
+226.06: ins1 starting to inspect c1
+226.06: w1 starting
+226.06: Future Event List[Ins1 for time:250.66, w1 for time:230.16]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+230.16: w1 produced 21th p1
+230.16: Future Event List[Ins1 for time:250.66]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+250.66: ins1 inspected 23th c1
+250.66: ins1 adding C1 to queue 1
+250.66: ins1 starting to inspect c1
+250.66: w1 starting
+250.66: Future Event List[Ins1 for time:258.24, w1 for time:259.46]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+258.24: ins1 inspected 24th c1
+258.24: ins1 adding C1 to queue 1
+258.24: ins1 starting to inspect c1
+258.24: Future Event List[w1 for time:259.46, Ins1 for time:272.45]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+259.46: w1 produced 22th p1
+259.46: w1 starting
+259.46: Future Event List[Ins1 for time:272.45, w1 for time:260.08]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+260.08: w1 produced 23th p1
+260.08: Future Event List[Ins1 for time:272.45]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+272.45: ins1 inspected 25th c1
+272.45: ins1 adding C1 to queue 1
+272.45: ins1 starting to inspect c1
+272.45: w1 starting
+272.45: Future Event List[Ins1 for time:280.98, w1 for time:278.83]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+278.83: w1 produced 24th p1
+278.83: Future Event List[Ins1 for time:280.98]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+280.98: ins1 inspected 26th c1
+280.98: ins1 adding C1 to queue 1
+280.98: ins1 starting to inspect c1
+280.98: w1 starting
+280.98: Future Event List[Ins1 for time:281.58, w1 for time:281.37]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+281.37: w1 produced 25th p1
+281.37: Future Event List[Ins1 for time:281.58]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+281.58: ins1 inspected 27th c1
+281.58: ins1 adding C1 to queue 1
+281.58: ins1 starting to inspect c1
+281.58: w1 starting
+281.58: Future Event List[Ins1 for time:284.52, w1 for time:285.10]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+284.52: ins1 inspected 28th c1
+284.52: ins1 adding C1 to queue 1
+284.52: ins1 starting to inspect c1
+284.52: Future Event List[w1 for time:285.10, Ins1 for time:289.41]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+285.10: w1 produced 26th p1
+285.10: w1 starting
+285.10: Future Event List[Ins1 for time:289.41, w1 for time:286.45]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+286.45: w1 produced 27th p1
+286.45: Future Event List[Ins1 for time:289.41]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+289.41: ins1 inspected 29th c1
+289.41: ins1 adding C1 to queue 1
+289.41: ins1 starting to inspect c1
+289.41: w1 starting
+289.41: Future Event List[Ins1 for time:297.13, w1 for time:296.74]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+296.74: w1 produced 28th p1
+296.74: Future Event List[Ins1 for time:297.13]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+297.13: ins1 inspected 30th c1
+297.13: ins1 adding C1 to queue 1
+297.13: ins1 starting to inspect c1
+297.13: w1 starting
+297.13: Future Event List[Ins1 for time:298.77, w1 for time:303.96]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+298.77: ins1 inspected 31th c1
+298.77: ins1 adding C1 to queue 1
+298.77: ins1 starting to inspect c1
+298.77: Future Event List[w1 for time:303.96, Ins1 for time:304.17]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+303.96: w1 produced 29th p1
+303.96: w1 starting
+303.96: Future Event List[Ins1 for time:304.17, w1 for time:321.92]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+304.17: ins1 inspected 32th c1
+304.17: ins1 adding C1 to queue 1
+304.17: ins1 starting to inspect c1
+304.17: Future Event List[w1 for time:321.92, Ins1 for time:305.70]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+305.70: ins1 inspected 33th c1
+305.70: ins1 adding C1 to queue 2
+305.70: ins1 starting to inspect c1
+305.70: Future Event List[w1 for time:321.92, Ins1 for time:315.67]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+315.67: ins1 inspected 34th c1
+315.67: ins1 adding C1 to queue 4
+315.67: ins1 starting to inspect c1
+315.67: W3 starting
+315.67: ins2 adding C3 to queue 5
+315.67: ins2 starting to inspect c3
+315.67: Future Event List[w1 for time:321.92, Ins1 for time:335.60, w3 for time:339.52, Ins2 for time:363.85]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+321.92: w1 produced 30th p1
+321.92: w1 starting
+321.92: Future Event List[Ins1 for time:335.60, w3 for time:339.52, Ins2 for time:363.85, w1 for time:322.39]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+322.39: w1 produced 31th p1
+322.39: Future Event List[Ins1 for time:335.60, w3 for time:339.52, Ins2 for time:363.85]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+335.60: ins1 inspected 35th c1
+335.60: ins1 adding C1 to queue 1
+335.60: ins1 starting to inspect c1
+335.60: w1 starting
+335.60: Future Event List[w3 for time:339.52, Ins2 for time:363.85, Ins1 for time:344.07, w1 for time:344.03]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+339.52: w3 produced 2th p3
+339.52: Future Event List[Ins2 for time:363.85, Ins1 for time:344.07, w1 for time:344.03]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+344.03: w1 produced 32th p1
+344.03: Future Event List[Ins2 for time:363.85, Ins1 for time:344.07]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+344.07: ins1 inspected 36th c1
+344.07: ins1 adding C1 to queue 1
+344.07: ins1 starting to inspect c1
+344.07: w1 starting
+344.07: Future Event List[Ins2 for time:363.85, Ins1 for time:351.18, w1 for time:345.47]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+345.47: w1 produced 33th p1
+345.47: Future Event List[Ins2 for time:363.85, Ins1 for time:351.18]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+351.18: ins1 inspected 37th c1
+351.18: ins1 adding C1 to queue 1
+351.18: ins1 starting to inspect c1
+351.18: w1 starting
+351.18: Future Event List[Ins2 for time:363.85, Ins1 for time:384.12, w1 for time:352.31]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+352.31: w1 produced 34th p1
+352.31: Future Event List[Ins2 for time:363.85, Ins1 for time:384.12]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+363.85: ins2 inspected  5th c3
+363.85: Future Event List[Ins1 for time:384.12]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+384.12: ins1 inspected 38th c1
+384.12: ins1 adding C1 to queue 1
+384.12: ins1 starting to inspect c1
+384.12: w1 starting
+384.12: Future Event List[Ins1 for time:421.50, w1 for time:388.92]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+388.92: w1 produced 35th p1
+388.92: Future Event List[Ins1 for time:421.50]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+421.50: ins1 inspected 39th c1
+421.50: ins1 adding C1 to queue 1
+421.50: ins1 starting to inspect c1
+421.50: w1 starting
+421.50: Future Event List[Ins1 for time:424.34, w1 for time:424.02]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+424.02: w1 produced 36th p1
+424.02: Future Event List[Ins1 for time:424.34]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+424.34: ins1 inspected 40th c1
+424.34: ins1 adding C1 to queue 1
+424.34: ins1 starting to inspect c1
+424.34: w1 starting
+424.34: Future Event List[Ins1 for time:434.81, w1 for time:436.59]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+434.81: ins1 inspected 41th c1
+434.81: ins1 adding C1 to queue 1
+434.81: ins1 starting to inspect c1
+434.81: Future Event List[w1 for time:436.59, Ins1 for time:447.73]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+436.59: w1 produced 37th p1
+436.59: w1 starting
+436.59: Future Event List[Ins1 for time:447.73, w1 for time:439.82]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+439.82: w1 produced 38th p1
+439.82: Future Event List[Ins1 for time:447.73]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+447.73: ins1 inspected 42th c1
+447.73: ins1 adding C1 to queue 1
+447.73: ins1 starting to inspect c1
+447.73: w1 starting
+447.73: Future Event List[Ins1 for time:451.65, w1 for time:457.59]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+451.65: ins1 inspected 43th c1
+451.65: ins1 adding C1 to queue 1
+451.65: ins1 starting to inspect c1
+451.65: Future Event List[w1 for time:457.59, Ins1 for time:463.22]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+457.59: w1 produced 39th p1
+457.59: w1 starting
+457.59: Future Event List[Ins1 for time:463.22, w1 for time:457.87]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+457.87: w1 produced 40th p1
+457.87: Future Event List[Ins1 for time:463.22]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+463.22: ins1 inspected 44th c1
+463.22: ins1 adding C1 to queue 1
+463.22: ins1 starting to inspect c1
+463.22: w1 starting
+463.22: Future Event List[Ins1 for time:478.15, w1 for time:466.27]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+466.27: w1 produced 41th p1
+466.27: Future Event List[Ins1 for time:478.15]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+478.15: ins1 inspected 45th c1
+478.15: ins1 adding C1 to queue 1
+478.15: ins1 starting to inspect c1
+478.15: w1 starting
+478.15: Future Event List[Ins1 for time:495.98, w1 for time:479.22]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+479.22: w1 produced 42th p1
+479.22: Future Event List[Ins1 for time:495.98]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+495.98: ins1 inspected 46th c1
+495.98: ins1 adding C1 to queue 1
+495.98: ins1 starting to inspect c1
+495.98: w1 starting
+495.98: Future Event List[Ins1 for time:502.53, w1 for time:497.02]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+497.02: w1 produced 43th p1
+497.02: Future Event List[Ins1 for time:502.53]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+502.53: ins1 inspected 47th c1
+502.53: ins1 adding C1 to queue 1
+502.53: ins1 starting to inspect c1
+502.53: w1 starting
+502.53: Future Event List[Ins1 for time:510.78, w1 for time:512.46]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+510.78: ins1 inspected 48th c1
+510.78: ins1 adding C1 to queue 1
+510.78: ins1 starting to inspect c1
+510.78: Future Event List[w1 for time:512.46, Ins1 for time:512.71]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+512.46: w1 produced 44th p1
+512.46: w1 starting
+512.46: Future Event List[Ins1 for time:512.71, w1 for time:521.29]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+512.71: ins1 inspected 49th c1
+512.71: ins1 adding C1 to queue 1
+512.71: ins1 starting to inspect c1
+512.71: Future Event List[w1 for time:521.29, Ins1 for time:540.69]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+521.29: w1 produced 45th p1
+521.29: w1 starting
+521.29: Future Event List[Ins1 for time:540.69, w1 for time:537.60]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+537.60: w1 produced 46th p1
+537.60: Future Event List[Ins1 for time:540.69]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+540.69: ins1 inspected 50th c1
+540.69: ins1 adding C1 to queue 1
+540.69: ins1 starting to inspect c1
+540.69: w1 starting
+540.69: Future Event List[Ins1 for time:548.95, w1 for time:543.31]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+543.31: w1 produced 47th p1
+543.31: Future Event List[Ins1 for time:548.95]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+548.95: ins1 inspected 51th c1
+548.95: ins1 adding C1 to queue 1
+548.95: ins1 starting to inspect c1
+548.95: w1 starting
+548.95: Future Event List[Ins1 for time:564.47, w1 for time:550.03]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+550.03: w1 produced 48th p1
+550.03: Future Event List[Ins1 for time:564.47]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+564.47: ins1 inspected 52th c1
+564.47: ins1 adding C1 to queue 1
+564.47: ins1 starting to inspect c1
+564.47: w1 starting
+564.47: Future Event List[Ins1 for time:587.71, w1 for time:573.00]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+573.00: w1 produced 49th p1
+573.00: Future Event List[Ins1 for time:587.71]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+587.71: ins1 inspected 53th c1
+587.71: ins1 adding C1 to queue 1
+587.71: ins1 starting to inspect c1
+587.71: w1 starting
+587.71: Future Event List[Ins1 for time:588.21, w1 for time:593.38]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+588.21: ins1 inspected 54th c1
+588.21: ins1 adding C1 to queue 1
+588.21: ins1 starting to inspect c1
+588.21: Future Event List[w1 for time:593.38, Ins1 for time:604.45]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+593.38: w1 produced 50th p1
+593.38: w1 starting
+593.38: Future Event List[Ins1 for time:604.45, w1 for time:607.96]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+604.45: ins1 inspected 55th c1
+604.45: ins1 adding C1 to queue 1
+604.45: ins1 starting to inspect c1
+604.45: Future Event List[w1 for time:607.96, Ins1 for time:617.28]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+607.96: w1 produced 51th p1
+607.96: w1 starting
+607.96: Future Event List[Ins1 for time:617.28, w1 for time:611.88]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+611.88: w1 produced 52th p1
+611.88: Future Event List[Ins1 for time:617.28]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+617.28: ins1 inspected 56th c1
+617.28: ins1 adding C1 to queue 1
+617.28: ins1 starting to inspect c1
+617.28: w1 starting
+617.28: Future Event List[Ins1 for time:622.19, w1 for time:617.74]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+617.74: w1 produced 53th p1
+617.74: Future Event List[Ins1 for time:622.19]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+622.19: ins1 inspected 57th c1
+622.19: ins1 adding C1 to queue 1
+622.19: ins1 starting to inspect c1
+622.19: w1 starting
+622.19: Future Event List[Ins1 for time:623.81, w1 for time:626.25]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+623.81: ins1 inspected 58th c1
+623.81: ins1 adding C1 to queue 1
+623.81: ins1 starting to inspect c1
+623.81: Future Event List[w1 for time:626.25, Ins1 for time:639.23]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+626.25: w1 produced 54th p1
+626.25: w1 starting
+626.25: Future Event List[Ins1 for time:639.23, w1 for time:629.20]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+629.20: w1 produced 55th p1
+629.20: Future Event List[Ins1 for time:639.23]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+639.23: ins1 inspected 59th c1
+639.23: ins1 adding C1 to queue 1
+639.23: ins1 starting to inspect c1
+639.23: w1 starting
+639.23: Future Event List[Ins1 for time:643.57, w1 for time:642.65]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+642.65: w1 produced 56th p1
+642.65: Future Event List[Ins1 for time:643.57]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+643.57: ins1 inspected 60th c1
+643.57: ins1 adding C1 to queue 1
+643.57: ins1 starting to inspect c1
+643.57: w1 starting
+643.57: Future Event List[Ins1 for time:650.82, w1 for time:649.46]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+649.46: w1 produced 57th p1
+649.46: Future Event List[Ins1 for time:650.82]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+650.82: ins1 inspected 61th c1
+650.82: ins1 adding C1 to queue 1
+650.82: ins1 starting to inspect c1
+650.82: w1 starting
+650.82: Future Event List[Ins1 for time:659.75, w1 for time:652.56]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+652.56: w1 produced 58th p1
+652.56: Future Event List[Ins1 for time:659.75]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+659.75: ins1 inspected 62th c1
+659.75: ins1 adding C1 to queue 1
+659.75: ins1 starting to inspect c1
+659.75: w1 starting
+659.75: Future Event List[Ins1 for time:666.15, w1 for time:662.82]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+662.82: w1 produced 59th p1
+662.82: Future Event List[Ins1 for time:666.15]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+666.15: ins1 inspected 63th c1
+666.15: ins1 adding C1 to queue 1
+666.15: ins1 starting to inspect c1
+666.15: w1 starting
+666.15: Future Event List[Ins1 for time:669.58, w1 for time:666.94]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+666.94: w1 produced 60th p1
+666.94: Future Event List[Ins1 for time:669.58]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+669.58: ins1 inspected 64th c1
+669.58: ins1 adding C1 to queue 1
+669.58: ins1 starting to inspect c1
+669.58: w1 starting
+669.58: Future Event List[Ins1 for time:691.88, w1 for time:671.75]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+671.75: w1 produced 61th p1
+671.75: Future Event List[Ins1 for time:691.88]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+691.88: ins1 inspected 65th c1
+691.88: ins1 adding C1 to queue 1
+691.88: ins1 starting to inspect c1
+691.88: w1 starting
+691.88: Future Event List[Ins1 for time:693.63, w1 for time:701.11]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+693.63: ins1 inspected 66th c1
+693.63: ins1 adding C1 to queue 1
+693.63: ins1 starting to inspect c1
+693.63: Future Event List[w1 for time:701.11, Ins1 for time:699.06]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+699.06: ins1 inspected 67th c1
+699.06: ins1 adding C1 to queue 4
+699.06: ins1 starting to inspect c1
+699.06: w3 starting
+699.06: ins2 adding C3 to queue 5
+699.06: ins2 starting to inspect c2
+699.06: Future Event List[w1 for time:701.11, Ins1 for time:709.85, w3 for time:708.60, Ins2 for time:717.13]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+701.11: w1 produced 62th p1
+701.11: w1 starting
+701.11: Future Event List[Ins1 for time:709.85, w3 for time:708.60, Ins2 for time:717.13, w1 for time:701.66]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+701.66: w1 produced 63th p1
+701.66: Future Event List[Ins1 for time:709.85, w3 for time:708.60, Ins2 for time:717.13]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+708.60: w3 produced 3th p3
+708.60: Future Event List[Ins1 for time:709.85, Ins2 for time:717.13]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+709.85: ins1 inspected 68th c1
+709.85: ins1 adding C1 to queue 1
+709.85: ins1 starting to inspect c1
+709.85: w1 starting
+709.85: Future Event List[Ins2 for time:717.13, Ins1 for time:714.26, w1 for time:714.14]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+714.14: w1 produced 64th p1
+714.14: Future Event List[Ins2 for time:717.13, Ins1 for time:714.26]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+714.26: ins1 inspected 69th c1
+714.26: ins1 adding C1 to queue 1
+714.26: ins1 starting to inspect c1
+714.26: w1 starting
+714.26: Future Event List[Ins2 for time:717.13, Ins1 for time:714.74, w1 for time:730.86]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+714.74: ins1 inspected 70th c1
+714.74: ins1 adding C1 to queue 1
+714.74: ins1 starting to inspect c1
+714.74: Future Event List[Ins2 for time:717.13, w1 for time:730.86, Ins1 for time:732.01]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+717.13: ins2 inspected  6th c2
+717.13: ins2 adding C2 to queue 3
+717.13: ins2 starting to inspect c3
+717.13: w2 starting
+717.13: Future Event List[w1 for time:730.86, Ins1 for time:732.01, Ins2 for time:737.39, w2 for time:723.93]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+723.93: w2 produced 3th p2
+723.93: Future Event List[w1 for time:730.86, Ins1 for time:732.01, Ins2 for time:737.39]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+730.86: w1 produced 65th p1
+730.86: w1 starting
+730.86: Future Event List[Ins1 for time:732.01, Ins2 for time:737.39, w1 for time:734.09]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+732.01: ins1 inspected 71th c1
+732.01: ins1 adding C1 to queue 1
+732.01: ins1 starting to inspect c1
+732.01: Future Event List[Ins2 for time:737.39, w1 for time:734.09, Ins1 for time:734.20]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+734.09: w1 produced 66th p1
+734.09: w1 starting
+734.09: Future Event List[Ins2 for time:737.39, Ins1 for time:734.20, w1 for time:742.96]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+734.20: ins1 inspected 72th c1
+734.20: ins1 adding C1 to queue 1
+734.20: ins1 starting to inspect c1
+734.20: Future Event List[Ins2 for time:737.39, w1 for time:742.96, Ins1 for time:770.95]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+737.39: ins2 inspected  6th c3
+737.39: Future Event List[w1 for time:742.96, Ins1 for time:770.95]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+742.96: w1 produced 67th p1
+742.96: w1 starting
+742.96: Future Event List[Ins1 for time:770.95, w1 for time:744.07]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+744.07: w1 produced 68th p1
+744.07: Future Event List[Ins1 for time:770.95]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+770.95: ins1 inspected 73th c1
+770.95: ins1 adding C1 to queue 1
+770.95: ins1 starting to inspect c1
+770.95: w1 starting
+770.95: Future Event List[Ins1 for time:772.63, w1 for time:771.80]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+771.80: w1 produced 69th p1
+771.80: Future Event List[Ins1 for time:772.63]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+772.63: ins1 inspected 74th c1
+772.63: ins1 adding C1 to queue 1
+772.63: ins1 starting to inspect c1
+772.63: w1 starting
+772.63: Future Event List[Ins1 for time:776.02, w1 for time:773.25]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+773.25: w1 produced 70th p1
+773.25: Future Event List[Ins1 for time:776.02]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+776.02: ins1 inspected 75th c1
+776.02: ins1 adding C1 to queue 1
+776.02: ins1 starting to inspect c1
+776.02: w1 starting
+776.02: Future Event List[Ins1 for time:777.52, w1 for time:781.83]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+777.52: ins1 inspected 76th c1
+777.52: ins1 adding C1 to queue 1
+777.52: ins1 starting to inspect c1
+777.52: Future Event List[w1 for time:781.83, Ins1 for time:778.02]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+778.02: ins1 inspected 77th c1
+778.02: ins1 adding C1 to queue 2
+778.02: ins1 starting to inspect c1
+778.02: Future Event List[w1 for time:781.83, Ins1 for time:784.44]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+781.83: w1 produced 71th p1
+781.83: w1 starting
+781.83: Future Event List[Ins1 for time:784.44, w1 for time:782.08]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+782.08: w1 produced 72th p1
+782.08: Future Event List[Ins1 for time:784.44]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+784.44: ins1 inspected 78th c1
+784.44: ins1 adding C1 to queue 1
+784.44: ins1 starting to inspect c1
+784.44: w1 starting
+784.44: Future Event List[Ins1 for time:790.49, w1 for time:794.71]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+790.49: ins1 inspected 79th c1
+790.49: ins1 adding C1 to queue 1
+790.49: ins1 starting to inspect c1
+790.49: Future Event List[w1 for time:794.71, Ins1 for time:804.25]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+794.71: w1 produced 73th p1
+794.71: w1 starting
+794.71: Future Event List[Ins1 for time:804.25, w1 for time:795.35]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+795.35: w1 produced 74th p1
+795.35: Future Event List[Ins1 for time:804.25]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+804.25: ins1 inspected 80th c1
+804.25: ins1 adding C1 to queue 1
+804.25: ins1 starting to inspect c1
+804.25: w1 starting
+804.25: Future Event List[Ins1 for time:826.96, w1 for time:810.87]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+810.87: w1 produced 75th p1
+810.87: Future Event List[Ins1 for time:826.96]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+826.96: ins1 inspected 81th c1
+826.96: ins1 adding C1 to queue 1
+826.96: ins1 starting to inspect c1
+826.96: w1 starting
+826.96: Future Event List[Ins1 for time:832.94, w1 for time:829.19]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+829.19: w1 produced 76th p1
+829.19: Future Event List[Ins1 for time:832.94]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+832.94: ins1 inspected 82th c1
+832.94: ins1 adding C1 to queue 1
+832.94: ins1 starting to inspect c1
+832.94: w1 starting
+832.94: Future Event List[Ins1 for time:853.56, w1 for time:834.46]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+834.46: w1 produced 77th p1
+834.46: Future Event List[Ins1 for time:853.56]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+853.56: ins1 inspected 83th c1
+853.56: ins1 adding C1 to queue 1
+853.56: ins1 starting to inspect c1
+853.56: w1 starting
+853.56: Future Event List[Ins1 for time:860.82, w1 for time:870.08]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+860.82: ins1 inspected 84th c1
+860.82: ins1 adding C1 to queue 1
+860.82: ins1 starting to inspect c1
+860.82: Future Event List[w1 for time:870.08, Ins1 for time:866.38]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+866.38: ins1 inspected 85th c1
+866.38: ins1 adding C1 to queue 4
+866.38: ins1 starting to inspect c1
+866.38: w3 starting
+866.38: ins2 adding C3 to queue 5
+866.38: ins2 starting to inspect c3
+866.38: Future Event List[w1 for time:870.08, Ins1 for time:874.68, w3 for time:868.78, Ins2 for time:870.48]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+868.78: w3 produced 4th p3
+868.78: Future Event List[w1 for time:870.08, Ins1 for time:874.68, Ins2 for time:870.48]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+870.08: w1 produced 78th p1
+870.08: w1 starting
+870.08: Future Event List[Ins1 for time:874.68, Ins2 for time:870.48, w1 for time:873.37]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+870.48: ins2 inspected  7th c3
+870.48: Future Event List[Ins1 for time:874.68, w1 for time:873.37]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+873.37: w1 produced 79th p1
+873.37: Future Event List[Ins1 for time:874.68]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+874.68: ins1 inspected 86th c1
+874.68: ins1 adding C1 to queue 1
+874.68: ins1 starting to inspect c1
+874.68: w1 starting
+874.68: Future Event List[Ins1 for time:889.62, w1 for time:897.76]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+889.62: ins1 inspected 87th c1
+889.62: ins1 adding C1 to queue 1
+889.62: ins1 starting to inspect c1
+889.62: Future Event List[w1 for time:897.76, Ins1 for time:895.10]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+895.10: ins1 inspected 88th c1
+895.10: ins1 adding C1 to queue 4
+895.10: ins1 starting to inspect c1
+895.10: w3 starting
+895.10: ins2 adding C3 to queue 5
+895.10: ins2 starting to inspect c2
+895.10: Future Event List[w1 for time:897.76, Ins1 for time:909.37, w3 for time:902.70, Ins2 for time:936.41]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+897.76: w1 produced 80th p1
+897.76: w1 starting
+897.76: Future Event List[Ins1 for time:909.37, w3 for time:902.70, Ins2 for time:936.41, w1 for time:900.32]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+900.32: w1 produced 81th p1
+900.32: Future Event List[Ins1 for time:909.37, w3 for time:902.70, Ins2 for time:936.41]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+902.70: w3 produced 5th p3
+902.70: Future Event List[Ins1 for time:909.37, Ins2 for time:936.41]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+909.37: ins1 inspected 89th c1
+909.37: ins1 adding C1 to queue 1
+909.37: ins1 starting to inspect c1
+909.37: w1 starting
+909.37: Future Event List[Ins2 for time:936.41, Ins1 for time:917.88, w1 for time:913.49]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+913.49: w1 produced 82th p1
+913.49: Future Event List[Ins2 for time:936.41, Ins1 for time:917.88]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+917.88: ins1 inspected 90th c1
+917.88: ins1 adding C1 to queue 1
+917.88: ins1 starting to inspect c1
+917.88: w1 starting
+917.88: Future Event List[Ins2 for time:936.41, Ins1 for time:927.72, w1 for time:921.44]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+921.44: w1 produced 83th p1
+921.44: Future Event List[Ins2 for time:936.41, Ins1 for time:927.72]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+927.72: ins1 inspected 91th c1
+927.72: ins1 adding C1 to queue 1
+927.72: ins1 starting to inspect c1
+927.72: w1 starting
+927.72: Future Event List[Ins2 for time:936.41, Ins1 for time:942.58, w1 for time:931.58]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+931.58: w1 produced 84th p1
+931.58: Future Event List[Ins2 for time:936.41, Ins1 for time:942.58]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+936.41: ins2 inspected  8th c2
+936.41: ins2 adding C2 to queue 3
+936.41: ins2 starting to inspect c2
+936.41: w2 starting
+936.41: Future Event List[Ins1 for time:942.58, Ins2 for time:938.79, w2 for time:936.73]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+936.73: w2 produced 4th p2
+936.73: Future Event List[Ins1 for time:942.58, Ins2 for time:938.79]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+938.79: ins2 inspected  8th c2
+938.79: ins2 adding C2 to queue 3
+938.79: ins2 starting to inspect c3
+938.79: Future Event List[Ins1 for time:942.58, Ins2 for time:963.85]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+942.58: ins1 inspected 92th c1
+942.58: ins1 adding C1 to queue 1
+942.58: ins1 starting to inspect c1
+942.58: w1 starting
+942.58: Future Event List[Ins2 for time:963.85, Ins1 for time:948.24, w1 for time:946.96]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+946.96: w1 produced 85th p1
+946.96: Future Event List[Ins2 for time:963.85, Ins1 for time:948.24]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+948.24: ins1 inspected 93th c1
+948.24: ins1 adding C1 to queue 1
+948.24: ins1 starting to inspect c1
+948.24: w1 starting
+948.24: Future Event List[Ins2 for time:963.85, Ins1 for time:949.48, w1 for time:948.97]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+948.97: w1 produced 86th p1
+948.97: Future Event List[Ins2 for time:963.85, Ins1 for time:949.48]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+949.48: ins1 inspected 94th c1
+949.48: ins1 adding C1 to queue 1
+949.48: ins1 starting to inspect c1
+949.48: w1 starting
+949.48: Future Event List[Ins2 for time:963.85, Ins1 for time:958.53, w1 for time:954.58]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+954.58: w1 produced 87th p1
+954.58: Future Event List[Ins2 for time:963.85, Ins1 for time:958.53]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+958.53: ins1 inspected 95th c1
+958.53: ins1 adding C1 to queue 1
+958.53: ins1 starting to inspect c1
+958.53: w1 starting
+958.53: Future Event List[Ins2 for time:963.85, Ins1 for time:965.40, w1 for time:959.75]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+959.75: w1 produced 88th p1
+959.75: Future Event List[Ins2 for time:963.85, Ins1 for time:965.40]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+963.85: ins2 inspected  8th c3
+963.85: Future Event List[Ins1 for time:965.40]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+965.40: ins1 inspected 96th c1
+965.40: ins1 adding C1 to queue 1
+965.40: ins1 starting to inspect c1
+965.40: w1 starting
+965.40: Future Event List[Ins1 for time:991.58, w1 for time:966.74]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+966.74: w1 produced 89th p1
+966.74: Future Event List[Ins1 for time:991.58]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+991.58: ins1 inspected 97th c1
+991.58: ins1 adding C1 to queue 1
+991.58: ins1 starting to inspect c1
+991.58: w1 starting
+991.58: Future Event List[Ins1 for time:1001.85, w1 for time:1001.67]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1001.67: w1 produced 90th p1
+1001.67: Future Event List[Ins1 for time:1001.85]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1001.85: ins1 inspected 98th c1
+1001.85: ins1 adding C1 to queue 1
+1001.85: ins1 starting to inspect c1
+1001.85: w1 starting
+1001.85: Future Event List[Ins1 for time:1006.11, w1 for time:1003.78]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1003.78: w1 produced 91th p1
+1003.78: Future Event List[Ins1 for time:1006.11]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1006.11: ins1 inspected 99th c1
+1006.11: ins1 adding C1 to queue 1
+1006.11: ins1 starting to inspect c1
+1006.11: w1 starting
+1006.11: Future Event List[Ins1 for time:1033.00, w1 for time:1014.67]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1014.67: w1 produced 92th p1
+1014.67: Future Event List[Ins1 for time:1033.00]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1033.00: ins1 inspected 100th c1
+1033.00: ins1 adding C1 to queue 1
+1033.00: ins1 starting to inspect c1
+1033.00: w1 starting
+1033.00: Future Event List[Ins1 for time:1041.34, w1 for time:1038.61]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1038.61: w1 produced 93th p1
+1038.61: Future Event List[Ins1 for time:1041.34]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1041.34: ins1 inspected 101th c1
+1041.34: ins1 adding C1 to queue 1
+1041.34: ins1 starting to inspect c1
+1041.34: w1 starting
+1041.34: Future Event List[Ins1 for time:1059.63, w1 for time:1048.44]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1048.44: w1 produced 94th p1
+1048.44: Future Event List[Ins1 for time:1059.63]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1059.63: ins1 inspected 102th c1
+1059.63: ins1 adding C1 to queue 1
+1059.63: ins1 starting to inspect c1
+1059.63: w1 starting
+1059.63: Future Event List[Ins1 for time:1074.78, w1 for time:1060.21]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1060.21: w1 produced 95th p1
+1060.21: Future Event List[Ins1 for time:1074.78]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1074.78: ins1 inspected 103th c1
+1074.78: ins1 adding C1 to queue 1
+1074.78: ins1 starting to inspect c1
+1074.78: w1 starting
+1074.78: Future Event List[Ins1 for time:1081.23, w1 for time:1077.05]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1077.05: w1 produced 96th p1
+1077.05: Future Event List[Ins1 for time:1081.23]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1081.23: ins1 inspected 104th c1
+1081.23: ins1 adding C1 to queue 1
+1081.23: ins1 starting to inspect c1
+1081.23: w1 starting
+1081.23: Future Event List[Ins1 for time:1081.33, w1 for time:1082.85]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1081.33: ins1 inspected 105th c1
+1081.33: ins1 adding C1 to queue 1
+1081.33: ins1 starting to inspect c1
+1081.33: Future Event List[w1 for time:1082.85, Ins1 for time:1082.02]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1082.02: ins1 inspected 106th c1
+1082.02: ins1 adding C1 to queue 2
+1082.02: ins1 starting to inspect c1
+1082.02: w2 starting
+1082.02: Future Event List[w1 for time:1082.85, Ins1 for time:1091.64, w2 for time:1131.35]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1082.85: w1 produced 97th p1
+1082.85: w1 starting
+1082.85: Future Event List[Ins1 for time:1091.64, w2 for time:1131.35, w1 for time:1085.73]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1085.73: w1 produced 98th p1
+1085.73: Future Event List[Ins1 for time:1091.64, w2 for time:1131.35]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1091.64: ins1 inspected 107th c1
+1091.64: ins1 adding C1 to queue 1
+1091.64: ins1 starting to inspect c1
+1091.64: w1 starting
+1091.64: Future Event List[w2 for time:1131.35, Ins1 for time:1101.69, w1 for time:1094.01]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1094.01: w1 produced 99th p1
+1094.01: Future Event List[w2 for time:1131.35, Ins1 for time:1101.69]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1101.69: ins1 inspected 108th c1
+1101.69: ins1 adding C1 to queue 1
+1101.69: ins1 starting to inspect c1
+1101.69: w1 starting
+1101.69: Future Event List[w2 for time:1131.35, Ins1 for time:1125.28, w1 for time:1102.92]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1102.92: w1 produced 100th p1
+1102.92: Future Event List[w2 for time:1131.35, Ins1 for time:1125.28]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1125.28: ins1 inspected 109th c1
+1125.28: ins1 adding C1 to queue 1
+1125.28: ins1 starting to inspect c1
+1125.28: w1 starting
+1125.28: Future Event List[w2 for time:1131.35, Ins1 for time:1131.09, w1 for time:1132.75]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1131.09: ins1 inspected 110th c1
+1131.09: ins1 adding C1 to queue 1
+1131.09: ins1 starting to inspect c1
+1131.09: Future Event List[w2 for time:1131.35, w1 for time:1132.75, Ins1 for time:1168.40]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1131.35: w2 produced 5th p2
+1131.35: Future Event List[w1 for time:1132.75, Ins1 for time:1168.40]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1132.75: w1 produced 101th p1
+1132.75: w1 starting
+1132.75: Future Event List[Ins1 for time:1168.40, w1 for time:1141.64]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1141.64: w1 produced 102th p1
+1141.64: Future Event List[Ins1 for time:1168.40]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1168.40: ins1 inspected 111th c1
+1168.40: ins1 adding C1 to queue 1
+1168.40: ins1 starting to inspect c1
+1168.40: w1 starting
+1168.40: Future Event List[Ins1 for time:1172.44, w1 for time:1173.66]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1172.44: ins1 inspected 112th c1
+1172.44: ins1 adding C1 to queue 1
+1172.44: ins1 starting to inspect c1
+1172.44: Future Event List[w1 for time:1173.66, Ins1 for time:1177.85]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1173.66: w1 produced 103th p1
+1173.66: w1 starting
+1173.66: Future Event List[Ins1 for time:1177.85, w1 for time:1181.88]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1177.85: ins1 inspected 113th c1
+1177.85: ins1 adding C1 to queue 1
+1177.85: ins1 starting to inspect c1
+1177.85: Future Event List[w1 for time:1181.88, Ins1 for time:1186.01]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1181.88: w1 produced 104th p1
+1181.88: w1 starting
+1181.88: Future Event List[Ins1 for time:1186.01, w1 for time:1188.43]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1186.01: ins1 inspected 114th c1
+1186.01: ins1 adding C1 to queue 1
+1186.01: ins1 starting to inspect c1
+1186.01: Future Event List[w1 for time:1188.43, Ins1 for time:1189.76]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1188.43: w1 produced 105th p1
+1188.43: w1 starting
+1188.43: Future Event List[Ins1 for time:1189.76, w1 for time:1201.32]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1189.76: ins1 inspected 115th c1
+1189.76: ins1 adding C1 to queue 1
+1189.76: ins1 starting to inspect c1
+1189.76: Future Event List[w1 for time:1201.32, Ins1 for time:1197.61]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1197.61: ins1 inspected 116th c1
+1197.61: ins1 adding C1 to queue 2
+1197.61: ins1 starting to inspect c1
+1197.61: Future Event List[w1 for time:1201.32, Ins1 for time:1209.28]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1201.32: w1 produced 106th p1
+1201.32: w1 starting
+1201.32: Future Event List[Ins1 for time:1209.28, w1 for time:1202.54]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1202.54: w1 produced 107th p1
+1202.54: Future Event List[Ins1 for time:1209.28]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1209.28: ins1 inspected 117th c1
+1209.28: ins1 adding C1 to queue 1
+1209.28: ins1 starting to inspect c1
+1209.28: w1 starting
+1209.28: Future Event List[Ins1 for time:1209.84, w1 for time:1210.58]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1209.84: ins1 inspected 118th c1
+1209.84: ins1 adding C1 to queue 1
+1209.84: ins1 starting to inspect c1
+1209.84: Future Event List[w1 for time:1210.58, Ins1 for time:1214.81]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1210.58: w1 produced 108th p1
+1210.58: w1 starting
+1210.58: Future Event List[Ins1 for time:1214.81, w1 for time:1213.38]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1213.38: w1 produced 109th p1
+1213.38: Future Event List[Ins1 for time:1214.81]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1214.81: ins1 inspected 119th c1
+1214.81: ins1 adding C1 to queue 1
+1214.81: ins1 starting to inspect c1
+1214.81: w1 starting
+1214.81: Future Event List[Ins1 for time:1223.29, w1 for time:1215.09]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1215.09: w1 produced 110th p1
+1215.09: Future Event List[Ins1 for time:1223.29]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1223.29: ins1 inspected 120th c1
+1223.29: ins1 adding C1 to queue 1
+1223.29: ins1 starting to inspect c1
+1223.29: w1 starting
+1223.29: Future Event List[Ins1 for time:1229.61, w1 for time:1234.12]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1229.61: ins1 inspected 121th c1
+1229.61: ins1 adding C1 to queue 1
+1229.61: ins1 starting to inspect c1
+1229.61: Future Event List[w1 for time:1234.12, Ins1 for time:1235.52]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1234.12: w1 produced 111th p1
+1234.12: w1 starting
+1234.12: Future Event List[Ins1 for time:1235.52, w1 for time:1236.26]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1235.52: ins1 inspected 122th c1
+1235.52: ins1 adding C1 to queue 1
+1235.52: ins1 starting to inspect c1
+1235.52: Future Event List[w1 for time:1236.26, Ins1 for time:1237.21]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1236.26: w1 produced 112th p1
+1236.26: w1 starting
+1236.26: Future Event List[Ins1 for time:1237.21, w1 for time:1242.92]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1237.21: ins1 inspected 123th c1
+1237.21: ins1 adding C1 to queue 1
+1237.21: ins1 starting to inspect c1
+1237.21: Future Event List[w1 for time:1242.92, Ins1 for time:1245.54]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1242.92: w1 produced 113th p1
+1242.92: w1 starting
+1242.92: Future Event List[Ins1 for time:1245.54, w1 for time:1245.96]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1245.54: ins1 inspected 124th c1
+1245.54: ins1 adding C1 to queue 1
+1245.54: ins1 starting to inspect c1
+1245.54: Future Event List[w1 for time:1245.96, Ins1 for time:1251.54]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1245.96: w1 produced 114th p1
+1245.96: w1 starting
+1245.96: Future Event List[Ins1 for time:1251.54, w1 for time:1246.22]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1246.22: w1 produced 115th p1
+1246.22: Future Event List[Ins1 for time:1251.54]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1251.54: ins1 inspected 125th c1
+1251.54: ins1 adding C1 to queue 1
+1251.54: ins1 starting to inspect c1
+1251.54: w1 starting
+1251.54: Future Event List[Ins1 for time:1284.56, w1 for time:1252.62]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1252.62: w1 produced 116th p1
+1252.62: Future Event List[Ins1 for time:1284.56]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1284.56: ins1 inspected 126th c1
+1284.56: ins1 adding C1 to queue 1
+1284.56: ins1 starting to inspect c1
+1284.56: w1 starting
+1284.56: Future Event List[Ins1 for time:1294.89, w1 for time:1289.79]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1289.79: w1 produced 117th p1
+1289.79: Future Event List[Ins1 for time:1294.89]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1294.89: ins1 inspected 127th c1
+1294.89: ins1 adding C1 to queue 1
+1294.89: ins1 starting to inspect c1
+1294.89: w1 starting
+1294.89: Future Event List[Ins1 for time:1295.87, w1 for time:1312.41]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1295.87: ins1 inspected 128th c1
+1295.87: ins1 adding C1 to queue 1
+1295.87: ins1 starting to inspect c1
+1295.87: Future Event List[w1 for time:1312.41, Ins1 for time:1296.52]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1296.52: ins1 inspected 129th c1
+1296.52: ins1 adding C1 to queue 4
+1296.52: ins1 starting to inspect c1
+1296.52: w3 starting
+1296.52: ins2 adding C3 to queue 5
+1296.52: ins2 starting to inspect c2
+1296.52: Future Event List[w1 for time:1312.41, Ins1 for time:1300.40, w3 for time:1310.15, Ins2 for time:1318.55]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1300.40: ins1 inspected 130th c1
+1300.40: ins1 adding C1 to queue 4
+1300.40: ins1 starting to inspect c1
+1300.40: Future Event List[w1 for time:1312.41, w3 for time:1310.15, Ins2 for time:1318.55, Ins1 for time:1304.74]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:1 buffer5:2
+
+1304.74: ins1 inspected 131th c1
+1304.74: ins1 adding C1 to queue 1
+1304.74: ins1 starting to inspect c1
+1304.74: Future Event List[w1 for time:1312.41, w3 for time:1310.15, Ins2 for time:1318.55, Ins1 for time:1324.38]
+Buffer contents --> buffer1: 2 buffer2:1 buffer3:0 buffer4:1 buffer5:2
+
+1310.15: w3 produced 6th p3
+1310.15: w3 starting
+1310.15: Future Event List[w1 for time:1312.41, Ins2 for time:1318.55, Ins1 for time:1324.38, w3 for time:1314.54]
+Buffer contents --> buffer1: 2 buffer2:1 buffer3:0 buffer4:0 buffer5:1
+
+1312.41: w1 produced 118th p1
+1312.41: w1 starting
+1312.41: Future Event List[Ins2 for time:1318.55, Ins1 for time:1324.38, w3 for time:1314.54, w1 for time:1315.25]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:1
+
+1314.54: w3 produced 7th p3
+1314.54: Future Event List[Ins2 for time:1318.55, Ins1 for time:1324.38, w1 for time:1315.25]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:1
+
+1315.25: w1 produced 119th p1
+1315.25: w1 starting
+1315.25: Future Event List[Ins2 for time:1318.55, Ins1 for time:1324.38, w1 for time:1322.33]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:1
+
+1318.55: ins2 inspected  9th c2
+1318.55: ins2 adding C2 to queue 3
+1318.55: ins2 starting to inspect c3
+1318.55: w2 starting
+1318.55: Future Event List[Ins1 for time:1324.38, w1 for time:1322.33, Ins2 for time:1325.38, w2 for time:1320.42]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:1
+
+1320.42: w2 produced 6th p2
+1320.42: Future Event List[Ins1 for time:1324.38, w1 for time:1322.33, Ins2 for time:1325.38]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:1
+
+1322.33: w1 produced 120th p1
+1322.33: Future Event List[Ins1 for time:1324.38, Ins2 for time:1325.38]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:1
+
+1324.38: ins1 inspected 132th c1
+1324.38: ins1 adding C1 to queue 1
+1324.38: ins1 starting to inspect c1
+1324.38: w1 starting
+1324.38: Future Event List[Ins2 for time:1325.38, Ins1 for time:1337.69, w1 for time:1328.76]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:1
+
+1325.38: ins2 inspected  9th c3
+1325.38: ins2 adding C3 to queue 5
+1325.38: ins2 starting to inspect c2
+1325.38: Future Event List[Ins1 for time:1337.69, w1 for time:1328.76, Ins2 for time:1325.68]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1325.68: ins2 inspected  10th c2
+1325.68: ins2 adding C2 to queue 3
+1325.68: ins2 starting to inspect c2
+1325.68: Future Event List[Ins1 for time:1337.69, w1 for time:1328.76, Ins2 for time:1334.41]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1328.76: w1 produced 121th p1
+1328.76: Future Event List[Ins1 for time:1337.69, Ins2 for time:1334.41]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1334.41: ins2 inspected  10th c2
+1334.41: ins2 adding C2 to queue 3
+1334.41: ins2 starting to inspect c3
+1334.41: Future Event List[Ins1 for time:1337.69, Ins2 for time:1334.95]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1334.95: ins2 inspected  10th c3
+1334.95: Future Event List[Ins1 for time:1337.69]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1337.69: ins1 inspected 133th c1
+1337.69: ins1 adding C1 to queue 1
+1337.69: ins1 starting to inspect c1
+1337.69: w1 starting
+1337.69: Future Event List[Ins1 for time:1348.00, w1 for time:1338.70]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1338.70: w1 produced 122th p1
+1338.70: Future Event List[Ins1 for time:1348.00]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1348.00: ins1 inspected 134th c1
+1348.00: ins1 adding C1 to queue 1
+1348.00: ins1 starting to inspect c1
+1348.00: w1 starting
+1348.00: Future Event List[Ins1 for time:1358.98, w1 for time:1348.93]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1348.93: w1 produced 123th p1
+1348.93: Future Event List[Ins1 for time:1358.98]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1358.98: ins1 inspected 135th c1
+1358.98: ins1 adding C1 to queue 1
+1358.98: ins1 starting to inspect c1
+1358.98: w1 starting
+1358.98: Future Event List[Ins1 for time:1379.93, w1 for time:1362.36]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1362.36: w1 produced 124th p1
+1362.36: Future Event List[Ins1 for time:1379.93]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1379.93: ins1 inspected 136th c1
+1379.93: ins1 adding C1 to queue 1
+1379.93: ins1 starting to inspect c1
+1379.93: w1 starting
+1379.93: Future Event List[Ins1 for time:1405.20, w1 for time:1385.30]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1385.30: w1 produced 125th p1
+1385.30: Future Event List[Ins1 for time:1405.20]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1405.20: ins1 inspected 137th c1
+1405.20: ins1 adding C1 to queue 1
+1405.20: ins1 starting to inspect c1
+1405.20: w1 starting
+1405.20: Future Event List[Ins1 for time:1442.93, w1 for time:1407.69]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1407.69: w1 produced 126th p1
+1407.69: Future Event List[Ins1 for time:1442.93]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1442.93: ins1 inspected 138th c1
+1442.93: ins1 adding C1 to queue 1
+1442.93: ins1 starting to inspect c1
+1442.93: w1 starting
+1442.93: Future Event List[Ins1 for time:1446.14, w1 for time:1443.44]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1443.44: w1 produced 127th p1
+1443.44: Future Event List[Ins1 for time:1446.14]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1446.14: ins1 inspected 139th c1
+1446.14: ins1 adding C1 to queue 1
+1446.14: ins1 starting to inspect c1
+1446.14: w1 starting
+1446.14: Future Event List[Ins1 for time:1457.88, w1 for time:1446.73]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1446.73: w1 produced 128th p1
+1446.73: Future Event List[Ins1 for time:1457.88]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1457.88: ins1 inspected 140th c1
+1457.88: ins1 adding C1 to queue 1
+1457.88: ins1 starting to inspect c1
+1457.88: w1 starting
+1457.88: Future Event List[Ins1 for time:1462.31, w1 for time:1461.12]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1461.12: w1 produced 129th p1
+1461.12: Future Event List[Ins1 for time:1462.31]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1462.31: ins1 inspected 141th c1
+1462.31: ins1 adding C1 to queue 1
+1462.31: ins1 starting to inspect c1
+1462.31: w1 starting
+1462.31: Future Event List[Ins1 for time:1463.53, w1 for time:1462.99]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1462.99: w1 produced 130th p1
+1462.99: Future Event List[Ins1 for time:1463.53]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1463.53: ins1 inspected 142th c1
+1463.53: ins1 adding C1 to queue 1
+1463.53: ins1 starting to inspect c1
+1463.53: w1 starting
+1463.53: Future Event List[Ins1 for time:1474.92, w1 for time:1466.28]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1466.28: w1 produced 131th p1
+1466.28: Future Event List[Ins1 for time:1474.92]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1474.92: ins1 inspected 143th c1
+1474.92: ins1 adding C1 to queue 1
+1474.92: ins1 starting to inspect c1
+1474.92: w1 starting
+1474.92: Future Event List[Ins1 for time:1481.36, w1 for time:1478.61]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1478.61: w1 produced 132th p1
+1478.61: Future Event List[Ins1 for time:1481.36]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1481.36: ins1 inspected 144th c1
+1481.36: ins1 adding C1 to queue 1
+1481.36: ins1 starting to inspect c1
+1481.36: w1 starting
+1481.36: Future Event List[Ins1 for time:1486.09, w1 for time:1482.41]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1482.41: w1 produced 133th p1
+1482.41: Future Event List[Ins1 for time:1486.09]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1486.09: ins1 inspected 145th c1
+1486.09: ins1 adding C1 to queue 1
+1486.09: ins1 starting to inspect c1
+1486.09: w1 starting
+1486.09: Future Event List[Ins1 for time:1497.20, w1 for time:1487.11]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1487.11: w1 produced 134th p1
+1487.11: Future Event List[Ins1 for time:1497.20]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1497.20: ins1 inspected 146th c1
+1497.20: ins1 adding C1 to queue 1
+1497.20: ins1 starting to inspect c1
+1497.20: w1 starting
+1497.20: Future Event List[Ins1 for time:1499.68, w1 for time:1497.85]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1497.85: w1 produced 135th p1
+1497.85: Future Event List[Ins1 for time:1499.68]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1499.68: ins1 inspected 147th c1
+1499.68: ins1 adding C1 to queue 1
+1499.68: ins1 starting to inspect c1
+1499.68: w1 starting
+1499.68: Future Event List[Ins1 for time:1500.42, w1 for time:1513.34]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1500.42: ins1 inspected 148th c1
+1500.42: ins1 adding C1 to queue 1
+1500.42: ins1 starting to inspect c1
+1500.42: Future Event List[w1 for time:1513.34, Ins1 for time:1503.08]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1503.08: ins1 inspected 149th c1
+1503.08: ins1 adding C1 to queue 2
+1503.08: ins1 starting to inspect c1
+1503.08: w2 starting
+1503.08: Future Event List[w1 for time:1513.34, Ins1 for time:1512.51, w2 for time:1508.81]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1508.81: w2 produced 7th p2
+1508.81: Future Event List[w1 for time:1513.34, Ins1 for time:1512.51]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1512.51: ins1 inspected 150th c1
+1512.51: ins1 adding C1 to queue 2
+1512.51: ins1 starting to inspect c1
+1512.51: w2 starting
+1512.51: Future Event List[w1 for time:1513.34, Ins1 for time:1515.06, w2 for time:1526.50]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1513.34: w1 produced 136th p1
+1513.34: w1 starting
+1513.34: Future Event List[Ins1 for time:1515.06, w2 for time:1526.50, w1 for time:1523.10]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1515.06: ins1 inspected 151th c1
+1515.06: ins1 adding C1 to queue 1
+1515.06: ins1 starting to inspect c1
+1515.06: Future Event List[w2 for time:1526.50, w1 for time:1523.10, Ins1 for time:1518.89]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1518.89: ins1 inspected 152th c1
+1518.89: ins1 adding C1 to queue 2
+1518.89: ins1 starting to inspect c1
+1518.89: Future Event List[w2 for time:1526.50, w1 for time:1523.10, Ins1 for time:1532.77]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1523.10: w1 produced 137th p1
+1523.10: w1 starting
+1523.10: Future Event List[w2 for time:1526.50, Ins1 for time:1532.77, w1 for time:1525.29]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1525.29: w1 produced 138th p1
+1525.29: Future Event List[w2 for time:1526.50, Ins1 for time:1532.77]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1526.50: w2 produced 8th p2
+1526.50: Future Event List[Ins1 for time:1532.77]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1532.77: ins1 inspected 153th c1
+1532.77: ins1 adding C1 to queue 1
+1532.77: ins1 starting to inspect c1
+1532.77: w1 starting
+1532.77: Future Event List[Ins1 for time:1544.71, w1 for time:1539.53]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1539.53: w1 produced 139th p1
+1539.53: Future Event List[Ins1 for time:1544.71]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1544.71: ins1 inspected 154th c1
+1544.71: ins1 adding C1 to queue 1
+1544.71: ins1 starting to inspect c1
+1544.71: w1 starting
+1544.71: Future Event List[Ins1 for time:1547.13, w1 for time:1548.40]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1547.13: ins1 inspected 155th c1
+1547.13: ins1 adding C1 to queue 1
+1547.13: ins1 starting to inspect c1
+1547.13: Future Event List[w1 for time:1548.40, Ins1 for time:1549.70]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1548.40: w1 produced 140th p1
+1548.40: w1 starting
+1548.40: Future Event List[Ins1 for time:1549.70, w1 for time:1550.53]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1549.70: ins1 inspected 156th c1
+1549.70: ins1 adding C1 to queue 1
+1549.70: ins1 starting to inspect c1
+1549.70: Future Event List[w1 for time:1550.53, Ins1 for time:1564.83]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1550.53: w1 produced 141th p1
+1550.53: w1 starting
+1550.53: Future Event List[Ins1 for time:1564.83, w1 for time:1552.49]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1552.49: w1 produced 142th p1
+1552.49: Future Event List[Ins1 for time:1564.83]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1564.83: ins1 inspected 157th c1
+1564.83: ins1 adding C1 to queue 1
+1564.83: ins1 starting to inspect c1
+1564.83: w1 starting
+1564.83: Future Event List[Ins1 for time:1572.82, w1 for time:1568.21]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1568.21: w1 produced 143th p1
+1568.21: Future Event List[Ins1 for time:1572.82]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1572.82: ins1 inspected 158th c1
+1572.82: ins1 adding C1 to queue 1
+1572.82: ins1 starting to inspect c1
+1572.82: w1 starting
+1572.82: Future Event List[Ins1 for time:1575.82, w1 for time:1573.76]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1573.76: w1 produced 144th p1
+1573.76: Future Event List[Ins1 for time:1575.82]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1575.82: ins1 inspected 159th c1
+1575.82: ins1 adding C1 to queue 1
+1575.82: ins1 starting to inspect c1
+1575.82: w1 starting
+1575.82: Future Event List[Ins1 for time:1594.13, w1 for time:1577.70]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1577.70: w1 produced 145th p1
+1577.70: Future Event List[Ins1 for time:1594.13]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1594.13: ins1 inspected 160th c1
+1594.13: ins1 adding C1 to queue 1
+1594.13: ins1 starting to inspect c1
+1594.13: w1 starting
+1594.13: Future Event List[Ins1 for time:1597.12, w1 for time:1597.04]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1597.04: w1 produced 146th p1
+1597.04: Future Event List[Ins1 for time:1597.12]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1597.12: ins1 inspected 161th c1
+1597.12: ins1 adding C1 to queue 1
+1597.12: ins1 starting to inspect c1
+1597.12: w1 starting
+1597.12: Future Event List[Ins1 for time:1600.29, w1 for time:1603.84]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1600.29: ins1 inspected 162th c1
+1600.29: ins1 adding C1 to queue 1
+1600.29: ins1 starting to inspect c1
+1600.29: Future Event List[w1 for time:1603.84, Ins1 for time:1623.84]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1603.84: w1 produced 147th p1
+1603.84: w1 starting
+1603.84: Future Event List[Ins1 for time:1623.84, w1 for time:1604.83]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1604.83: w1 produced 148th p1
+1604.83: Future Event List[Ins1 for time:1623.84]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1623.84: ins1 inspected 163th c1
+1623.84: ins1 adding C1 to queue 1
+1623.84: ins1 starting to inspect c1
+1623.84: w1 starting
+1623.84: Future Event List[Ins1 for time:1644.12, w1 for time:1623.95]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1623.95: w1 produced 149th p1
+1623.95: Future Event List[Ins1 for time:1644.12]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1644.12: ins1 inspected 164th c1
+1644.12: ins1 adding C1 to queue 1
+1644.12: ins1 starting to inspect c1
+1644.12: w1 starting
+1644.12: Future Event List[Ins1 for time:1663.72, w1 for time:1645.80]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1645.80: w1 produced 150th p1
+1645.80: Future Event List[Ins1 for time:1663.72]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1663.72: ins1 inspected 165th c1
+1663.72: ins1 adding C1 to queue 1
+1663.72: ins1 starting to inspect c1
+1663.72: w1 starting
+1663.72: Future Event List[Ins1 for time:1681.91, w1 for time:1665.73]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1665.73: w1 produced 151th p1
+1665.73: Future Event List[Ins1 for time:1681.91]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1681.91: ins1 inspected 166th c1
+1681.91: ins1 adding C1 to queue 1
+1681.91: ins1 starting to inspect c1
+1681.91: w1 starting
+1681.91: Future Event List[Ins1 for time:1685.67, w1 for time:1697.34]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1685.67: ins1 inspected 167th c1
+1685.67: ins1 adding C1 to queue 1
+1685.67: ins1 starting to inspect c1
+1685.67: Future Event List[w1 for time:1697.34, Ins1 for time:1690.78]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1690.78: ins1 inspected 168th c1
+1690.78: ins1 adding C1 to queue 4
+1690.78: ins1 starting to inspect c1
+1690.78: w3 starting
+1690.78: ins2 adding C3 to queue 5
+1690.78: ins2 starting to inspect c2
+1690.78: Future Event List[w1 for time:1697.34, Ins1 for time:1697.92, w3 for time:1694.71, Ins2 for time:1728.90]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1694.71: w3 produced 8th p3
+1694.71: Future Event List[w1 for time:1697.34, Ins1 for time:1697.92, Ins2 for time:1728.90]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1697.34: w1 produced 152th p1
+1697.34: w1 starting
+1697.34: Future Event List[Ins1 for time:1697.92, Ins2 for time:1728.90, w1 for time:1697.41]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1697.41: w1 produced 153th p1
+1697.41: Future Event List[Ins1 for time:1697.92, Ins2 for time:1728.90]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1697.92: ins1 inspected 169th c1
+1697.92: ins1 adding C1 to queue 1
+1697.92: ins1 starting to inspect c1
+1697.92: w1 starting
+1697.92: Future Event List[Ins2 for time:1728.90, Ins1 for time:1710.90, w1 for time:1699.55]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1699.55: w1 produced 154th p1
+1699.55: Future Event List[Ins2 for time:1728.90, Ins1 for time:1710.90]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1710.90: ins1 inspected 170th c1
+1710.90: ins1 adding C1 to queue 1
+1710.90: ins1 starting to inspect c1
+1710.90: w1 starting
+1710.90: Future Event List[Ins2 for time:1728.90, Ins1 for time:1717.50, w1 for time:1713.21]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1713.21: w1 produced 155th p1
+1713.21: Future Event List[Ins2 for time:1728.90, Ins1 for time:1717.50]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1717.50: ins1 inspected 171th c1
+1717.50: ins1 adding C1 to queue 1
+1717.50: ins1 starting to inspect c1
+1717.50: w1 starting
+1717.50: Future Event List[Ins2 for time:1728.90, Ins1 for time:1720.89, w1 for time:1717.83]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1717.83: w1 produced 156th p1
+1717.83: Future Event List[Ins2 for time:1728.90, Ins1 for time:1720.89]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1720.89: ins1 inspected 172th c1
+1720.89: ins1 adding C1 to queue 1
+1720.89: ins1 starting to inspect c1
+1720.89: w1 starting
+1720.89: Future Event List[Ins2 for time:1728.90, Ins1 for time:1724.53, w1 for time:1732.02]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1724.53: ins1 inspected 173th c1
+1724.53: ins1 adding C1 to queue 1
+1724.53: ins1 starting to inspect c1
+1724.53: Future Event List[Ins2 for time:1728.90, w1 for time:1732.02, Ins1 for time:1730.68]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1728.90: ins2 inspected  11th c2
+1728.90: ins2 adding C2 to queue 3
+1728.90: ins2 starting to inspect c2
+1728.90: w2 starting
+1728.90: Future Event List[w1 for time:1732.02, Ins1 for time:1730.68, Ins2 for time:1739.54, w2 for time:1737.22]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1730.68: ins1 inspected 174th c1
+1730.68: ins1 adding C1 to queue 2
+1730.68: ins1 starting to inspect c1
+1730.68: Future Event List[w1 for time:1732.02, Ins2 for time:1739.54, w2 for time:1737.22, Ins1 for time:1743.21]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1732.02: w1 produced 157th p1
+1732.02: w1 starting
+1732.02: Future Event List[Ins2 for time:1739.54, w2 for time:1737.22, Ins1 for time:1743.21, w1 for time:1738.80]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1737.22: w2 produced 9th p2
+1737.22: Future Event List[Ins2 for time:1739.54, Ins1 for time:1743.21, w1 for time:1738.80]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1738.80: w1 produced 158th p1
+1738.80: Future Event List[Ins2 for time:1739.54, Ins1 for time:1743.21]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+1739.54: ins2 inspected  11th c2
+1739.54: ins2 adding C2 to queue 3
+1739.54: ins2 starting to inspect c2
+1739.54: w2 starting
+1739.54: Future Event List[Ins1 for time:1743.21, Ins2 for time:1753.02, w2 for time:1754.19]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1743.21: ins1 inspected 175th c1
+1743.21: ins1 adding C1 to queue 1
+1743.21: ins1 starting to inspect c1
+1743.21: w1 starting
+1743.21: Future Event List[Ins2 for time:1753.02, w2 for time:1754.19, Ins1 for time:1743.56, w1 for time:1745.18]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1743.56: ins1 inspected 176th c1
+1743.56: ins1 adding C1 to queue 1
+1743.56: ins1 starting to inspect c1
+1743.56: Future Event List[Ins2 for time:1753.02, w2 for time:1754.19, w1 for time:1745.18, Ins1 for time:1751.60]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1745.18: w1 produced 159th p1
+1745.18: w1 starting
+1745.18: Future Event List[Ins2 for time:1753.02, w2 for time:1754.19, Ins1 for time:1751.60, w1 for time:1746.27]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1746.27: w1 produced 160th p1
+1746.27: Future Event List[Ins2 for time:1753.02, w2 for time:1754.19, Ins1 for time:1751.60]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1751.60: ins1 inspected 177th c1
+1751.60: ins1 adding C1 to queue 1
+1751.60: ins1 starting to inspect c1
+1751.60: w1 starting
+1751.60: Future Event List[Ins2 for time:1753.02, w2 for time:1754.19, Ins1 for time:1751.87, w1 for time:1758.41]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1751.87: ins1 inspected 178th c1
+1751.87: ins1 adding C1 to queue 1
+1751.87: ins1 starting to inspect c1
+1751.87: Future Event List[Ins2 for time:1753.02, w2 for time:1754.19, w1 for time:1758.41, Ins1 for time:1763.81]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1753.02: ins2 inspected  11th c2
+1753.02: ins2 adding C2 to queue 3
+1753.02: ins2 starting to inspect c2
+1753.02: Future Event List[w2 for time:1754.19, w1 for time:1758.41, Ins1 for time:1763.81, Ins2 for time:1753.56]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1753.56: ins2 inspected  11th c2
+1753.56: ins2 adding C2 to queue 3
+1753.56: ins2 starting to inspect c3
+1753.56: Future Event List[w2 for time:1754.19, w1 for time:1758.41, Ins1 for time:1763.81, Ins2 for time:1756.94]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1754.19: w2 produced 10th p2
+1754.19: Future Event List[w1 for time:1758.41, Ins1 for time:1763.81, Ins2 for time:1756.94]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1756.94: ins2 inspected  11th c3
+1756.94: Future Event List[w1 for time:1758.41, Ins1 for time:1763.81]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1758.41: w1 produced 161th p1
+1758.41: w1 starting
+1758.41: Future Event List[Ins1 for time:1763.81, w1 for time:1759.31]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1759.31: w1 produced 162th p1
+1759.31: Future Event List[Ins1 for time:1763.81]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1763.81: ins1 inspected 179th c1
+1763.81: ins1 adding C1 to queue 1
+1763.81: ins1 starting to inspect c1
+1763.81: w1 starting
+1763.81: Future Event List[Ins1 for time:1766.68, w1 for time:1769.02]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1766.68: ins1 inspected 180th c1
+1766.68: ins1 adding C1 to queue 1
+1766.68: ins1 starting to inspect c1
+1766.68: Future Event List[w1 for time:1769.02, Ins1 for time:1842.97]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1769.02: w1 produced 163th p1
+1769.02: w1 starting
+1769.02: Future Event List[Ins1 for time:1842.97, w1 for time:1779.40]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1779.40: w1 produced 164th p1
+1779.40: Future Event List[Ins1 for time:1842.97]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1842.97: ins1 inspected 181th c1
+1842.97: ins1 adding C1 to queue 1
+1842.97: ins1 starting to inspect c1
+1842.97: w1 starting
+1842.97: Future Event List[Ins1 for time:1848.09, w1 for time:1859.13]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1848.09: ins1 inspected 182th c1
+1848.09: ins1 adding C1 to queue 1
+1848.09: ins1 starting to inspect c1
+1848.09: Future Event List[w1 for time:1859.13, Ins1 for time:1868.20]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1859.13: w1 produced 165th p1
+1859.13: w1 starting
+1859.13: Future Event List[Ins1 for time:1868.20, w1 for time:1863.37]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1863.37: w1 produced 166th p1
+1863.37: Future Event List[Ins1 for time:1868.20]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1868.20: ins1 inspected 183th c1
+1868.20: ins1 adding C1 to queue 1
+1868.20: ins1 starting to inspect c1
+1868.20: w1 starting
+1868.20: Future Event List[Ins1 for time:1868.32, w1 for time:1869.52]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1868.32: ins1 inspected 184th c1
+1868.32: ins1 adding C1 to queue 1
+1868.32: ins1 starting to inspect c1
+1868.32: Future Event List[w1 for time:1869.52, Ins1 for time:1874.86]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1869.52: w1 produced 167th p1
+1869.52: w1 starting
+1869.52: Future Event List[Ins1 for time:1874.86, w1 for time:1892.80]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1874.86: ins1 inspected 185th c1
+1874.86: ins1 adding C1 to queue 1
+1874.86: ins1 starting to inspect c1
+1874.86: Future Event List[w1 for time:1892.80, Ins1 for time:1883.59]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+1883.59: ins1 inspected 186th c1
+1883.59: ins1 adding C1 to queue 2
+1883.59: ins1 starting to inspect c1
+1883.59: w2 starting
+1883.59: Future Event List[w1 for time:1892.80, Ins1 for time:1908.04, w2 for time:1884.45]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1884.45: w2 produced 11th p2
+1884.45: Future Event List[w1 for time:1892.80, Ins1 for time:1908.04]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1892.80: w1 produced 168th p1
+1892.80: w1 starting
+1892.80: Future Event List[Ins1 for time:1908.04, w1 for time:1896.02]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1896.02: w1 produced 169th p1
+1896.02: Future Event List[Ins1 for time:1908.04]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1908.04: ins1 inspected 187th c1
+1908.04: ins1 adding C1 to queue 1
+1908.04: ins1 starting to inspect c1
+1908.04: w1 starting
+1908.04: Future Event List[Ins1 for time:1920.40, w1 for time:1909.38]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1909.38: w1 produced 170th p1
+1909.38: Future Event List[Ins1 for time:1920.40]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1920.40: ins1 inspected 188th c1
+1920.40: ins1 adding C1 to queue 1
+1920.40: ins1 starting to inspect c1
+1920.40: w1 starting
+1920.40: Future Event List[Ins1 for time:1927.62, w1 for time:1923.21]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1923.21: w1 produced 171th p1
+1923.21: Future Event List[Ins1 for time:1927.62]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1927.62: ins1 inspected 189th c1
+1927.62: ins1 adding C1 to queue 1
+1927.62: ins1 starting to inspect c1
+1927.62: w1 starting
+1927.62: Future Event List[Ins1 for time:1948.79, w1 for time:1931.04]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1931.04: w1 produced 172th p1
+1931.04: Future Event List[Ins1 for time:1948.79]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1948.79: ins1 inspected 190th c1
+1948.79: ins1 adding C1 to queue 1
+1948.79: ins1 starting to inspect c1
+1948.79: w1 starting
+1948.79: Future Event List[Ins1 for time:1957.89, w1 for time:1954.36]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1954.36: w1 produced 173th p1
+1954.36: Future Event List[Ins1 for time:1957.89]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1957.89: ins1 inspected 191th c1
+1957.89: ins1 adding C1 to queue 1
+1957.89: ins1 starting to inspect c1
+1957.89: w1 starting
+1957.89: Future Event List[Ins1 for time:1960.10, w1 for time:1958.89]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1958.89: w1 produced 174th p1
+1958.89: Future Event List[Ins1 for time:1960.10]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1960.10: ins1 inspected 192th c1
+1960.10: ins1 adding C1 to queue 1
+1960.10: ins1 starting to inspect c1
+1960.10: w1 starting
+1960.10: Future Event List[Ins1 for time:1969.58, w1 for time:1962.99]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1962.99: w1 produced 175th p1
+1962.99: Future Event List[Ins1 for time:1969.58]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1969.58: ins1 inspected 193th c1
+1969.58: ins1 adding C1 to queue 1
+1969.58: ins1 starting to inspect c1
+1969.58: w1 starting
+1969.58: Future Event List[Ins1 for time:1974.56, w1 for time:1978.18]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1974.56: ins1 inspected 194th c1
+1974.56: ins1 adding C1 to queue 1
+1974.56: ins1 starting to inspect c1
+1974.56: Future Event List[w1 for time:1978.18, Ins1 for time:1977.35]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+1977.35: ins1 inspected 195th c1
+1977.35: ins1 adding C1 to queue 2
+1977.35: ins1 starting to inspect c1
+1977.35: w2 starting
+1977.35: Future Event List[w1 for time:1978.18, Ins1 for time:1981.45, w2 for time:1979.48]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1978.18: w1 produced 176th p1
+1978.18: w1 starting
+1978.18: Future Event List[Ins1 for time:1981.45, w2 for time:1979.48, w1 for time:1981.74]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1979.48: w2 produced 12th p2
+1979.48: Future Event List[Ins1 for time:1981.45, w1 for time:1981.74]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1981.45: ins1 inspected 196th c1
+1981.45: ins1 adding C1 to queue 1
+1981.45: ins1 starting to inspect c1
+1981.45: Future Event List[w1 for time:1981.74, Ins1 for time:1985.27]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1981.74: w1 produced 177th p1
+1981.74: w1 starting
+1981.74: Future Event List[Ins1 for time:1985.27, w1 for time:1982.69]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1982.69: w1 produced 178th p1
+1982.69: Future Event List[Ins1 for time:1985.27]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1985.27: ins1 inspected 197th c1
+1985.27: ins1 adding C1 to queue 1
+1985.27: ins1 starting to inspect c1
+1985.27: w1 starting
+1985.27: Future Event List[Ins1 for time:2006.50, w1 for time:1986.81]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+1986.81: w1 produced 179th p1
+1986.81: Future Event List[Ins1 for time:2006.50]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2006.50: ins1 inspected 198th c1
+2006.50: ins1 adding C1 to queue 1
+2006.50: ins1 starting to inspect c1
+2006.50: w1 starting
+2006.50: Future Event List[Ins1 for time:2014.91, w1 for time:2016.38]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2014.91: ins1 inspected 199th c1
+2014.91: ins1 adding C1 to queue 1
+2014.91: ins1 starting to inspect c1
+2014.91: Future Event List[w1 for time:2016.38, Ins1 for time:2017.71]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2016.38: w1 produced 180th p1
+2016.38: w1 starting
+2016.38: Future Event List[Ins1 for time:2017.71, w1 for time:2020.75]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2017.71: ins1 inspected 200th c1
+2017.71: ins1 adding C1 to queue 1
+2017.71: ins1 starting to inspect c1
+2017.71: Future Event List[w1 for time:2020.75, Ins1 for time:2020.30]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2020.30: ins1 inspected 201th c1
+2020.30: ins1 adding C1 to queue 2
+2020.30: ins1 starting to inspect c1
+2020.30: Future Event List[w1 for time:2020.75, Ins1 for time:2026.98]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2020.75: w1 produced 181th p1
+2020.75: w1 starting
+2020.75: Future Event List[Ins1 for time:2026.98, w1 for time:2021.52]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2021.52: w1 produced 182th p1
+2021.52: Future Event List[Ins1 for time:2026.98]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2026.98: ins1 inspected 202th c1
+2026.98: ins1 adding C1 to queue 1
+2026.98: ins1 starting to inspect c1
+2026.98: w1 starting
+2026.98: Future Event List[Ins1 for time:2040.18, w1 for time:2031.56]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2031.56: w1 produced 183th p1
+2031.56: Future Event List[Ins1 for time:2040.18]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2040.18: ins1 inspected 203th c1
+2040.18: ins1 adding C1 to queue 1
+2040.18: ins1 starting to inspect c1
+2040.18: w1 starting
+2040.18: Future Event List[Ins1 for time:2059.35, w1 for time:2044.64]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2044.64: w1 produced 184th p1
+2044.64: Future Event List[Ins1 for time:2059.35]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2059.35: ins1 inspected 204th c1
+2059.35: ins1 adding C1 to queue 1
+2059.35: ins1 starting to inspect c1
+2059.35: w1 starting
+2059.35: Future Event List[Ins1 for time:2067.15, w1 for time:2060.39]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2060.39: w1 produced 185th p1
+2060.39: Future Event List[Ins1 for time:2067.15]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2067.15: ins1 inspected 205th c1
+2067.15: ins1 adding C1 to queue 1
+2067.15: ins1 starting to inspect c1
+2067.15: w1 starting
+2067.15: Future Event List[Ins1 for time:2067.27, w1 for time:2068.69]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2067.27: ins1 inspected 206th c1
+2067.27: ins1 adding C1 to queue 1
+2067.27: ins1 starting to inspect c1
+2067.27: Future Event List[w1 for time:2068.69, Ins1 for time:2080.87]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2068.69: w1 produced 186th p1
+2068.69: w1 starting
+2068.69: Future Event List[Ins1 for time:2080.87, w1 for time:2070.46]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2070.46: w1 produced 187th p1
+2070.46: Future Event List[Ins1 for time:2080.87]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2080.87: ins1 inspected 207th c1
+2080.87: ins1 adding C1 to queue 1
+2080.87: ins1 starting to inspect c1
+2080.87: w1 starting
+2080.87: Future Event List[Ins1 for time:2089.46, w1 for time:2086.05]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2086.05: w1 produced 188th p1
+2086.05: Future Event List[Ins1 for time:2089.46]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2089.46: ins1 inspected 208th c1
+2089.46: ins1 adding C1 to queue 1
+2089.46: ins1 starting to inspect c1
+2089.46: w1 starting
+2089.46: Future Event List[Ins1 for time:2109.39, w1 for time:2094.07]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2094.07: w1 produced 189th p1
+2094.07: Future Event List[Ins1 for time:2109.39]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2109.39: ins1 inspected 209th c1
+2109.39: ins1 adding C1 to queue 1
+2109.39: ins1 starting to inspect c1
+2109.39: w1 starting
+2109.39: Future Event List[Ins1 for time:2121.08, w1 for time:2110.12]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2110.12: w1 produced 190th p1
+2110.12: Future Event List[Ins1 for time:2121.08]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2121.08: ins1 inspected 210th c1
+2121.08: ins1 adding C1 to queue 1
+2121.08: ins1 starting to inspect c1
+2121.08: w1 starting
+2121.08: Future Event List[Ins1 for time:2130.61, w1 for time:2122.96]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2122.96: w1 produced 191th p1
+2122.96: Future Event List[Ins1 for time:2130.61]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2130.61: ins1 inspected 211th c1
+2130.61: ins1 adding C1 to queue 1
+2130.61: ins1 starting to inspect c1
+2130.61: w1 starting
+2130.61: Future Event List[Ins1 for time:2132.65, w1 for time:2133.67]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2132.65: ins1 inspected 212th c1
+2132.65: ins1 adding C1 to queue 1
+2132.65: ins1 starting to inspect c1
+2132.65: Future Event List[w1 for time:2133.67, Ins1 for time:2136.40]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2133.67: w1 produced 192th p1
+2133.67: w1 starting
+2133.67: Future Event List[Ins1 for time:2136.40, w1 for time:2134.50]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2134.50: w1 produced 193th p1
+2134.50: Future Event List[Ins1 for time:2136.40]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2136.40: ins1 inspected 213th c1
+2136.40: ins1 adding C1 to queue 1
+2136.40: ins1 starting to inspect c1
+2136.40: w1 starting
+2136.40: Future Event List[Ins1 for time:2147.58, w1 for time:2143.23]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2143.23: w1 produced 194th p1
+2143.23: Future Event List[Ins1 for time:2147.58]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2147.58: ins1 inspected 214th c1
+2147.58: ins1 adding C1 to queue 1
+2147.58: ins1 starting to inspect c1
+2147.58: w1 starting
+2147.58: Future Event List[Ins1 for time:2172.86, w1 for time:2148.98]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2148.98: w1 produced 195th p1
+2148.98: Future Event List[Ins1 for time:2172.86]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2172.86: ins1 inspected 215th c1
+2172.86: ins1 adding C1 to queue 1
+2172.86: ins1 starting to inspect c1
+2172.86: w1 starting
+2172.86: Future Event List[Ins1 for time:2175.13, w1 for time:2179.76]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2175.13: ins1 inspected 216th c1
+2175.13: ins1 adding C1 to queue 1
+2175.13: ins1 starting to inspect c1
+2175.13: Future Event List[w1 for time:2179.76, Ins1 for time:2177.06]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2177.06: ins1 inspected 217th c1
+2177.06: ins1 adding C1 to queue 4
+2177.06: ins1 starting to inspect c1
+2177.06: w3 starting
+2177.06: ins2 adding C3 to queue 5
+2177.06: ins2 starting to inspect c2
+2177.06: Future Event List[w1 for time:2179.76, Ins1 for time:2188.64, w3 for time:2180.70, Ins2 for time:2185.32]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2179.76: w1 produced 196th p1
+2179.76: w1 starting
+2179.76: Future Event List[Ins1 for time:2188.64, w3 for time:2180.70, Ins2 for time:2185.32, w1 for time:2187.48]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2180.70: w3 produced 9th p3
+2180.70: Future Event List[Ins1 for time:2188.64, Ins2 for time:2185.32, w1 for time:2187.48]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2185.32: ins2 inspected  12th c2
+2185.32: ins2 adding C2 to queue 3
+2185.32: ins2 starting to inspect c3
+2185.32: w2 starting
+2185.32: Future Event List[Ins1 for time:2188.64, w1 for time:2187.48, Ins2 for time:2235.85, w2 for time:2193.20]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2187.48: w1 produced 197th p1
+2187.48: Future Event List[Ins1 for time:2188.64, Ins2 for time:2235.85, w2 for time:2193.20]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2188.64: ins1 inspected 218th c1
+2188.64: ins1 adding C1 to queue 1
+2188.64: ins1 starting to inspect c1
+2188.64: w1 starting
+2188.64: Future Event List[Ins2 for time:2235.85, w2 for time:2193.20, Ins1 for time:2198.39, w1 for time:2189.84]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2189.84: w1 produced 198th p1
+2189.84: Future Event List[Ins2 for time:2235.85, w2 for time:2193.20, Ins1 for time:2198.39]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2193.20: w2 produced 13th p2
+2193.20: Future Event List[Ins2 for time:2235.85, Ins1 for time:2198.39]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2198.39: ins1 inspected 219th c1
+2198.39: ins1 adding C1 to queue 1
+2198.39: ins1 starting to inspect c1
+2198.39: w1 starting
+2198.39: Future Event List[Ins2 for time:2235.85, Ins1 for time:2203.86, w1 for time:2209.21]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2203.86: ins1 inspected 220th c1
+2203.86: ins1 adding C1 to queue 1
+2203.86: ins1 starting to inspect c1
+2203.86: Future Event List[Ins2 for time:2235.85, w1 for time:2209.21, Ins1 for time:2214.12]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2209.21: w1 produced 199th p1
+2209.21: w1 starting
+2209.21: Future Event List[Ins2 for time:2235.85, Ins1 for time:2214.12, w1 for time:2212.53]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2212.53: w1 produced 200th p1
+2212.53: Future Event List[Ins2 for time:2235.85, Ins1 for time:2214.12]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2214.12: ins1 inspected 221th c1
+2214.12: ins1 adding C1 to queue 1
+2214.12: ins1 starting to inspect c1
+2214.12: w1 starting
+2214.12: Future Event List[Ins2 for time:2235.85, Ins1 for time:2221.66, w1 for time:2215.16]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2215.16: w1 produced 201th p1
+2215.16: Future Event List[Ins2 for time:2235.85, Ins1 for time:2221.66]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2221.66: ins1 inspected 222th c1
+2221.66: ins1 adding C1 to queue 1
+2221.66: ins1 starting to inspect c1
+2221.66: w1 starting
+2221.66: Future Event List[Ins2 for time:2235.85, Ins1 for time:2225.68, w1 for time:2224.83]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2224.83: w1 produced 202th p1
+2224.83: Future Event List[Ins2 for time:2235.85, Ins1 for time:2225.68]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2225.68: ins1 inspected 223th c1
+2225.68: ins1 adding C1 to queue 1
+2225.68: ins1 starting to inspect c1
+2225.68: w1 starting
+2225.68: Future Event List[Ins2 for time:2235.85, Ins1 for time:2229.74, w1 for time:2228.38]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2228.38: w1 produced 203th p1
+2228.38: Future Event List[Ins2 for time:2235.85, Ins1 for time:2229.74]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2229.74: ins1 inspected 224th c1
+2229.74: ins1 adding C1 to queue 1
+2229.74: ins1 starting to inspect c1
+2229.74: w1 starting
+2229.74: Future Event List[Ins2 for time:2235.85, Ins1 for time:2234.28, w1 for time:2234.41]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2234.28: ins1 inspected 225th c1
+2234.28: ins1 adding C1 to queue 1
+2234.28: ins1 starting to inspect c1
+2234.28: Future Event List[Ins2 for time:2235.85, w1 for time:2234.41, Ins1 for time:2239.62]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2234.41: w1 produced 204th p1
+2234.41: w1 starting
+2234.41: Future Event List[Ins2 for time:2235.85, Ins1 for time:2239.62, w1 for time:2240.48]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2235.85: ins2 inspected  12th c3
+2235.85: Future Event List[Ins1 for time:2239.62, w1 for time:2240.48]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2239.62: ins1 inspected 226th c1
+2239.62: ins1 adding C1 to queue 1
+2239.62: ins1 starting to inspect c1
+2239.62: Future Event List[w1 for time:2240.48, Ins1 for time:2244.21]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2240.48: w1 produced 205th p1
+2240.48: w1 starting
+2240.48: Future Event List[Ins1 for time:2244.21, w1 for time:2242.77]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2242.77: w1 produced 206th p1
+2242.77: Future Event List[Ins1 for time:2244.21]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2244.21: ins1 inspected 227th c1
+2244.21: ins1 adding C1 to queue 1
+2244.21: ins1 starting to inspect c1
+2244.21: w1 starting
+2244.21: Future Event List[Ins1 for time:2253.27, w1 for time:2244.93]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2244.93: w1 produced 207th p1
+2244.93: Future Event List[Ins1 for time:2253.27]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2253.27: ins1 inspected 228th c1
+2253.27: ins1 adding C1 to queue 1
+2253.27: ins1 starting to inspect c1
+2253.27: w1 starting
+2253.27: Future Event List[Ins1 for time:2274.75, w1 for time:2253.84]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2253.84: w1 produced 208th p1
+2253.84: Future Event List[Ins1 for time:2274.75]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2274.75: ins1 inspected 229th c1
+2274.75: ins1 adding C1 to queue 1
+2274.75: ins1 starting to inspect c1
+2274.75: w1 starting
+2274.75: Future Event List[Ins1 for time:2278.41, w1 for time:2279.23]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2278.41: ins1 inspected 230th c1
+2278.41: ins1 adding C1 to queue 1
+2278.41: ins1 starting to inspect c1
+2278.41: Future Event List[w1 for time:2279.23, Ins1 for time:2281.91]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2279.23: w1 produced 209th p1
+2279.23: w1 starting
+2279.23: Future Event List[Ins1 for time:2281.91, w1 for time:2290.15]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2281.91: ins1 inspected 231th c1
+2281.91: ins1 adding C1 to queue 1
+2281.91: ins1 starting to inspect c1
+2281.91: Future Event List[w1 for time:2290.15, Ins1 for time:2298.79]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2290.15: w1 produced 210th p1
+2290.15: w1 starting
+2290.15: Future Event List[Ins1 for time:2298.79, w1 for time:2299.04]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2298.79: ins1 inspected 232th c1
+2298.79: ins1 adding C1 to queue 1
+2298.79: ins1 starting to inspect c1
+2298.79: Future Event List[w1 for time:2299.04, Ins1 for time:2300.53]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2299.04: w1 produced 211th p1
+2299.04: w1 starting
+2299.04: Future Event List[Ins1 for time:2300.53, w1 for time:2300.91]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2300.53: ins1 inspected 233th c1
+2300.53: ins1 adding C1 to queue 1
+2300.53: ins1 starting to inspect c1
+2300.53: Future Event List[w1 for time:2300.91, Ins1 for time:2314.64]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2300.91: w1 produced 212th p1
+2300.91: w1 starting
+2300.91: Future Event List[Ins1 for time:2314.64, w1 for time:2303.09]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2303.09: w1 produced 213th p1
+2303.09: Future Event List[Ins1 for time:2314.64]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2314.64: ins1 inspected 234th c1
+2314.64: ins1 adding C1 to queue 1
+2314.64: ins1 starting to inspect c1
+2314.64: w1 starting
+2314.64: Future Event List[Ins1 for time:2329.79, w1 for time:2317.40]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2317.40: w1 produced 214th p1
+2317.40: Future Event List[Ins1 for time:2329.79]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2329.79: ins1 inspected 235th c1
+2329.79: ins1 adding C1 to queue 1
+2329.79: ins1 starting to inspect c1
+2329.79: w1 starting
+2329.79: Future Event List[Ins1 for time:2332.94, w1 for time:2331.39]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2331.39: w1 produced 215th p1
+2331.39: Future Event List[Ins1 for time:2332.94]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2332.94: ins1 inspected 236th c1
+2332.94: ins1 adding C1 to queue 1
+2332.94: ins1 starting to inspect c1
+2332.94: w1 starting
+2332.94: Future Event List[Ins1 for time:2346.76, w1 for time:2335.52]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2335.52: w1 produced 216th p1
+2335.52: Future Event List[Ins1 for time:2346.76]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2346.76: ins1 inspected 237th c1
+2346.76: ins1 adding C1 to queue 1
+2346.76: ins1 starting to inspect c1
+2346.76: w1 starting
+2346.76: Future Event List[Ins1 for time:2369.00, w1 for time:2347.62]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2347.62: w1 produced 217th p1
+2347.62: Future Event List[Ins1 for time:2369.00]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2369.00: ins1 inspected 238th c1
+2369.00: ins1 adding C1 to queue 1
+2369.00: ins1 starting to inspect c1
+2369.00: w1 starting
+2369.00: Future Event List[Ins1 for time:2398.29, w1 for time:2371.04]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2371.04: w1 produced 218th p1
+2371.04: Future Event List[Ins1 for time:2398.29]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2398.29: ins1 inspected 239th c1
+2398.29: ins1 adding C1 to queue 1
+2398.29: ins1 starting to inspect c1
+2398.29: w1 starting
+2398.29: Future Event List[Ins1 for time:2402.87, w1 for time:2400.47]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2400.47: w1 produced 219th p1
+2400.47: Future Event List[Ins1 for time:2402.87]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2402.87: ins1 inspected 240th c1
+2402.87: ins1 adding C1 to queue 1
+2402.87: ins1 starting to inspect c1
+2402.87: w1 starting
+2402.87: Future Event List[Ins1 for time:2407.49, w1 for time:2406.82]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2406.82: w1 produced 220th p1
+2406.82: Future Event List[Ins1 for time:2407.49]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2407.49: ins1 inspected 241th c1
+2407.49: ins1 adding C1 to queue 1
+2407.49: ins1 starting to inspect c1
+2407.49: w1 starting
+2407.49: Future Event List[Ins1 for time:2415.54, w1 for time:2412.85]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2412.85: w1 produced 221th p1
+2412.85: Future Event List[Ins1 for time:2415.54]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2415.54: ins1 inspected 242th c1
+2415.54: ins1 adding C1 to queue 1
+2415.54: ins1 starting to inspect c1
+2415.54: w1 starting
+2415.54: Future Event List[Ins1 for time:2424.89, w1 for time:2416.82]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2416.82: w1 produced 222th p1
+2416.82: Future Event List[Ins1 for time:2424.89]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2424.89: ins1 inspected 243th c1
+2424.89: ins1 adding C1 to queue 1
+2424.89: ins1 starting to inspect c1
+2424.89: w1 starting
+2424.89: Future Event List[Ins1 for time:2451.96, w1 for time:2434.37]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2434.37: w1 produced 223th p1
+2434.37: Future Event List[Ins1 for time:2451.96]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2451.96: ins1 inspected 244th c1
+2451.96: ins1 adding C1 to queue 1
+2451.96: ins1 starting to inspect c1
+2451.96: w1 starting
+2451.96: Future Event List[Ins1 for time:2474.09, w1 for time:2452.96]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2452.96: w1 produced 224th p1
+2452.96: Future Event List[Ins1 for time:2474.09]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2474.09: ins1 inspected 245th c1
+2474.09: ins1 adding C1 to queue 1
+2474.09: ins1 starting to inspect c1
+2474.09: w1 starting
+2474.09: Future Event List[Ins1 for time:2487.99, w1 for time:2479.63]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2479.63: w1 produced 225th p1
+2479.63: Future Event List[Ins1 for time:2487.99]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2487.99: ins1 inspected 246th c1
+2487.99: ins1 adding C1 to queue 1
+2487.99: ins1 starting to inspect c1
+2487.99: w1 starting
+2487.99: Future Event List[Ins1 for time:2488.08, w1 for time:2493.12]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2488.08: ins1 inspected 247th c1
+2488.08: ins1 adding C1 to queue 1
+2488.08: ins1 starting to inspect c1
+2488.08: Future Event List[w1 for time:2493.12, Ins1 for time:2498.52]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2493.12: w1 produced 226th p1
+2493.12: w1 starting
+2493.12: Future Event List[Ins1 for time:2498.52, w1 for time:2506.21]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2498.52: ins1 inspected 248th c1
+2498.52: ins1 adding C1 to queue 1
+2498.52: ins1 starting to inspect c1
+2498.52: Future Event List[w1 for time:2506.21, Ins1 for time:2549.74]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2506.21: w1 produced 227th p1
+2506.21: w1 starting
+2506.21: Future Event List[Ins1 for time:2549.74, w1 for time:2508.10]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2508.10: w1 produced 228th p1
+2508.10: Future Event List[Ins1 for time:2549.74]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2549.74: ins1 inspected 249th c1
+2549.74: ins1 adding C1 to queue 1
+2549.74: ins1 starting to inspect c1
+2549.74: w1 starting
+2549.74: Future Event List[Ins1 for time:2575.13, w1 for time:2553.29]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2553.29: w1 produced 229th p1
+2553.29: Future Event List[Ins1 for time:2575.13]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2575.13: ins1 inspected 250th c1
+2575.13: ins1 adding C1 to queue 1
+2575.13: ins1 starting to inspect c1
+2575.13: w1 starting
+2575.13: Future Event List[Ins1 for time:2615.38, w1 for time:2575.98]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2575.98: w1 produced 230th p1
+2575.98: Future Event List[Ins1 for time:2615.38]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2615.38: ins1 inspected 251th c1
+2615.38: ins1 adding C1 to queue 1
+2615.38: ins1 starting to inspect c1
+2615.38: w1 starting
+2615.38: Future Event List[Ins1 for time:2617.87, w1 for time:2622.24]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2617.87: ins1 inspected 252th c1
+2617.87: ins1 adding C1 to queue 1
+2617.87: ins1 starting to inspect c1
+2617.87: Future Event List[w1 for time:2622.24, Ins1 for time:2618.29]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2618.29: ins1 inspected 253th c1
+2618.29: ins1 adding C1 to queue 2
+2618.29: ins1 starting to inspect c1
+2618.29: Future Event List[w1 for time:2622.24, Ins1 for time:2628.99]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2622.24: w1 produced 231th p1
+2622.24: w1 starting
+2622.24: Future Event List[Ins1 for time:2628.99, w1 for time:2632.99]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2628.99: ins1 inspected 254th c1
+2628.99: ins1 adding C1 to queue 1
+2628.99: ins1 starting to inspect c1
+2628.99: Future Event List[w1 for time:2632.99, Ins1 for time:2639.39]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2632.99: w1 produced 232th p1
+2632.99: w1 starting
+2632.99: Future Event List[Ins1 for time:2639.39, w1 for time:2659.33]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2639.39: ins1 inspected 255th c1
+2639.39: ins1 adding C1 to queue 1
+2639.39: ins1 starting to inspect c1
+2639.39: Future Event List[w1 for time:2659.33, Ins1 for time:2640.63]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2640.63: ins1 inspected 256th c1
+2640.63: ins1 adding C1 to queue 4
+2640.63: ins1 starting to inspect c1
+2640.63: w3 starting
+2640.63: ins2 adding C3 to queue 5
+2640.63: ins2 starting to inspect c2
+2640.63: Future Event List[w1 for time:2659.33, Ins1 for time:2663.09, w3 for time:2650.17, Ins2 for time:2676.20]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2650.17: w3 produced 10th p3
+2650.17: Future Event List[w1 for time:2659.33, Ins1 for time:2663.09, Ins2 for time:2676.20]
+Buffer contents --> buffer1: 1 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2659.33: w1 produced 233th p1
+2659.33: w1 starting
+2659.33: Future Event List[Ins1 for time:2663.09, Ins2 for time:2676.20, w1 for time:2659.53]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2659.53: w1 produced 234th p1
+2659.53: Future Event List[Ins1 for time:2663.09, Ins2 for time:2676.20]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2663.09: ins1 inspected 257th c1
+2663.09: ins1 adding C1 to queue 1
+2663.09: ins1 starting to inspect c1
+2663.09: w1 starting
+2663.09: Future Event List[Ins2 for time:2676.20, Ins1 for time:2685.46, w1 for time:2672.86]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2672.86: w1 produced 235th p1
+2672.86: Future Event List[Ins2 for time:2676.20, Ins1 for time:2685.46]
+Buffer contents --> buffer1: 0 buffer2:1 buffer3:0 buffer4:0 buffer5:2
+
+2676.20: ins2 inspected  13th c2
+2676.20: ins2 adding C2 to queue 3
+2676.20: ins2 starting to inspect c2
+2676.20: w2 starting
+2676.20: Future Event List[Ins1 for time:2685.46, Ins2 for time:2694.71, w2 for time:2676.49]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2676.49: w2 produced 14th p2
+2676.49: Future Event List[Ins1 for time:2685.46, Ins2 for time:2694.71]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2685.46: ins1 inspected 258th c1
+2685.46: ins1 adding C1 to queue 1
+2685.46: ins1 starting to inspect c1
+2685.46: w1 starting
+2685.46: Future Event List[Ins2 for time:2694.71, Ins1 for time:2685.95, w1 for time:2689.11]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2685.95: ins1 inspected 259th c1
+2685.95: ins1 adding C1 to queue 1
+2685.95: ins1 starting to inspect c1
+2685.95: Future Event List[Ins2 for time:2694.71, w1 for time:2689.11, Ins1 for time:2712.70]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2689.11: w1 produced 236th p1
+2689.11: w1 starting
+2689.11: Future Event List[Ins2 for time:2694.71, Ins1 for time:2712.70, w1 for time:2691.49]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2691.49: w1 produced 237th p1
+2691.49: Future Event List[Ins2 for time:2694.71, Ins1 for time:2712.70]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2694.71: ins2 inspected  13th c2
+2694.71: ins2 adding C2 to queue 3
+2694.71: ins2 starting to inspect c2
+2694.71: Future Event List[Ins1 for time:2712.70, Ins2 for time:2736.74]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+2712.70: ins1 inspected 260th c1
+2712.70: ins1 adding C1 to queue 1
+2712.70: ins1 starting to inspect c1
+2712.70: w1 starting
+2712.70: Future Event List[Ins2 for time:2736.74, Ins1 for time:2725.42, w1 for time:2727.89]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+2725.42: ins1 inspected 261th c1
+2725.42: ins1 adding C1 to queue 1
+2725.42: ins1 starting to inspect c1
+2725.42: Future Event List[Ins2 for time:2736.74, w1 for time:2727.89, Ins1 for time:2738.54]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+2727.89: w1 produced 238th p1
+2727.89: w1 starting
+2727.89: Future Event List[Ins2 for time:2736.74, Ins1 for time:2738.54, w1 for time:2729.29]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+2729.29: w1 produced 239th p1
+2729.29: Future Event List[Ins2 for time:2736.74, Ins1 for time:2738.54]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+2736.74: ins2 inspected  13th c2
+2736.74: ins2 adding C2 to queue 3
+2736.74: ins2 starting to inspect c2
+2736.74: Future Event List[Ins1 for time:2738.54, Ins2 for time:2742.52]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2738.54: ins1 inspected 262th c1
+2738.54: ins1 adding C1 to queue 1
+2738.54: ins1 starting to inspect c1
+2738.54: w1 starting
+2738.54: Future Event List[Ins2 for time:2742.52, Ins1 for time:2743.22, w1 for time:2740.31]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2740.31: w1 produced 240th p1
+2740.31: Future Event List[Ins2 for time:2742.52, Ins1 for time:2743.22]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2742.52: ins2 inspected  13th c2
+2742.52: Future Event List[Ins1 for time:2743.22]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2743.22: ins1 inspected 263th c1
+2743.22: ins1 adding C1 to queue 1
+2743.22: ins1 starting to inspect c1
+2743.22: w1 starting
+2743.22: Future Event List[Ins1 for time:2755.89, w1 for time:2749.63]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2749.63: w1 produced 241th p1
+2749.63: Future Event List[Ins1 for time:2755.89]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2755.89: ins1 inspected 264th c1
+2755.89: ins1 adding C1 to queue 1
+2755.89: ins1 starting to inspect c1
+2755.89: w1 starting
+2755.89: Future Event List[Ins1 for time:2756.22, w1 for time:2758.42]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2756.22: ins1 inspected 265th c1
+2756.22: ins1 adding C1 to queue 1
+2756.22: ins1 starting to inspect c1
+2756.22: Future Event List[w1 for time:2758.42, Ins1 for time:2760.71]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2758.42: w1 produced 242th p1
+2758.42: w1 starting
+2758.42: Future Event List[Ins1 for time:2760.71, w1 for time:2759.26]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2759.26: w1 produced 243th p1
+2759.26: Future Event List[Ins1 for time:2760.71]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2760.71: ins1 inspected 266th c1
+2760.71: ins1 adding C1 to queue 1
+2760.71: ins1 starting to inspect c1
+2760.71: w1 starting
+2760.71: Future Event List[Ins1 for time:2771.11, w1 for time:2762.55]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2762.55: w1 produced 244th p1
+2762.55: Future Event List[Ins1 for time:2771.11]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2771.11: ins1 inspected 267th c1
+2771.11: ins1 adding C1 to queue 1
+2771.11: ins1 starting to inspect c1
+2771.11: w1 starting
+2771.11: Future Event List[Ins1 for time:2791.74, w1 for time:2774.50]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2774.50: w1 produced 245th p1
+2774.50: Future Event List[Ins1 for time:2791.74]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2791.74: ins1 inspected 268th c1
+2791.74: ins1 adding C1 to queue 1
+2791.74: ins1 starting to inspect c1
+2791.74: w1 starting
+2791.74: Future Event List[Ins1 for time:2798.68, w1 for time:2801.00]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2798.68: ins1 inspected 269th c1
+2798.68: ins1 adding C1 to queue 1
+2798.68: ins1 starting to inspect c1
+2798.68: Future Event List[w1 for time:2801.00, Ins1 for time:2814.51]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2801.00: w1 produced 246th p1
+2801.00: w1 starting
+2801.00: Future Event List[Ins1 for time:2814.51, w1 for time:2801.80]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2801.80: w1 produced 247th p1
+2801.80: Future Event List[Ins1 for time:2814.51]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2814.51: ins1 inspected 270th c1
+2814.51: ins1 adding C1 to queue 1
+2814.51: ins1 starting to inspect c1
+2814.51: w1 starting
+2814.51: Future Event List[Ins1 for time:2814.71, w1 for time:2814.95]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2814.71: ins1 inspected 271th c1
+2814.71: ins1 adding C1 to queue 1
+2814.71: ins1 starting to inspect c1
+2814.71: Future Event List[w1 for time:2814.95, Ins1 for time:2819.45]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2814.95: w1 produced 248th p1
+2814.95: w1 starting
+2814.95: Future Event List[Ins1 for time:2819.45, w1 for time:2817.26]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2817.26: w1 produced 249th p1
+2817.26: Future Event List[Ins1 for time:2819.45]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2819.45: ins1 inspected 272th c1
+2819.45: ins1 adding C1 to queue 1
+2819.45: ins1 starting to inspect c1
+2819.45: w1 starting
+2819.45: Future Event List[Ins1 for time:2822.63, w1 for time:2826.61]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2822.63: ins1 inspected 273th c1
+2822.63: ins1 adding C1 to queue 1
+2822.63: ins1 starting to inspect c1
+2822.63: Future Event List[w1 for time:2826.61, Ins1 for time:2826.75]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2826.61: w1 produced 250th p1
+2826.61: w1 starting
+2826.61: Future Event List[Ins1 for time:2826.75, w1 for time:2840.75]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2826.75: ins1 inspected 274th c1
+2826.75: ins1 adding C1 to queue 1
+2826.75: ins1 starting to inspect c1
+2826.75: Future Event List[w1 for time:2840.75, Ins1 for time:2827.54]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2827.54: ins1 inspected 275th c1
+2827.54: ins1 adding C1 to queue 2
+2827.54: ins1 starting to inspect c1
+2827.54: w2 starting
+2827.54: ins2 adding C2 to queue 3
+2827.54: ins2 starting to inspect c2
+2827.54: Future Event List[w1 for time:2840.75, Ins1 for time:2834.63, w2 for time:2834.12, Ins2 for time:2848.81]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2834.12: w2 produced 15th p2
+2834.12: Future Event List[w1 for time:2840.75, Ins1 for time:2834.63, Ins2 for time:2848.81]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2834.63: ins1 inspected 276th c1
+2834.63: ins1 adding C1 to queue 2
+2834.63: ins1 starting to inspect c1
+2834.63: w2 starting
+2834.63: Future Event List[w1 for time:2840.75, Ins2 for time:2848.81, Ins1 for time:2853.12, w2 for time:2844.87]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+2840.75: w1 produced 251th p1
+2840.75: w1 starting
+2840.75: Future Event List[Ins2 for time:2848.81, Ins1 for time:2853.12, w2 for time:2844.87, w1 for time:2842.38]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+2842.38: w1 produced 252th p1
+2842.38: Future Event List[Ins2 for time:2848.81, Ins1 for time:2853.12, w2 for time:2844.87]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+2844.87: w2 produced 16th p2
+2844.87: Future Event List[Ins2 for time:2848.81, Ins1 for time:2853.12]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+2848.81: ins2 inspected  13th c2
+2848.81: ins2 adding C2 to queue 3
+2848.81: ins2 starting to inspect c3
+2848.81: Future Event List[Ins1 for time:2853.12, Ins2 for time:2857.61]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2853.12: ins1 inspected 277th c1
+2853.12: ins1 adding C1 to queue 1
+2853.12: ins1 starting to inspect c1
+2853.12: w1 starting
+2853.12: Future Event List[Ins2 for time:2857.61, Ins1 for time:2853.51, w1 for time:2857.31]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2853.51: ins1 inspected 278th c1
+2853.51: ins1 adding C1 to queue 1
+2853.51: ins1 starting to inspect c1
+2853.51: Future Event List[Ins2 for time:2857.61, w1 for time:2857.31, Ins1 for time:2868.13]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2857.31: w1 produced 253th p1
+2857.31: w1 starting
+2857.31: Future Event List[Ins2 for time:2857.61, Ins1 for time:2868.13, w1 for time:2886.68]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2857.61: ins2 inspected  13th c3
+2857.61: Future Event List[Ins1 for time:2868.13, w1 for time:2886.68]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2868.13: ins1 inspected 279th c1
+2868.13: ins1 adding C1 to queue 1
+2868.13: ins1 starting to inspect c1
+2868.13: Future Event List[w1 for time:2886.68, Ins1 for time:2871.78]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:2 buffer4:0 buffer5:2
+
+2871.78: ins1 inspected 280th c1
+2871.78: ins1 adding C1 to queue 2
+2871.78: ins1 starting to inspect c1
+2871.78: w2 starting
+2871.78: Future Event List[w1 for time:2886.68, Ins1 for time:2884.98, w2 for time:2873.89]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+2873.89: w2 produced 17th p2
+2873.89: Future Event List[w1 for time:2886.68, Ins1 for time:2884.98]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:1 buffer4:0 buffer5:2
+
+2884.98: ins1 inspected 281th c1
+2884.98: ins1 adding C1 to queue 2
+2884.98: ins1 starting to inspect c1
+2884.98: w2 starting
+2884.98: Future Event List[w1 for time:2886.68, Ins1 for time:2892.50, w2 for time:2886.18]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2886.18: w2 produced 18th p2
+2886.18: Future Event List[w1 for time:2886.68, Ins1 for time:2892.50]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2886.68: w1 produced 254th p1
+2886.68: w1 starting
+2886.68: Future Event List[Ins1 for time:2892.50, w1 for time:2908.24]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2892.50: ins1 inspected 282th c1
+2892.50: ins1 adding C1 to queue 1
+2892.50: ins1 starting to inspect c1
+2892.50: Future Event List[w1 for time:2908.24, Ins1 for time:2915.16]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2908.24: w1 produced 255th p1
+2908.24: w1 starting
+2908.24: Future Event List[Ins1 for time:2915.16, w1 for time:2908.83]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2908.83: w1 produced 256th p1
+2908.83: Future Event List[Ins1 for time:2915.16]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2915.16: ins1 inspected 283th c1
+2915.16: ins1 adding C1 to queue 1
+2915.16: ins1 starting to inspect c1
+2915.16: w1 starting
+2915.16: Future Event List[Ins1 for time:2920.58, w1 for time:2915.95]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2915.95: w1 produced 257th p1
+2915.95: Future Event List[Ins1 for time:2920.58]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2920.58: ins1 inspected 284th c1
+2920.58: ins1 adding C1 to queue 1
+2920.58: ins1 starting to inspect c1
+2920.58: w1 starting
+2920.58: Future Event List[Ins1 for time:2927.12, w1 for time:2921.73]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2921.73: w1 produced 258th p1
+2921.73: Future Event List[Ins1 for time:2927.12]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2927.12: ins1 inspected 285th c1
+2927.12: ins1 adding C1 to queue 1
+2927.12: ins1 starting to inspect c1
+2927.12: w1 starting
+2927.12: Future Event List[Ins1 for time:2985.43, w1 for time:2939.81]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2939.81: w1 produced 259th p1
+2939.81: Future Event List[Ins1 for time:2985.43]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2985.43: ins1 inspected 286th c1
+2985.43: ins1 adding C1 to queue 1
+2985.43: ins1 starting to inspect c1
+2985.43: w1 starting
+2985.43: Future Event List[Ins1 for time:2988.29, w1 for time:2988.45]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2988.29: ins1 inspected 287th c1
+2988.29: ins1 adding C1 to queue 1
+2988.29: ins1 starting to inspect c1
+2988.29: Future Event List[w1 for time:2988.45, Ins1 for time:2989.54]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2988.45: w1 produced 260th p1
+2988.45: w1 starting
+2988.45: Future Event List[Ins1 for time:2989.54, w1 for time:2989.03]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2989.03: w1 produced 261th p1
+2989.03: Future Event List[Ins1 for time:2989.54]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2989.54: ins1 inspected 288th c1
+2989.54: ins1 adding C1 to queue 1
+2989.54: ins1 starting to inspect c1
+2989.54: w1 starting
+2989.54: Future Event List[Ins1 for time:3002.35, w1 for time:2991.19]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+2991.19: w1 produced 262th p1
+2991.19: Future Event List[Ins1 for time:3002.35]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3002.35: ins1 inspected 289th c1
+3002.35: ins1 adding C1 to queue 1
+3002.35: ins1 starting to inspect c1
+3002.35: w1 starting
+3002.35: Future Event List[Ins1 for time:3004.78, w1 for time:3003.77]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3003.77: w1 produced 263th p1
+3003.77: Future Event List[Ins1 for time:3004.78]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3004.78: ins1 inspected 290th c1
+3004.78: ins1 adding C1 to queue 1
+3004.78: ins1 starting to inspect c1
+3004.78: w1 starting
+3004.78: Future Event List[Ins1 for time:3021.63, w1 for time:3009.39]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3009.39: w1 produced 264th p1
+3009.39: Future Event List[Ins1 for time:3021.63]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3021.63: ins1 inspected 291th c1
+3021.63: ins1 adding C1 to queue 1
+3021.63: ins1 starting to inspect c1
+3021.63: w1 starting
+3021.63: Future Event List[Ins1 for time:3030.31, w1 for time:3023.33]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3023.33: w1 produced 265th p1
+3023.33: Future Event List[Ins1 for time:3030.31]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3030.31: ins1 inspected 292th c1
+3030.31: ins1 adding C1 to queue 1
+3030.31: ins1 starting to inspect c1
+3030.31: w1 starting
+3030.31: Future Event List[Ins1 for time:3035.10, w1 for time:3030.32]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3030.32: w1 produced 266th p1
+3030.32: Future Event List[Ins1 for time:3035.10]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3035.10: ins1 inspected 293th c1
+3035.10: ins1 adding C1 to queue 1
+3035.10: ins1 starting to inspect c1
+3035.10: w1 starting
+3035.10: Future Event List[Ins1 for time:3053.72, w1 for time:3047.70]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3047.70: w1 produced 267th p1
+3047.70: Future Event List[Ins1 for time:3053.72]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3053.72: ins1 inspected 294th c1
+3053.72: ins1 adding C1 to queue 1
+3053.72: ins1 starting to inspect c1
+3053.72: w1 starting
+3053.72: Future Event List[Ins1 for time:3065.65, w1 for time:3054.22]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3054.22: w1 produced 268th p1
+3054.22: Future Event List[Ins1 for time:3065.65]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3065.65: ins1 inspected 295th c1
+3065.65: ins1 adding C1 to queue 1
+3065.65: ins1 starting to inspect c1
+3065.65: w1 starting
+3065.65: Future Event List[Ins1 for time:3080.13, w1 for time:3067.28]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3067.28: w1 produced 269th p1
+3067.28: Future Event List[Ins1 for time:3080.13]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3080.13: ins1 inspected 296th c1
+3080.13: ins1 adding C1 to queue 1
+3080.13: ins1 starting to inspect c1
+3080.13: w1 starting
+3080.13: Future Event List[Ins1 for time:3082.56, w1 for time:3082.15]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3082.15: w1 produced 270th p1
+3082.15: Future Event List[Ins1 for time:3082.56]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3082.56: ins1 inspected 297th c1
+3082.56: ins1 adding C1 to queue 1
+3082.56: ins1 starting to inspect c1
+3082.56: w1 starting
+3082.56: Future Event List[Ins1 for time:3088.67, w1 for time:3088.67]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3088.67: w1 produced 271th p1
+3088.67: Future Event List[Ins1 for time:3088.67]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3088.67: ins1 inspected 298th c1
+3088.67: ins1 adding C1 to queue 1
+3088.67: ins1 starting to inspect c1
+3088.67: w1 starting
+3088.67: Future Event List[Ins1 for time:3098.34, w1 for time:3089.26]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3089.26: w1 produced 272th p1
+3089.26: Future Event List[Ins1 for time:3098.34]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3098.34: ins1 inspected 299th c1
+3098.34: ins1 adding C1 to queue 1
+3098.34: ins1 starting to inspect c1
+3098.34: w1 starting
+3098.34: Future Event List[Ins1 for time:3104.35, w1 for time:3113.36]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3104.35: ins1 inspected 300th c1
+3104.35: ins1 adding C1 to queue 1
+Inspector1 done simulating 300 values
+3104.35: Future Event List[w1 for time:3113.36]
+Buffer contents --> buffer1: 1 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3113.36: w1 produced 273th p1
+3113.36: w1 starting
+3113.36: Future Event List[w1 for time:3113.84]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+3113.84: w1 produced 274th p1
+3113.84: Future Event List[]
+Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+
+
+---------------------------------------------------------------------------------------------------
+No more events to process. Terminating the simulation
+---------------------------------------------------------------------------------------------------
+
+Total Busy Percentage --> Insector1:99.70  Insector2:18.71 WorkStation1:39.96 WorkStation2:4.68 WorkStation3:2.52
+avarage buffer occupancy --> Buffer1:0.1351 Buffer2:0.3748 Buffer3:0.3739 Buffer4:0.0031 Buffer5:1.9234
+production --> Component1:300 Component2:18 Component3:13 Product1:274 Product2:18 Product3:10
+Final Buffer contents --> buffer1: 0 buffer2:0 buffer3:0 buffer4:0 buffer5:2
+Final entities blocked --> Inspector1:no Inspector2:yes Worstation1:yes Worstation2:yes Worstation3:yes

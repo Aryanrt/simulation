@@ -36,30 +36,30 @@ public class WorkStation
         this.state =State.WORKING;
         
     }
-    public double bootstrap()
+    public double bootstrap() throws IOException
     {
         // read from file or generate statistically
         this.timeLeft = -1;
         //case of w1
         if(buffers.size() == 1)
         {
-            // System.out.println("produced p1");
+            // Main.log("produced p1");
             if(buffers.get(0).getSize() > 0)
             {
                 buffers.get(0).removeComponent();
                 // read from file or generate statistically
                 this.timeLeft = this.serviceTime.get(index++);
                 state=State.WORKING;
-                System.out.println(Main.globalTime+": W1 starting");
+                Main.log(Main.df.format(Main.globalTime)+": W1 starting");
             }
         //0 means idle
         }
         else if(buffers.get(0).getSize() > 0 && buffers.get(1).getSize() > 0)
         {
             if(buffers.get(1).productID == 2)
-                System.out.println(Main.globalTime+": W2 starting");
+                Main.log(Main.df.format(Main.globalTime)+": W2 starting");
             else
-                System.out.println(Main.globalTime+": W3 starting");
+                Main.log(Main.df.format(Main.globalTime)+": W3 starting");
             
             buffers.get(0).removeComponent();
             buffers.get(1).removeComponent(); 
@@ -73,7 +73,7 @@ public class WorkStation
         return timeLeft;        
     }
 
-    public double produce()
+    public double produce() throws IOException
     {
         timeLeft =0;
 
@@ -83,15 +83,15 @@ public class WorkStation
             if(this.created)
             {
                 created = false;
-                System.out.println(Main.globalTime+": w1 produced p1");
+                Main.log(Main.df.format(Main.globalTime)+": w1 produced "+ (index+1)+"th p1");
             }
-            // System.out.println("produced p1");
+            // Main.log("produced p1");
             if(buffers.get(0).getSize() > 0)
             {
                 if(index == 300)
                     return -2;
 
-                System.out.println(Main.globalTime+": w1 starting");
+                Main.log(Main.df.format(Main.globalTime)+": w1 starting");
                 buffers.get(0).removeComponent();
                 
                 // read from file or generate statistically
@@ -107,17 +107,17 @@ public class WorkStation
         {
             created = false;
             if(buffers.get(1).productID == 2)
-                System.out.println(Main.globalTime+": w2 produced p2");
+                Main.log(Main.df.format(Main.globalTime)+": w2 produced "+ (index+1)+"th p2");
             else
-                System.out.println(Main.globalTime+": w3 produced p3");
+                Main.log(Main.df.format(Main.globalTime)+": w3 produced "+ (index+1)+"th p3");
         }
 
         else if(buffers.get(0).getSize() > 0 && buffers.get(1).getSize() > 0)
         {
             if(buffers.get(1).productID == 2)
-                System.out.println(Main.globalTime+": w2 starting");
+                Main.log(Main.df.format(Main.globalTime)+": w2 starting");
             else
-                System.out.println(Main.globalTime+": w3 starting");
+                Main.log(Main.df.format(Main.globalTime)+": w3 starting");
 
             created=true;
             buffers.get(0).removeComponent();

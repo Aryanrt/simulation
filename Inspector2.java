@@ -49,7 +49,7 @@ class Inspector2 extends Inspector
         this.state =State.IDLE;
         this.rand = new Random();
     }
-    public double bootrap()
+    public double bootrap() throws IOException
     {
         // read from file or generate statistically
         
@@ -60,17 +60,17 @@ class Inspector2 extends Inspector
         else
             this.timeLeft = this.serviceTime3.get(index3++); 
 
-        System.out.println(Main.globalTime+": ins2 starting to inspect "+ this.currentComponent.getName());
+        Main.log(Main.df.format(Main.globalTime)+": ins2 starting to inspect "+ this.currentComponent.getName());
         this.created = true;
         return timeLeft;        
     }
 
-    public double work()
+    public double work() throws IOException
     {
         this.timeLeft=0;
         if(this.created)
         {
-            System.out.println(Main.globalTime+": ins2 inspected "+currentComponent.getName());
+            Main.log(Main.df.format(Main.globalTime)+": ins2 inspected  "+((currentComponent.getName().equals("C2")?index2:index3)+1)+"th "+currentComponent.getName());
             this.created = false;
         }
        //case of finished or blocked for C2
@@ -78,11 +78,11 @@ class Inspector2 extends Inspector
        {
             this.buffers.get(0).addComponent();
             this.currentComponent= components.get(rand.nextInt(2));
-            System.out.println(Main.globalTime+": ins2 adding C2 to queue 3");
+            Main.log(Main.df.format(Main.globalTime)+": ins2 adding C2 to queue 3");
             
             if(index2 == 300)
                 return -2;
-            System.out.println(Main.globalTime+": ins2 starting to inspect "+ this.currentComponent.getName());
+            Main.log(Main.df.format(Main.globalTime)+": ins2 starting to inspect "+ this.currentComponent.getName());
             this.state = State.WORKING;
             // read from file or generate statistically
             this.timeLeft = this.serviceTime2.get(index2++);
@@ -93,10 +93,10 @@ class Inspector2 extends Inspector
         else if(currentComponent.getName().equalsIgnoreCase("C3") && buffers.get(1).getSize() < 2)
         {
             this.currentComponent= components.get(rand.nextInt(2));
-            System.out.println(Main.globalTime+": ins2 adding C3 to queue 5");
+            Main.log(Main.df.format(Main.globalTime)+": ins2 adding C3 to queue 5");
             if(index3 == 300)
                 return -2;
-            System.out.println(Main.globalTime+": ins2 starting to inspect "+ this.currentComponent.getName());
+            Main.log(Main.df.format(Main.globalTime)+": ins2 starting to inspect "+ this.currentComponent.getName());
             this.buffers.get(1).addComponent();
             this.state = State.WORKING;
             // read from file or generate statistically
@@ -108,6 +108,5 @@ class Inspector2 extends Inspector
         return timeLeft;
         
     }
-
 
 }

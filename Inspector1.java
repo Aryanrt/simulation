@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,21 +32,25 @@ public class Inspector1 extends Inspector
         this.timeLeft = 0;
         this.state =State.IDLE;
     }
-    public double bootrap()
+    public double bootrap() throws IOException
     {
         // read from file or generate statistically
         timeLeft = this.serviceTime.get(index++);
         state = State.WORKING;
         this.created = true;
-        System.out.println(Main.globalTime+": ins1 starting to inspect c1");
+        
+        Main.log(Main.df.format(Main.globalTime)+": ins1 starting to inspect c1");
         return timeLeft;        
     }
-    public double work()
+    public double work() throws IOException
     {
+
+        if(index == 300)
+            return -2; 
 
         if(created)
         {
-            System.out.println(Main.globalTime+": ins1 inspected c1");
+            Main.log(Main.df.format(Main.globalTime)+": ins1 inspected "+(index+1)+"th c1");
             created = false;
         }
         int i,j=-1;
@@ -81,10 +86,15 @@ public class Inspector1 extends Inspector
         // case of component placed in queue
         else    
         {
-            System.out.println(Main.globalTime+": ins1 adding C1 to queue " + j);
-            if(index == 300)
+            Main.log(Main.df.format(Main.globalTime)+": ins1 adding C1 to queue " + j);
+            
+            if(index == 299)
+            {
+                Main.log("Inspector1 done simulating 300 values");
                 return -2; 
-            System.out.println(Main.globalTime+": ins1 starting to inspect c1");
+            }
+            
+            Main.log(Main.df.format(Main.globalTime)+": ins1 starting to inspect c1");
             created = true;
             state = State.WORKING;
             

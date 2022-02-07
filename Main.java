@@ -1,6 +1,9 @@
 
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -14,15 +17,10 @@ import java.util.Map;
 class Main
 {
     public static double globalTime = 0;
+    public static DecimalFormat df = new DecimalFormat("####0.00");
+    static FileWriter myWriter;
     public static void main(String[] args) throws FileNotFoundException, IOException 
     {
-        // File file = new File("")
-        // try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-        //     String line;
-        //     while ((line = br.readLine()) != null) {
-        //     // process the line.
-        //     }
-        //}
 
         Buffer b1 = new Buffer(1);
         Buffer b2 = new Buffer(1);
@@ -70,7 +68,7 @@ class Main
         double timeLeft2 = ins2.bootrap();
         double timeLeft3=-1, timeLeft4=-1, timeLeft5=-1;
         double totalTime1 = 0, totalTime2 = 0, totalTime3 = 0, totalTime4 = 0,totalTime5 = 0;
-        // System.out.println("Addining event for " + (globalTime + timeLeft1) + " and " + (globalTime + timeLeft2));
+        log("Addining Initial event for ins1 and Insp2 ");
         fel.add(new MyEvent(1, globalTime + timeLeft1));
         fel.add(new MyEvent(2, globalTime + timeLeft2));
         totalTime1 += timeLeft1;
@@ -82,18 +80,27 @@ class Main
         Map<Double, Integer> histogram3 = new LinkedHashMap<Double, Integer>();
         Map<Double, Integer> histogram4 = new LinkedHashMap<Double, Integer>();
         Map<Double, Integer> histogram5 = new LinkedHashMap<Double, Integer>();
-
+        
+        //create the log file or clear it
+        File file = new File("logs.txt");
+        if( ! file.createNewFile()) 
+        {
+            PrintWriter writer = new PrintWriter(file);
+            writer.print("");
+            writer.close();
+        }
         
         while(true)
         {
             
-
-            System.out.println( ins1.index +" "+ins2.index2  +" "+ins2.index3+" "+w1.index+" "+w2.index+" "+w3.index);
-            System.out.println( fel);
             if(fel.size() == 0)
                // && w1.index == 300 && w2.index == 300 && w3.index == 300 )
             {
-                System.out.println("all done");
+                log("");
+                log("---------------------------------------------------------------------------------------------------");
+                log("No more events to process. Terminating the simulation");
+                log("---------------------------------------------------------------------------------------------------");
+                log("");
                 break;
             }    
             double min = 10000 + globalTime;
@@ -103,7 +110,7 @@ class Main
             
             //update time
             globalTime = min;
-            //System.out.println("global time is"+globalTime);
+            //log("global time is"+globalTime);
 
             toBeRemoved.clear();
             toBeAdded.clear();
@@ -119,7 +126,7 @@ class Main
                         timeLeft1 = ins1.work();
                         if(timeLeft1 != 0 && timeLeft1 != -2)
                         {
-                            // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                            // log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(1, (globalTime + timeLeft1)));
                             totalTime1 += timeLeft1;
                         }
@@ -128,10 +135,10 @@ class Main
                     case 2:
                         toBeRemoved.add(e);
                         timeLeft2 = ins2.work();
-                        // System.out.println("time2 "+timeLeft2);
+                        // log("time2 "+timeLeft2);
                         if(timeLeft2 != 0)
                         {
-                            // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                            // log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(2, (globalTime + timeLeft2)));
                             totalTime2 += timeLeft2;
                         }
@@ -142,7 +149,7 @@ class Main
                         timeLeft3 = w1.produce();
                         if(timeLeft3 != 0 && timeLeft3 != -2)
                         {
-                            // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                            // log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(3, (globalTime + timeLeft3)));
                             totalTime3 += timeLeft3;
                         }
@@ -153,7 +160,7 @@ class Main
                         timeLeft4 = w2.produce();
                         if(timeLeft4 != 0)
                         {
-                            // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                            // log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(4, (globalTime + timeLeft4)));
                             totalTime4 += timeLeft4;
                         }
@@ -164,7 +171,7 @@ class Main
                         timeLeft5 = w3.produce();
                         if(timeLeft5 != 0)
                         {
-                            // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                            // log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(5, (globalTime + timeLeft5)));
                             totalTime5 += timeLeft5;
                         }
@@ -185,7 +192,7 @@ class Main
                     timeLeft3 = w1.produce();
                 if(timeLeft3 != 0 && timeLeft3 != -1)
                 {
-                    // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                    // log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                     totalTime3 += timeLeft3;
                     fel.add(new MyEvent(3, globalTime + timeLeft3));
                 }
@@ -198,8 +205,8 @@ class Main
                     timeLeft4 = w2.produce();
                 if(timeLeft4 != 0 && timeLeft4 != -1)
                 {
-                    // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
-                    // System.out.println("adding finish time for w2 "+ (globalTime + timeLeft4));
+                    // log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                    // log("adding finish time for w2 "+ (globalTime + timeLeft4));
                     totalTime4 += timeLeft4;
                     fel.add(new MyEvent(4, globalTime + timeLeft4));                    
                 }
@@ -213,8 +220,8 @@ class Main
                 if(timeLeft5 != 0 && timeLeft5 != -1)
                 {
                     totalTime5 += timeLeft5;
-                    // System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
-                    // System.out.println("adding finish time for w3 "+ (globalTime + timeLeft5));
+                    // log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                    // log("adding finish time for w3 "+ (globalTime + timeLeft5));
                     fel.add(new MyEvent(5, globalTime + timeLeft5));                    
                 }
             }
@@ -223,7 +230,7 @@ class Main
                 timeLeft1 = ins1.work();
                 if(timeLeft1 != 0)
                 {
-             //       System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+             //       log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                     totalTime1 += timeLeft1;
                     fel.add(new MyEvent(1, globalTime + timeLeft1));
                 }
@@ -233,34 +240,46 @@ class Main
                 timeLeft2= ins2.work();
                 if(timeLeft2 != 0)
                 {
-                 //   System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+                 //   log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                     totalTime2 += timeLeft2;
                     fel.add(new MyEvent(2, globalTime + timeLeft2));
                 }
             }
 
+
+            //populate the histograms of each buffer occupancy
             histogram1.put(globalTime, b1.getSize());
             histogram2.put(globalTime, b2.getSize());
             histogram3.put(globalTime, b3.getSize());
             histogram4.put(globalTime, b4.getSize());
             histogram5.put(globalTime, b5.getSize());
 
-            System.out.println(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
+            log(df.format(globalTime)+": Future Event List"+ fel);
+            log("Buffer contents --> buffer1: " + b1.getSize()+" buffer2:"+b2.getSize()+" buffer3:"+b3.getSize()+" buffer4:"+b4.getSize()+" buffer5:"+b5.getSize());
+            log("");
             
         }
-        DecimalFormat df = new DecimalFormat("####0.00");
-        System.out.println("Total Busy Percentage: " + df.format(100*totalTime1/globalTime) + " "+ df.format(100*totalTime2/globalTime) + " "+ df.format(100*totalTime3/globalTime)
-         + " "+ df.format(100*totalTime4/globalTime) + " "+ df.format(100*totalTime5/globalTime));
-
+        
         BigDecimal BigglobalTime = new BigDecimal(globalTime);
-        System.out.println("avarage buffer occupancy: "+ areaUnderHistogram(histogram1).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " "
-        + areaUnderHistogram(histogram2).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " "+ areaUnderHistogram(histogram3).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " "
-        + areaUnderHistogram(histogram4).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " " + areaUnderHistogram(histogram5).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) );
 
-        System.out.println("production "+ ins1.index + " "+ ins2.index2 + " "+ ins2.index3 + " "+ w1.index + " " + w2.index +" " + w3.index);
-        System.out.println("Buffer contents" + b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
-        System.out.println("Currently blocked" + (timeLeft1==0?1:0) + " "+ (timeLeft2==0?1:0) + " "+ (timeLeft3==0?1:0) + " "
-        + (timeLeft4==0?1:0) + " "+ (timeLeft5==0?1:0) + " " );
+        
+        log("Total Busy Percentage --> Insector1:" + df.format(100*totalTime1/globalTime) + "  Insector2:"+ df.format(100*totalTime2/globalTime) 
+        + " WorkStation1:"+ df.format(100*totalTime3/globalTime)+ " WorkStation2:"+ df.format(100*totalTime4/globalTime) + " WorkStation3:"
+        + df.format(100*totalTime5/globalTime));
+
+        
+        log("avarage buffer occupancy --> Buffer1:"+ areaUnderHistogram(histogram1).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " Buffer2:"
+        + areaUnderHistogram(histogram2).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " Buffer3:"+ areaUnderHistogram(histogram3).divide(BigglobalTime,4, RoundingMode.HALF_DOWN)
+         + " Buffer4:"+ areaUnderHistogram(histogram4).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) 
+         + " Buffer5:" + areaUnderHistogram(histogram5).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) );
+
+        log("production --> Component1:"+ (1+ins1.index) + " Component2:"+ (1+ins2.index2) + " Component3:"+ (1+ins2.index3)
+        + " Product1:"+ (w1.index+1) + " Product2:" + (1+w2.index) +" Product3:" + (1+w3.index));
+        log("Final Buffer contents --> buffer1: " + b1.getSize()+" buffer2:"+b2.getSize()+" buffer3:"+b3.getSize()+" buffer4:"+b4.getSize()+" buffer5:"+b5.getSize());
+        log("Final entities blocked --> Inspector1:" + (timeLeft1==0?"yes":"no") + " Inspector2:"+ (timeLeft2==0?"yes":"no") + " Worstation1:"+ (timeLeft3==0?"yes":"no") 
+        + " Worstation2:"+ (timeLeft4==0?"yes":"no") + " Worstation3:"+ (timeLeft5==0?"yes":"no"));
+
+        
     }
 
     static BigDecimal areaUnderHistogram(Map<Double, Integer> histogram)
@@ -279,5 +298,12 @@ class Main
         } 
         return area;
 
+    }
+    public static void log(String s) throws IOException
+    {
+        Main.myWriter = new FileWriter("logs.txt", true);
+        myWriter.write(s+"\n");
+        myWriter.close();
+        
     }
 }

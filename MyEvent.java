@@ -21,7 +21,7 @@ public class MyEvent
     }
     public String toString()
     {
-        return (this.type == 1?"Ins1":this.type == 2?"Ins2":this.type == 3?"w1":this.type == 4?"w2":"w3") + " for time:"+ this.time;
+        return (this.type == 1?"Ins1":this.type == 2?"Ins2":this.type == 3?"w1":this.type == 4?"w2":"w3") + " for time:"+ Main.df.format(this.time);
     }
     
 }
