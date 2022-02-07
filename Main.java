@@ -263,22 +263,33 @@ class Main
         BigDecimal BigglobalTime = new BigDecimal(globalTime);
 
         
-        log("Total Busy Percentage --> Insector1:" + df.format(100*totalTime1/globalTime) + "  Insector2:"+ df.format(100*totalTime2/globalTime) 
-        + " WorkStation1:"+ df.format(100*totalTime3/globalTime)+ " WorkStation2:"+ df.format(100*totalTime4/globalTime) + " WorkStation3:"
+        log("Total Busy Percentage: \n\tInsector1: " + df.format(100*totalTime1/globalTime) + " | Insector2: "+ df.format(100*totalTime2/globalTime) 
+        + " | WorkStation1: "+ df.format(100*totalTime3/globalTime)+ " | WorkStation2: "+ df.format(100*totalTime4/globalTime) + " | WorkStation3: "
         + df.format(100*totalTime5/globalTime));
-
+        log("");
         
-        log("avarage buffer occupancy --> Buffer1:"+ areaUnderHistogram(histogram1).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " Buffer2:"
-        + areaUnderHistogram(histogram2).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " Buffer3:"+ areaUnderHistogram(histogram3).divide(BigglobalTime,4, RoundingMode.HALF_DOWN)
-         + " Buffer4:"+ areaUnderHistogram(histogram4).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) 
-         + " Buffer5:" + areaUnderHistogram(histogram5).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) );
+        log("avarage buffer occupancy: \n\tBuffer1: "+ areaUnderHistogram(histogram1).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " | Buffer2: "
+        + areaUnderHistogram(histogram2).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " | Buffer3: "+ areaUnderHistogram(histogram3).divide(BigglobalTime,4, RoundingMode.HALF_DOWN)
+         + " | Buffer4: "+ areaUnderHistogram(histogram4).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) 
+         + " | Buffer5: " + areaUnderHistogram(histogram5).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) );
+         log("");
 
-        log("production --> Component1:"+ (1+ins1.index) + " Component2:"+ (1+ins2.index2) + " Component3:"+ (1+ins2.index3)
-        + " Product1:"+ (w1.index+1) + " Product2:" + (1+w2.index) +" Product3:" + (1+w3.index));
-        log("Final Buffer contents --> buffer1: " + b1.getSize()+" buffer2:"+b2.getSize()+" buffer3:"+b3.getSize()+" buffer4:"+b4.getSize()+" buffer5:"+b5.getSize());
-        log("Final entities blocked --> Inspector1:" + (timeLeft1==0?"yes":"no") + " Inspector2:"+ (timeLeft2==0?"yes":"no") + " Worstation1:"+ (timeLeft3==0?"yes":"no") 
-        + " Worstation2:"+ (timeLeft4==0?"yes":"no") + " Worstation3:"+ (timeLeft5==0?"yes":"no"));
+        log("production \n\tComponent1: "+ (1+ins1.index) + " | Component2: "+ (1+ins2.index2) + " | Component3: "+ (1+ins2.index3)
+        + " | Product1: "+ (w1.index+1) + " | Product2: " + (1+w2.index) +" | Product3: " + (1+w3.index));
+        log("");
+        
+        log("Throuput \n\tComponent1: "+ df.format((1+ins1.index)/(globalTime/60)) + " | Component2: "+ df.format((1+ins2.index2)/(globalTime/60)) 
+        + " | Component3: "+ df.format((1+ins2.index3)/(globalTime/60)) + " | Product1: "+ df.format((w1.index+1)/(globalTime/60)) 
+        + " | Product2: " + df.format((1+w2.index)/(globalTime/60)) +" | Product3: " + df.format((1+w3.index)/(globalTime/60)));
+        log("");
 
+        log("Final Buffer contents \n\tbuffer1: " + b1.getSize()+" | buffer2: "+b2.getSize()+" | buffer3: "+b3.getSize()+" | buffer4: "+b4.getSize()
+        +" | buffer5: "+b5.getSize());
+        log("");
+
+        log("Final entities blocked \n\tInspector1: " + (timeLeft1==0?"yes":"no") + " | Inspector2: "+ (timeLeft2==0?"yes":"no") + " | Worstation1: "
+        + (timeLeft3==0?"yes":"no") + " | Worstation2: "+ (timeLeft4==0?"yes":"no") + " | Worstation3: "+ (timeLeft5==0?"yes":"no"));
+        log("");
         
     }
 
