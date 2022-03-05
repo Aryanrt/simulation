@@ -42,20 +42,40 @@ def calculateX2(observed,expeted,size):
         x2 = x2 + pow((observed[i]-expeted[i]),2)/expeted[i];
     return round(x2,2);
 
+def generateRandomNumbers():
+    a=21;
+    c=31;
+    m=100;
+    digits=[0]*300;
+    digits[0]=35;
+
+    for i in range(1,300):
+        digits[i]=(a*digits[i-1]+c)%m;
+    for i in range(0,300):
+        digits[i] = round(digits[i]/m,2);
+
+    return digits;
+
 def plotQQExp(data,name):
-    dist = ot.Exponential(1/calulateWeightedMean(data));
-    x = dist.getSample(300);
-    x = np.random.exponential(calulateWeightedMean(data),300);
+    # dist = ot.Exponential(1/calulateWeightedMean(data));
+    # x = dist.getSample(300);
+    # x = np.random.exponential(calulateWeightedMean(data),300);
+    generatedSample= [0]*300;
+    landa= 1/np.mean(data);
+    randomNums = generateRandomNumbers();
+    for i in range(0,300):
+        generatedSample[i] = (-1/landa)* np.log(1-randomNums[i]);
+    x= generatedSample;
     maxSample=0;
     for i in range(0,300):
-        if maxSample < x[i]:
-            maxSample= x[i];
+        if maxSample < generatedSample[i]:
+            maxSample= generatedSample[i];
     
     minSample= maxSample;
     index=-1;
     for i in range(0,300):
-        if minSample > x[i]:
-            minSample= x[i];
+        if minSample > generatedSample[i]:
+            minSample= generatedSample[i];
             index = i;
     width = (max(max(data), maxSample)-(min(min(data), minSample))) /18;
     # widths = [0]*18;
@@ -78,7 +98,7 @@ def plotQQExp(data,name):
     
     for i in range (0,size):
         for j in range(0,300):
-            if x[j] >= i * width + minData and x[j]< (i+1) * width + minData:
+            if generatedSample[j] >= i * width + minData and generatedSample[j]< (i+1) * width + minData:
                 distBin[i] = distBin[i] + 1;
             if data[j] >= i * width + minData and data[j] < (i+1) * width + minData:
                 sampleBin[i] = sampleBin[i] + 1;
@@ -87,12 +107,12 @@ def plotQQExp(data,name):
     
     x2 = calculateX2(sampleBin, distBin,size);
 
-    # plt.clf();
-    # plt.plot(sampleBin, distBin);
-    # xpoints = ypoints = plt.xlim();
-    # plt.plot(xpoints, ypoints, linestyle='--', color='k', lw=3, scalex=False, scaley=False);
-    # plt.title(name+'-QQ-Exponential \n with x2= '+str(x2));
-    # plt.savefig(name+'-QQ-EXP.png');
+    plt.clf();
+    plt.plot(sampleBin, distBin);
+    xpoints = ypoints = plt.xlim();
+    plt.plot(xpoints, ypoints, linestyle='--', color='k', lw=3, scalex=False, scaley=False);
+    plt.title(name+'-QQ-Exponential \n with x2= '+str(x2));
+    plt.savefig(name+'-QQ-EXP.png');
     return str(x2);
 
 def plotQQGeom(data,name):
@@ -185,11 +205,12 @@ servinsp23 = np.loadtxt( 'servinsp23.dat' )
 ws1 = np.loadtxt( 'ws1.dat' )
 ws2 = np.loadtxt( 'ws2.dat' )
 ws3 = np.loadtxt( 'ws3.dat' )
-
+generateRandomNumbers();
 ot.RandomGenerator.SetSeed(77)
 
 # Plot histograms with 18 bins
 binSize= round(sqrt(300).real);
+
 plotHistograms(servinsp1,'servinsp1');
 plotHistograms(servinsp22,'servinsp22');
 plotHistograms(servinsp23,'servinsp23');
