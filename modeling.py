@@ -35,6 +35,7 @@ def calulateWeightedMean(data):
     return binMean;
 
 def calculateX2(observed,expeted,size):
+
     x2=0;
     for i in range(0,size):
         if expeted[i] == 0:
@@ -42,25 +43,53 @@ def calculateX2(observed,expeted,size):
         x2 = x2 + pow((observed[i]-expeted[i]),2)/expeted[i];
     return round(x2,2);
 
+a=71;
+c=17;
+m=pow(2,8)+1;
+digits=[0]*600000;
+digits[0]=7;
+counter=0;
+
 def generateRandomNumbers():
-    a=21;
-    c=31;
-    m=100;
-    digits=[0]*300;
-    digits[0]=35;
 
-    for i in range(1,300):
-        digits[i]=(a*digits[i-1]+c)%m;
+    global a,c,m,digits,counter;
+    generatedNums=300*[0];
+
+    for i in range(1,301):
+        digits[counter*300+i]=(a*digits[counter*300+i-1]+c)%m;
+        generatedNums[i-1]=digits[counter*300+i]
+      
     for i in range(0,300):
-        digits[i] = round(digits[i]/m,2);
+        generatedNums[i] = round(generatedNums[i]/m,6);
+    counter = counter + 1;
 
-    return digits;
+    return generatedNums;
+
+def testForUnifomity(sample):
+    # test for 30 bins
+    observedBins=30*[0];
+    minn=min(sample);
+    maxx=max(sample);
+    width=(maxx-minn)/30;
+    for i in range (0,30):
+        for j in range(0,300):
+            if sample[j] >= i * width + minn and sample[j]< (i+1) * width + minn:
+                observedBins[i] = observedBins[i] + 1;
+    
+    expectedBins=30*[10];
+    observedBins[29] = observedBins[29] + 300-sum(observedBins);
+    print('Generated R:'+str(observedBins)+'\nExpected R:'+str(expectedBins));
+    print('For 30 Bins X2 of generated numbers(R), compare to uniform distribution is '+str(calculateX2(observedBins, expectedBins,30)));
+
+    return observedBins;
 
 def plotQQExp(data,name):
 
     generatedSample= [0]*300;
     landa= 1/np.mean(data);
     randomNums = generateRandomNumbers();
+    testForUnifomity(randomNums);
+
     for i in range(0,300):
         generatedSample[i] = (-1/landa)* np.log(1-randomNums[i]);
 
@@ -80,12 +109,14 @@ def plotQQExp(data,name):
     if name=="servinsp1" or name=="servinsp22":
         size =9;
     if name=="servinsp23":
-        size =13;
-    if name=="ws1" or name=="ws2":
+        size =15;
+    if name=="ws1":
         size =12;
+    if name=="ws2":
+        size=17;
     if name=="ws3":
-        size =11;
-    width = (max(max(data), maxSample)-(min(min(data), minSample))) /size;
+        size =14;
+    width = (max(max(data), maxSample)-(min(min(data), minSample))) /18;
     minData = (min(min(data), minSample));
 
     sampleBin = [0] * size;
@@ -101,6 +132,13 @@ def plotQQExp(data,name):
     sampleBin[size-1] = 300 - sum(sampleBin);
     
     x2 = calculateX2(sampleBin, distBin,size);
+    print('Entity\t\t',name);
+    print('size\t\t',len(sampleBin));
+    print('observed\t',sampleBin);
+    print('expectred\t',distBin);
+    print('X2\t\t', x2);
+    print('------------------------------------------');
+    
 
     plt.clf();
     plt.plot(sampleBin, distBin);
@@ -132,13 +170,15 @@ def plotQQGeom(data,name):
     if name=="servinsp1" or name=="servinsp22":
         size =9;
     if name=="servinsp23":
-        size =13;
-    if name=="ws1" or name=="ws2":
+        size =15;
+    if name=="ws1":
         size =12;
+    if name=="ws2":
+        size=17;
     if name=="ws3":
-        size =11;
+        size =14;
 
-    width = (max(max(data), maxSample)-(min(min(data), minSample))) /size;
+    width = (max(max(data), maxSample)-(min(min(data), minSample))) /18;
     minData = (min(min(data), minSample));
     
 
@@ -171,8 +211,6 @@ servinsp23 = np.loadtxt( 'servinsp23.dat' )
 ws1 = np.loadtxt( 'ws1.dat' )
 ws2 = np.loadtxt( 'ws2.dat' )
 ws3 = np.loadtxt( 'ws3.dat' )
-generateRandomNumbers();
-ot.RandomGenerator.SetSeed(77)
 
 # Plot histograms with 18 bins
 binSize= round(sqrt(300).real);
