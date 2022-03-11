@@ -7,6 +7,11 @@ import scipy.stats as stats
 from scipy.stats import geom
 import openturns as ot
 from openturns.viewer import View
+import sys
+
+file = open('modeling-logs.txt', 'w') ;
+sys.stdout =file;
+
 
 def plotHistograms(data, name):
     plt.clf();
@@ -106,7 +111,7 @@ def plotQQExp(data,name):
     generatedSample= [0]*300;
     landa= 1/np.mean(data);
     randomNums = generateRandomNumbers();
-    print(name+'\n---------------------------------');
+    print('*******************\n\t'+name+'\n*******************\n');
     print('Generated Random Numbers:');
     print(randomNums);
     print('------------');
@@ -172,7 +177,7 @@ def plotQQExp(data,name):
     print('observed Bin\n',sampleBin);
     print('expectred Bin\n',distBin);
     print('X2 calcualted\n', x2);
-    print('------------------------------------------');
+    print('------------------------------------------------------------------------------------------------------------\n\n');
     
 
     plt.clf();
@@ -184,59 +189,59 @@ def plotQQExp(data,name):
     return str(x2);
 
 # --------------------------------------------------------------------------------------------------------
-def plotQQGeom(data,name):
+# def plotQQGeom(data,name):
 
-    generatedSample= [0]*300;
-    p= 1/np.mean(data);
-    randomNums = generateRandomNumbers();
-    for i in range(0,300):
-        generatedSample[i] = np.log(1-randomNums[i])/ np.log(1-p);
+#     generatedSample= [0]*300;
+#     p= 1/np.mean(data);
+#     randomNums = generateRandomNumbers();
+#     for i in range(0,300):
+#         generatedSample[i] = np.log(1-randomNums[i])/ np.log(1-p);
     
-    maxSample=0;
-    for i in range(0,300):
-        if maxSample < generatedSample[i]:
-            maxSample= generatedSample[i];
+#     maxSample=0;
+#     for i in range(0,300):
+#         if maxSample < generatedSample[i]:
+#             maxSample= generatedSample[i];
     
-    minSample= maxSample;
-    for i in range(0,300):
-        if minSample > generatedSample[i]:
-            minSample= generatedSample[i];
+#     minSample= maxSample;
+#     for i in range(0,300):
+#         if minSample > generatedSample[i]:
+#             minSample= generatedSample[i];
 
-    if name=="servinsp1" or name=="servinsp22":
-        size =9;
-    if name=="servinsp23":
-        size =15;
-    if name=="ws1":
-        size =12;
-    if name=="ws2":
-        size=17;
-    if name=="ws3":
-        size =14;
+#     if name=="servinsp1" or name=="servinsp22":
+#         size =9;
+#     if name=="servinsp23":
+#         size =15;
+#     if name=="ws1":
+#         size =12;
+#     if name=="ws2":
+#         size=17;
+#     if name=="ws3":
+#         size =14;
 
-    width = (max(max(data), maxSample)-(min(min(data), minSample))) /18;
-    minData = (min(min(data), minSample));
+#     width = (max(max(data), maxSample)-(min(min(data), minSample))) /18;
+#     minData = (min(min(data), minSample));
     
 
-    sampleBin = [0] * size;
-    distBin = [0] * size;
+#     sampleBin = [0] * size;
+#     distBin = [0] * size;
     
-    for i in range (0,size):
-        for j in range(0,300):
-            if generatedSample[j] >= i * width + minData and generatedSample[j]< (i+1) * width + minData:
-                distBin[i] = distBin[i] + 1;
-            if data[j] >= i * width + minData and data[j] < (i+1) * width + minData:
-                sampleBin[i] = sampleBin[i] + 1;
-    distBin[size-1] = 300 - sum(distBin);
-    sampleBin[size-1] = 300 - sum(sampleBin);
+#     for i in range (0,size):
+#         for j in range(0,300):
+#             if generatedSample[j] >= i * width + minData and generatedSample[j]< (i+1) * width + minData:
+#                 distBin[i] = distBin[i] + 1;
+#             if data[j] >= i * width + minData and data[j] < (i+1) * width + minData:
+#                 sampleBin[i] = sampleBin[i] + 1;
+#     distBin[size-1] = 300 - sum(distBin);
+#     sampleBin[size-1] = 300 - sum(sampleBin);
     
-    x2 = calculateX2(sampleBin, distBin,size);
-    plt.clf();
-    plt.plot(sampleBin, distBin)
-    xpoints = ypoints = plt.xlim()
-    plt.plot(xpoints, ypoints, linestyle='--', color='k', lw=3, scalex=False, scaley=False)
-    plt.title(name+'-QQ-Geometric \n with x2= '+str(x2));
-    plt.savefig(name+'-QQ-GEO.png')
-    return str(x2);
+#     x2 = calculateX2(sampleBin, distBin,size);
+#     plt.clf();
+#     plt.plot(sampleBin, distBin)
+#     xpoints = ypoints = plt.xlim()
+#     plt.plot(xpoints, ypoints, linestyle='--', color='k', lw=3, scalex=False, scaley=False)
+#     plt.title(name+'-QQ-Geometric \n with x2= '+str(x2));
+#     plt.savefig(name+'-QQ-GEO.png')
+#     return str(x2);
 
 
 # load data
@@ -265,28 +270,28 @@ aw1 = plotQQExp(ws1,'ws1');
 aw2 = plotQQExp(ws2,'ws2');
 aw3 = plotQQExp(ws3,'ws3');
 
-# QQ for Geomteric
-bs1 = plotQQGeom(servinsp1,'servinsp1');
-bs22 = plotQQGeom(servinsp22,'servinsp22');
-bs23 = plotQQGeom(servinsp23,'servinsp23');
-bw1 = plotQQGeom(ws1,'ws1');
-bw2 = plotQQGeom(ws2,'ws2');
-bw3 = plotQQGeom(ws2,'ws3');
+# # QQ for Geomteric
+# bs1 = plotQQGeom(servinsp1,'servinsp1');
+# bs22 = plotQQGeom(servinsp22,'servinsp22');
+# bs23 = plotQQGeom(servinsp23,'servinsp23');
+# bw1 = plotQQGeom(ws1,'ws1');
+# bw2 = plotQQGeom(ws2,'ws2');
+# bw3 = plotQQGeom(ws2,'ws3');
 
-
-print('Exponential Chi Square Restlts:');
+print('\n------------------');
+print('Summery\nExponential Chi Square Restlts:');
 print('\nins1\t'+as1);
 print('ins22\t'+as22);
 print('ins23\t'+as23);
 print('ws1\t'+aw1);
 print('ws2\t'+aw2);
 print('ws3\t'+aw3);
-print('\n------------------');
-print('Geomteric Chi Square Restlts:');
-print('\nins1\t'+bs1);
-print('ins22\t'+bs22);
-print('ins23\t'+bs23);
-print('ws1\t'+bw1);
-print('ws2\t'+bw2);
-print('ws3\t'+bw3);
-print('\n------------------');
+
+# print('Geomteric Chi Square Restlts:');
+# print('\nins1\t'+bs1);
+# print('ins22\t'+bs22);
+# print('ins23\t'+bs23);
+# print('ws1\t'+bw1);
+# print('ws2\t'+bw2);
+# print('ws3\t'+bw3);
+# print('\n------------------');
