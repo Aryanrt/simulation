@@ -112,6 +112,10 @@ def plotQQExp(data,name):
     landa= 1/np.mean(data);
     randomNums = generateRandomNumbers();
     print('*******************\n\t'+name+'\n*******************\n');
+    print('Parameter Estimation:')
+    print('mean = '+str(round(np.mean(data),2)));
+    print('landa = '+str(round(landa,2)));
+    print('------------');
     print('Generated Random Numbers:');
     print(randomNums);
     print('------------');
@@ -130,10 +134,7 @@ def plotQQExp(data,name):
     for i in range(0,300):
         generatedSample[i] = (-1/landa)* np.log(1-randomNums[i]);
 
-    print('Generatated Exponential Distribution:');
-    print('------------');
-    print(list(np.around(np.array(generatedSample),2)));
-    print('------------');
+
     # get min and max
     maxSample=0;
     for i in range(0,300):
@@ -150,13 +151,13 @@ def plotQQExp(data,name):
     if name=="servinsp1" or name=="servinsp22":
         size =9;
     if name=="servinsp23":
-        size =15;
-    if name=="ws1":
-        size =12;
-    if name=="ws2":
-        size=17;
-    if name=="ws3":
         size =14;
+    if name=="ws1":
+        size =10;
+    if name=="ws2":
+        size=12;
+    if name=="ws3":
+        size =12;
     width = (max(max(data), maxSample)-(min(min(data), minSample))) /18;
     minData = (min(min(data), minSample));
 
@@ -173,9 +174,19 @@ def plotQQExp(data,name):
     sampleBin[size-1] = 300 - sum(sampleBin);
     
     x2 = calculateX2(sampleBin, distBin,size);
-    print('size of bin\n',len(sampleBin));
-    print('observed Bin\n',sampleBin);
-    print('expectred Bin\n',distBin);
+    print('--------------------------------------------------------');
+    print('Goodness of Fit:');
+    print('Generatated(Expected) Exponential Distribution:');
+    print(np.round(np.array(generatedSample),2));
+    print('Observed samples:');
+    print(data);
+    print('------------');
+    print('size of bin chosen\n',len(sampleBin));
+    print('expectred Bin');
+    print(distBin);
+    print('observed Bin');
+    print('------------');    
+    print(sampleBin);
     print('X2 calcualted\n', x2);
     print('------------------------------------------------------------------------------------------------------------\n\n');
     
