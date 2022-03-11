@@ -43,13 +43,18 @@ def calculateX2(observed,expeted,size):
         x2 = x2 + pow((observed[i]-expeted[i]),2)/expeted[i];
     return round(x2,2);
 
-a=71;
-c=17;
+a=5 ;
+c=7;
 m=pow(2,8)+1;
 digits=[0]*600000;
-digits[0]=7;
+digits[0]=31;
 counter=0;
-
+# a=5 ;
+# c=7;
+# m=pow(2,8)+1;
+# digits=[0]*600000;
+# digits[0]=31;
+# counter=0;
 def generateRandomNumbers():
 
     global a,c,m,digits,counter;
@@ -60,39 +65,70 @@ def generateRandomNumbers():
         generatedNums[i-1]=digits[counter*300+i]
       
     for i in range(0,300):
-        generatedNums[i] = round(generatedNums[i]/m,6);
+        generatedNums[i] = round(generatedNums[i]/m,8);
     counter = counter + 1;
 
     return generatedNums;
 
-def testForUnifomity(sample):
+def testForUnifomity(sample,bins):
     # test for 30 bins
-    observedBins=30*[0];
+    observedBins=bins*[0];
     minn=min(sample);
     maxx=max(sample);
-    width=(maxx-minn)/30;
-    for i in range (0,30):
+    width=(maxx-minn)/bins;
+    for i in range (0,bins):
         for j in range(0,300):
             if sample[j] >= i * width + minn and sample[j]< (i+1) * width + minn:
                 observedBins[i] = observedBins[i] + 1;
     
-    expectedBins=30*[10];
-    observedBins[29] = observedBins[29] + 300-sum(observedBins);
-    print('Generated R:'+str(observedBins)+'\nExpected R:'+str(expectedBins));
-    print('For 30 Bins X2 of generated numbers(R), compare to uniform distribution is '+str(calculateX2(observedBins, expectedBins,30)));
+    expectedBins=bins*[300/bins];
+    observedBins[bins-1] = observedBins[bins-1] + 300-sum(observedBins);
+    print('For '+str(bins)+' Bins');
+    print('Generated R:\n'+str(observedBins)+'\nExpected R:\n'+str(expectedBins));
+    print('X2 of generated numbers, compare to uniform distribution is '+str(calculateX2(observedBins, expectedBins,bins)));
+    print('------------');
 
     return observedBins;
+
+def testAutoCorrelation(sample, m,i):
+    averagePhi=0;
+    k=0;
+    while (k+1)*m < 300:
+        averagePhi = averagePhi + sample[k*m+i]*sample[(k+1)*m+i];
+        k = k + 1;
+        
+    averagePhi = averagePhi / (1 + k) - 0.25;
+    sigmaPhi=sqrt(13*k+7).real/(12*(k+1));
+    print('testAutoCorrelation for (m= '+str(m)+',i='+str(i)+'):  '+ str(round(averagePhi/sigmaPhi,4)));
 
 def plotQQExp(data,name):
 
     generatedSample= [0]*300;
     landa= 1/np.mean(data);
     randomNums = generateRandomNumbers();
-    testForUnifomity(randomNums);
+    print(name+'\n---------------------------------');
+    print('Generated Random Numbers:');
+    print(randomNums);
+    print('------------');
+    print('Testing for Uniformity:');
+    print('------------');
+    testForUnifomity(randomNums,10);
+    testForUnifomity(randomNums,30);
+    testForUnifomity(randomNums,50);
+    print('Testing for AutoCorrelation:');
+    print('------------');
+    testAutoCorrelation(randomNums,1,0);
+    testAutoCorrelation(randomNums,5,0);
+    testAutoCorrelation(randomNums,10,0);
+    print('------------');
 
     for i in range(0,300):
         generatedSample[i] = (-1/landa)* np.log(1-randomNums[i]);
 
+    print('Generatated Exponential Distribution:');
+    print('------------');
+    print(list(np.around(np.array(generatedSample),2)));
+    print('------------');
     # get min and max
     maxSample=0;
     for i in range(0,300):
@@ -132,11 +168,10 @@ def plotQQExp(data,name):
     sampleBin[size-1] = 300 - sum(sampleBin);
     
     x2 = calculateX2(sampleBin, distBin,size);
-    print('Entity\t\t',name);
-    print('size\t\t',len(sampleBin));
-    print('observed\t',sampleBin);
-    print('expectred\t',distBin);
-    print('X2\t\t', x2);
+    print('size of bin\n',len(sampleBin));
+    print('observed Bin\n',sampleBin);
+    print('expectred Bin\n',distBin);
+    print('X2 calcualted\n', x2);
     print('------------------------------------------');
     
 
