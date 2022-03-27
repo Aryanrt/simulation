@@ -29,10 +29,15 @@ public class GraphPanel extends JPanel {
     private static final Stroke GRAPH_STROKE = new BasicStroke(2f);
     private int pointWidth = 4;
     private int numberYDivisions = 10;
-    private List<Double> scores;
+    private List<Double> scores=new ArrayList<Double>();
+    private Map<Double,Double> map;
 
-    public GraphPanel(List<Double> scores) {
-        this.scores = scores;
+    public GraphPanel(Map<Double,Double> map) {
+        this.map=new LinkedHashMap<Double,Double>();
+        this.map=map;
+        for(double key: map.keySet())
+            scores.add(map.get(key));
+        
     }
 
     @Override
@@ -45,12 +50,18 @@ public class GraphPanel extends JPanel {
         double yScale = ((double) getHeight() - 2 * padding - labelPadding) / (getMaxScore() - getMinScore());
 
         List<Point> graphPoints = new ArrayList<>();
-        for (int i = 0; i < scores.size(); i++) {
-            int x1 = (int) (i * xScale + padding + labelPadding);
-            int y1 = (int) ((getMaxScore() - scores.get(i)) * yScale + padding);
+        // for (int i = 0; i < scores.size(); i++) {
+        //     int x1 = (int) (i * xScale + padding + labelPadding);
+        //     int y1 = (int) ((getMaxScore() - scores.get(i)) * yScale + padding);
+        //     graphPoints.add(new Point(x1, y1));
+        // }
+        for(double key: map.keySet())
+        {
+            int x1 = (int) (key * xScale + padding + labelPadding);
+            int y1 = (int) ((getMaxScore() - map.get(key)) * yScale + padding);
             graphPoints.add(new Point(x1, y1));
-        }
-
+            
+        } 
         // draw white background
         g2.setColor(Color.WHITE);
         g2.fillRect(padding + labelPadding, padding, getWidth() - (2 * padding) - labelPadding, getHeight() - 2 * padding - labelPadding);
@@ -62,7 +73,7 @@ public class GraphPanel extends JPanel {
             int x1 = pointWidth + padding + labelPadding;
             int y0 = getHeight() - ((i * (getHeight() - padding * 2 - labelPadding)) / numberYDivisions + padding + labelPadding);
             int y1 = y0;
-            if (scores.size() > 0) {
+            if (map.size() > 0) {
                 g2.setColor(gridColor);
                 g2.drawLine(padding + labelPadding + 1 + pointWidth, y0, getWidth() - padding, y1);
                 g2.setColor(Color.BLACK);
@@ -75,13 +86,13 @@ public class GraphPanel extends JPanel {
         }
 
         // and for x axis
-        for (int i = 0; i < scores.size(); i++) {
-            if (scores.size() > 1) {
-                int x0 = i * (getWidth() - padding * 2 - labelPadding) / (scores.size() - 1) + padding + labelPadding;
+        for (int i = 0; i < map.size(); i++) {
+            if (map.size() > 1) {
+                int x0 = i * (getWidth() - padding * 2 - labelPadding) / (map.size() - 1) + padding + labelPadding;
                 int x1 = x0;
                 int y0 = getHeight() - padding - labelPadding;
                 int y1 = y0 - pointWidth;
-                if ((i % ((int) ((scores.size() / 20.0)) + 1)) == 0) {
+                if ((i % ((int) ((map.size() / 20.0)) + 1)) == 0) {
                     g2.setColor(gridColor);
                     g2.drawLine(x0, getHeight() - padding - labelPadding - 1 - pointWidth, x1, padding);
                     g2.setColor(Color.BLACK);
@@ -164,7 +175,7 @@ public class GraphPanel extends JPanel {
 //             scores.add((double) random.nextDouble() * maxScore);
 // //            scores.add((double) i);
 //         }
-        GraphPanel mainPanel = new GraphPanel(scores);
+        GraphPanel mainPanel = new GraphPanel(map);
         mainPanel.setPreferredSize(new Dimension(800, 600));
         JFrame frame = new JFrame("DrawGraph");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
