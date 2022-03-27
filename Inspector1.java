@@ -12,22 +12,24 @@ public class Inspector1 extends Inspector
     public boolean created =false;
     List<Double> serviceTime;
     public int index=0;
+    Generator generator;
 
     public Inspector1(List<Buffer> buffers) throws FileNotFoundException, IOException
     {
         this.serviceTime = new ArrayList<Double>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(new File("servinsp1.dat")))) 
-        {
-            String line;
-            int i=0;
-            while ((line = br.readLine()) != null) 
-            {
-                if (i++ == 300)
-                    break;
-                this.serviceTime.add(Double.parseDouble(line));
-            }
-        }
+        generator = new Generator(0.1);
+        // try (BufferedReader br = new BufferedReader(new FileReader(new File("servinsp1.dat")))) 
+        // {
+        //     String line;
+        //     int i=0;
+        //     while ((line = br.readLine()) != null) 
+        //     {
+        //         if (i++ == 300)
+        //             break;
+        //         this.serviceTime.add(Double.parseDouble(line));
+        //     }
+        // }
         this.buffers = buffers;
         this.timeLeft = 0;
         this.state =State.IDLE;
@@ -35,7 +37,9 @@ public class Inspector1 extends Inspector
     public double bootrap() throws IOException
     {
         // read from file or generate statistically
-        timeLeft = this.serviceTime.get(index++);
+        //timeLeft = this.serviceTime.get(index++);
+        index++;
+        timeLeft = this.generator.next();
         state = State.WORKING;
         this.created = true;
         
@@ -99,7 +103,9 @@ public class Inspector1 extends Inspector
             state = State.WORKING;
             
             // read from file or generate statistically
-            timeLeft = this.serviceTime.get(index++);
+            //timeLeft = this.serviceTime.get(index++);
+            index++;
+            timeLeft = this.generator.next();
         }
 
         //return 0 means blocked 

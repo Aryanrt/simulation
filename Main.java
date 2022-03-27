@@ -312,7 +312,7 @@ class Main
     }
     public static void log(String s) throws IOException
     {
-        Main.myWriter = new FileWriter("logs.txt", true);
+        Main.myWriter = new FileWriter("verification-logs.txt", true);
         myWriter.write(s+"\n");
         myWriter.close();
         

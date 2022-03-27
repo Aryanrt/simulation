@@ -15,21 +15,28 @@ public class WorkStation
     public boolean created=false;
     List<Double> serviceTime;
     public int index =0;
+    Generator generator;
 
     public WorkStation(List<Buffer> buffers, int id) throws FileNotFoundException, IOException
     {
-        this.serviceTime = new ArrayList<Double>();
-        try (BufferedReader br = new BufferedReader(new FileReader(new File("ws"+id+".dat")))) 
-        {
-            String line;
-            int i=0;
-            while ((line = br.readLine()) != null) 
-            {
-                if (i++ == 300)
-                    break;
-                this.serviceTime.add(Double.parseDouble(line));
-            }
-        }
+        if( id == 1)
+            generator = new Generator(0.22);
+        else if( id == 1)
+            generator = new Generator(0.09);
+        else
+            generator = new Generator(0.11);
+        // this.serviceTime = new ArrayList<Double>();
+        // try (BufferedReader br = new BufferedReader(new FileReader(new File("ws"+id+".dat")))) 
+        // {
+        //     String line;
+        //     int i=0;
+        //     while ((line = br.readLine()) != null) 
+        //     {
+        //         if (i++ == 300)
+        //             break;
+        //         this.serviceTime.add(Double.parseDouble(line));
+        //     }
+        // }
 
         this.buffers = buffers;
         this.id = id;
@@ -48,7 +55,9 @@ public class WorkStation
             {
                 buffers.get(0).removeComponent();
                 // read from file or generate statistically
-                this.timeLeft = this.serviceTime.get(index++);
+                //this.timeLeft = this.serviceTime.get(index++);
+                index++;
+                this.timeLeft = this.generator.next();
                 state=State.WORKING;
                 Main.log(Main.df.format(Main.globalTime)+": W1 starting");
             }
@@ -64,7 +73,9 @@ public class WorkStation
             buffers.get(0).removeComponent();
             buffers.get(1).removeComponent(); 
             // read from file or generate statistically
-            this.timeLeft = this.serviceTime.get(index++);
+            //this.timeLeft = this.serviceTime.get(index++);
+            index++;
+            this.timeLeft = this.generator.next();
             state=State.WORKING;
         }
         if( this.timeLeft != -1)
@@ -95,7 +106,9 @@ public class WorkStation
                 buffers.get(0).removeComponent();
                 
                 // read from file or generate statistically
-                this.timeLeft = this.serviceTime.get(this.index++);
+                //this.timeLeft = this.serviceTime.get(this.index++);
+                index++;
+                this.timeLeft = this.generator.next();
                 state=State.WORKING;
                 this.created =true;
             }
@@ -123,7 +136,9 @@ public class WorkStation
             buffers.get(0).removeComponent();
             buffers.get(1).removeComponent(); 
             // read from file or generate statistically
-            this.timeLeft = this.serviceTime.get(index++);
+            //this.timeLeft = this.serviceTime.get(index++);
+            index++;
+            this.timeLeft = this.generator.next();
             state=State.WORKING;
         }
 

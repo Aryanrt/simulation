@@ -15,33 +15,36 @@ class Inspector2 extends Inspector
     List<Double> serviceTime3;
     public int index2 =0;
     public int index3 =0;
+    Generator generator2, generator3;
 
     public Inspector2(List<Buffer> buffers, List<Component> components) throws FileNotFoundException, IOException
     {
-        this.serviceTime2 = new ArrayList<Double>();
-        try (BufferedReader br = new BufferedReader(new FileReader(new File("servinsp22.dat")))) 
-        {
-            String line;
-            int i=0;
-            while ((line = br.readLine()) != null) 
-            {
-                if (i++ == 300)
-                    break;
-                this.serviceTime2.add(Double.parseDouble(line));
-            }
-        }
-        this.serviceTime3 = new ArrayList<Double>();
-        try (BufferedReader br = new BufferedReader(new FileReader(new File("servinsp23.dat")))) 
-        {
-            String line;
-            int i=0;
-            while ((line = br.readLine()) != null) 
-            {
-                if (i++ == 300)
-                    break;
-                this.serviceTime3.add(Double.parseDouble(line));
-            }
-        }
+        generator2 = new Generator(0.06);
+        generator3 = new Generator(0.05);
+        // this.serviceTime2 = new ArrayList<Double>();
+        // try (BufferedReader br = new BufferedReader(new FileReader(new File("servinsp22.dat")))) 
+        // {
+        //     String line;
+        //     int i=0;
+        //     while ((line = br.readLine()) != null) 
+        //     {
+        //         if (i++ == 300)
+        //             break;
+        //         this.serviceTime2.add(Double.parseDouble(line));
+        //     }
+        // }
+        // this.serviceTime3 = new ArrayList<Double>();
+        // try (BufferedReader br = new BufferedReader(new FileReader(new File("servinsp23.dat")))) 
+        // {
+        //     String line;
+        //     int i=0;
+        //     while ((line = br.readLine()) != null) 
+        //     {
+        //         if (i++ == 300)
+        //             break;
+        //         this.serviceTime3.add(Double.parseDouble(line));
+        //     }
+        // }
 
         this.buffers = buffers;
         this.components = new ArrayList<Component>(components);
@@ -56,9 +59,17 @@ class Inspector2 extends Inspector
         state = State.WORKING;
         this.currentComponent= components.get(rand.nextInt(2));
         if(currentComponent.getName().equalsIgnoreCase("C2"))
-            this.timeLeft = this.serviceTime2.get(index2++);
+        {
+            //this.timeLeft = this.serviceTime2.get(index2++);
+            index2++;
+            this.timeLeft = this.generator2.next();
+        } 
         else
-            this.timeLeft = this.serviceTime3.get(index3++); 
+        {
+            //this.timeLeft = this.serviceTime3.get(index3++); 
+            this.timeLeft = this.generator3.next(); 
+            index3++;
+        }
 
         Main.log(Main.df.format(Main.globalTime)+": ins2 starting to inspect "+ this.currentComponent.getName());
         this.created = true;
@@ -85,7 +96,9 @@ class Inspector2 extends Inspector
             Main.log(Main.df.format(Main.globalTime)+": ins2 starting to inspect "+ this.currentComponent.getName());
             this.state = State.WORKING;
             // read from file or generate statistically
-            this.timeLeft = this.serviceTime2.get(index2++);
+            //this.timeLeft = this.serviceTime2.get(index2++);
+            index2++;
+            this.timeLeft = this.generator2.next();
             
             this.created = true;
        }
@@ -100,7 +113,9 @@ class Inspector2 extends Inspector
             this.buffers.get(1).addComponent();
             this.state = State.WORKING;
             // read from file or generate statistically
-            this.timeLeft = this.serviceTime3.get(index3++);
+            //this.timeLeft = this.serviceTime3.get(index3++);
+            index3=0;
+            this.timeLeft = this.generator3.next();
             this.created = true;
         }
 
