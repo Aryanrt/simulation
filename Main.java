@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
+
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -80,6 +80,12 @@ class Main
         Map<Double, Integer> histogram3 = new LinkedHashMap<Double, Integer>();
         Map<Double, Integer> histogram4 = new LinkedHashMap<Double, Integer>();
         Map<Double, Integer> histogram5 = new LinkedHashMap<Double, Integer>();
+        Map<Double, Double> throughputs1 = new LinkedHashMap<Double, Double>();
+        Map<Double, Double> throughputs2 = new LinkedHashMap<Double, Double>();
+        Map<Double, Double> throughputs3 = new LinkedHashMap<Double, Double>();
+        Map<Double, Double> throughputs4 = new LinkedHashMap<Double, Double>();
+        Map<Double, Double> throughputs5 = new LinkedHashMap<Double, Double>();
+        
         
         //create the log file or clear it
         File file = new File("logs.txt");
@@ -103,6 +109,7 @@ class Main
                 log("");
                 break;
             }    
+
             double min = 10000 + globalTime;
             for(MyEvent e: fel)
                 min = Math.min(min, e.getTime());
@@ -254,6 +261,13 @@ class Main
             histogram4.put(globalTime, b4.getSize());
             histogram5.put(globalTime, b5.getSize());
 
+            //update throughputs
+            throughputs1.put(globalTime, (1+ins1.index)/(globalTime/60));
+            throughputs2.put(globalTime, (1+ins2.index2 + 1+ins2.index3)/(globalTime/60));
+            throughputs3.put(globalTime, (1+w1.index)/(globalTime/60));
+            throughputs4.put(globalTime, (1+w2.index)/(globalTime/60));
+            throughputs5.put(globalTime, (1+w3.index)/(globalTime/60));
+
             log(df.format(globalTime)+": Future Event List"+ fel);
             log("Buffer contents --> buffer1: " + b1.getSize()+" buffer2:"+b2.getSize()+" buffer3:"+b3.getSize()+" buffer4:"+b4.getSize()+" buffer5:"+b5.getSize());
             log("");
@@ -290,6 +304,11 @@ class Main
         log("Final entities blocked \n\tInspector1: " + (timeLeft1==0?"yes":"no") + " | Inspector2: "+ (timeLeft2==0?"yes":"no") + " | Worstation1: "
         + (timeLeft3==0?"yes":"no") + " | Worstation2: "+ (timeLeft4==0?"yes":"no") + " | Worstation3: "+ (timeLeft5==0?"yes":"no"));
         log("");
+
+        // final XYSeriesDemo demo = new XYSeriesDemo("XY Series Demo");
+        // demo.pack();
+        // RefineryUtilities.centerFrameOnScreen(demo);
+        // demo.setVisible(true);
         
     }
 
@@ -312,7 +331,7 @@ class Main
     }
     public static void log(String s) throws IOException
     {
-        Main.myWriter = new FileWriter("verification-logs.txt", true);
+        Main.myWriter = new FileWriter("final.logs", true);
         myWriter.write(s+"\n");
         myWriter.close();
         
