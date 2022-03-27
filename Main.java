@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
+import javax.swing.SwingUtilities;
 
 class Main
 {
@@ -305,10 +305,12 @@ class Main
         + (timeLeft3==0?"yes":"no") + " | Worstation2: "+ (timeLeft4==0?"yes":"no") + " | Worstation3: "+ (timeLeft5==0?"yes":"no"));
         log("");
 
-        // final XYSeriesDemo demo = new XYSeriesDemo("XY Series Demo");
-        // demo.pack();
-        // RefineryUtilities.centerFrameOnScreen(demo);
-        // demo.setVisible(true);
+        //GraphPanel panel = new GraphPanel();
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                GraphPanel.createAndShowGui(throughputs1);
+            }
+         });
         
     }
 
