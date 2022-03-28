@@ -17,7 +17,7 @@ import javax.swing.SwingUtilities;
 class Main
 {
     public static double globalTime = 0;
-    public static DecimalFormat df = new DecimalFormat("####0.00");
+    public static DecimalFormat df = new DecimalFormat("####0.0000");
     static FileWriter myWriter;
     static Map<Double, Double> throughputs1 = new LinkedHashMap<Double, Double>();
     static Map<Double, Double> throughputs2 = new LinkedHashMap<Double, Double>();
@@ -107,7 +107,7 @@ class Main
         else
         {
             arrivals3.add(globalTime);
-            fel.add(new MyEvent(3, globalTime + timeLeft2));
+            fel.add(new MyEvent(2, globalTime + timeLeft2));
         }
 
         totalTime1 += timeLeft1;
@@ -140,8 +140,8 @@ class Main
                 throughputs4 = new LinkedHashMap<Double, Double>();
                 throughputs5 = new LinkedHashMap<Double, Double>();
                 totallArrivals1 = new ArrayList<Double>();
-                // totallArrivals2 = new ArrayList<Double>();
-                // totallArrivals3 = new ArrayList<Double>();
+                totallArrivals2 = new ArrayList<Double>();
+                totallArrivals3 = new ArrayList<Double>();
                 // List<Double> arrivals1 = new ArrayList<Double>();
                 // List<Double> arrivals2 = new ArrayList<Double>();
                 // List<Double> arrivals3 = new ArrayList<Double>();
@@ -173,10 +173,12 @@ class Main
             //     log("");
             //     break;
             // }    
-
-            double min = 10000 + globalTime;
+            
+            double min=1000000;
             for(MyEvent e: fel)
                 min = Math.min(min, e.getTime());
+            
+            globalTime = min;
             
 
             // System.out.println(arrivals1.size());
@@ -333,6 +335,7 @@ class Main
                     timeLeft5 = w3.bootstrap();
                 else
                     timeLeft5 = w3.produce();
+                log("timeleft5"+timeLeft5);
                 if(timeLeft5 != 0 && timeLeft5 != -1)
                 {
                     // timeInSystem1 += timeLeft5 - arrivals1.get(arrivals1.size()-1);
@@ -360,6 +363,7 @@ class Main
             if(timeLeft2 == 0)
             {
                 timeLeft2= ins2.work();
+                log(timeLeft2+"");
                 if(timeLeft2 != 0)
                 {
                     if( ins2.currentComponent.getName().equals("c2"))
@@ -450,6 +454,11 @@ class Main
             "\tComponent3: " + (totallArrivals3.size()/(totallArrivals3.get(totallArrivals3.size()-1)-totallArrivals3.get(0))) );
         log("");
 
+        log("Expected Avg # ins system \n\tComponent1: " + ( ((timeInSystem1)/(w1.index+w2.index+w3.index))*(totallArrivals1.size()/(totallArrivals1.get(totallArrivals1.size()-1)-totallArrivals1.get(0)))) + 
+        "\tComponent2: " + (((timeInSystem2)/w2.index)*(totallArrivals2.size()/(totallArrivals2.get(totallArrivals2.size()-1)-totallArrivals2.get(0)))) + 
+            "\tComponent3: " + (( (timeInSystem3)/w3.index)*(totallArrivals3.size()/(totallArrivals3.get(totallArrivals3.size()-1)-totallArrivals3.get(0))) ));
+        log("");
+
         log("avarage # in system: \n\tComponent1: "+ areaUnderHistogram(histogramNumberInSystem1).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " | Component2: "
         + areaUnderHistogram(histogramNumberInSystem2).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " | Component3: "+ areaUnderHistogram(histogramNumberInSystem3).divide(BigglobalTime,4, RoundingMode.HALF_DOWN));
          log("");
@@ -482,7 +491,7 @@ class Main
     }
     public static void log(String s) throws IOException
     {
-        Main.myWriter = new FileWriter("final.logs", true);
+        Main.myWriter = new FileWriter("little-low.logs", true);
         myWriter.write(s+"\n");
         myWriter.close();
         

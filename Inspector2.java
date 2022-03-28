@@ -71,7 +71,7 @@ class Inspector2 extends Inspector
             index3++;
         }
 
-       // Main.log(Main.df.format(Main.globalTime)+": ins2 starting to inspect "+ this.currentComponent.getName());
+        Main.log(Main.df.format(Main.globalTime)+": ins2 starting to inspect "+ this.currentComponent.getName());
         this.prev = new Component(currentComponent.getName());
         this.created = true;
         return timeLeft;        

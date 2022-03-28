@@ -20,7 +20,7 @@ public class Generator
     {  
         double result;
         result = (-1/landa) * Math.log(1-nextRandomNumber()/m);
-        return result;
+        return Math.max(result,0.0001);
     }
 
 }

@@ -43,7 +43,7 @@ public class Inspector1 extends Inspector
         state = State.WORKING;
         this.created = true;
         
-      //  Main.log(Main.df.format(Main.globalTime)+": ins1 starting to inspect c1");
+        Main.log(Main.df.format(Main.globalTime)+": ins1 starting to inspect c1");
         return timeLeft;        
     }
     public double work() throws IOException
@@ -54,7 +54,7 @@ public class Inspector1 extends Inspector
 
         if(created)
         {
-          //  Main.log(Main.df.format(Main.globalTime)+": ins1 inspected "+(index+1)+"th c1");
+            Main.log(Main.df.format(Main.globalTime)+": ins1 inspected "+(index+1)+"th c1");
             created = false;
         }
         int i,j=-1;
@@ -90,7 +90,7 @@ public class Inspector1 extends Inspector
         // case of component placed in queue
         else    
         {
-            //Main.log(Main.df.format(Main.globalTime)+": ins1 adding C1 to queue " + j);
+            Main.log(Main.df.format(Main.globalTime)+": ins1 adding C1 to queue " + j);
             
             // if(index == 299)
             // {
@@ -98,7 +98,7 @@ public class Inspector1 extends Inspector
             //     return -2; 
             // }
             
-            //Main.log(Main.df.format(Main.globalTime)+": ins1 starting to inspect c1");
+            Main.log(Main.df.format(Main.globalTime)+": ins1 starting to inspect c1");
             created = true;
             state = State.WORKING;
             

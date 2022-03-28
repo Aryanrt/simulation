@@ -50,7 +50,7 @@ public class WorkStation
         //case of w1
         if(buffers.size() == 1)
         {
-            // Main.log("produced p1");
+             //Main.log("produced p1");
             if(buffers.get(0).getSize() > 0)
             {
                 buffers.get(0).removeComponent();
@@ -59,16 +59,16 @@ public class WorkStation
                 index++;
                 this.timeLeft = this.generator.next();
                 state=State.WORKING;
-               // Main.log(Main.df.format(Main.globalTime)+": W1 starting");
+                Main.log(Main.df.format(Main.globalTime)+": W1 starting");
             }
         //0 means idle
         }
         else if(buffers.get(0).getSize() > 0 && buffers.get(1).getSize() > 0)
         {
             // if(buffers.get(1).productID == 2)
-            //     Main.log(Main.df.format(Main.globalTime)+": W2 starting");
+                 Main.log(Main.df.format(Main.globalTime)+": W2 starting");
             // else
-            //     Main.log(Main.df.format(Main.globalTime)+": W3 starting");
+                 Main.log(Main.df.format(Main.globalTime)+": W3 starting");
             
             buffers.get(0).removeComponent();
             buffers.get(1).removeComponent(); 
