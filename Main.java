@@ -363,8 +363,8 @@ class Main
         log("");
 
         log(timeInSystem1+" "+timeInSystem2+" "+timeInSystem3+" ");
-        log("Average time in system \n\tProduct 1: " + (timeInSystem1/60)/(w1.index+w2.index+w3.index) + "\tProduct 2: " + (timeInSystem2/60)/w2.index + 
-            "\tProduct 3: " + (timeInSystem3/60)/w3.index );
+        log("Average time in system \n\ttComponent1: " + (timeInSystem1/60)/(w1.index+w2.index+w3.index) + "\tComponent2: " + (timeInSystem2/60)/w2.index + 
+            "\tComponent3: " + (timeInSystem3/60)/w3.index );
         log("");
 
         log("avarage # in system: \n\tComponent1: "+ areaUnderHistogram(histogramNumberInSystem1).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " | Component2: "
