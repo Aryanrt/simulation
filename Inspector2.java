@@ -16,6 +16,7 @@ class Inspector2 extends Inspector
     public int index2 =0;
     public int index3 =0;
     Generator generator2, generator3;
+    Component prev;
 
     public Inspector2(List<Buffer> buffers, List<Component> components) throws FileNotFoundException, IOException
     {
@@ -45,7 +46,6 @@ class Inspector2 extends Inspector
         //         this.serviceTime3.add(Double.parseDouble(line));
         //     }
         // }
-
         this.buffers = buffers;
         this.components = new ArrayList<Component>(components);
         this.timeLeft = 0;
@@ -71,7 +71,8 @@ class Inspector2 extends Inspector
             index3++;
         }
 
-        Main.log(Main.df.format(Main.globalTime)+": ins2 starting to inspect "+ this.currentComponent.getName());
+       // Main.log(Main.df.format(Main.globalTime)+": ins2 starting to inspect "+ this.currentComponent.getName());
+        this.prev = new Component(currentComponent.getName());
         this.created = true;
         return timeLeft;        
     }
@@ -83,6 +84,7 @@ class Inspector2 extends Inspector
         {
             Main.log(Main.df.format(Main.globalTime)+": ins2 inspected  "+((currentComponent.getName().equals("c2")?index2:index3)+1)+"th "+currentComponent.getName());
             this.created = false;
+            this.prev = new Component(currentComponent.getName());
         }
        //case of finished or blocked for C2
        if(currentComponent.getName().equalsIgnoreCase("c2") && buffers.get(0).getSize() < 2)
@@ -91,8 +93,8 @@ class Inspector2 extends Inspector
             this.currentComponent= components.get(rand.nextInt(2));
             Main.log(Main.df.format(Main.globalTime)+": ins2 adding C2 to queue 3");
             
-            if(index2 == 300)
-                return -2;
+            // if(index2 == 300)
+            //     return -2;
             Main.log(Main.df.format(Main.globalTime)+": ins2 starting to inspect "+ this.currentComponent.getName());
             this.state = State.WORKING;
             // read from file or generate statistically
@@ -107,8 +109,8 @@ class Inspector2 extends Inspector
         {
             this.currentComponent= components.get(rand.nextInt(2));
             Main.log(Main.df.format(Main.globalTime)+": ins2 adding C3 to queue 5");
-            if(index3 == 300)
-                return -2;
+            // if(index3 == 300)
+            //     return -2;
             Main.log(Main.df.format(Main.globalTime)+": ins2 starting to inspect "+ this.currentComponent.getName());
             this.buffers.get(1).addComponent();
             this.state = State.WORKING;

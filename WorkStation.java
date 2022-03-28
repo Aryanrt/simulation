@@ -21,7 +21,7 @@ public class WorkStation
     {
         if( id == 1)
             generator = new Generator(0.22);
-        else if( id == 1)
+        else if( id == 2)
             generator = new Generator(0.09);
         else
             generator = new Generator(0.11);
@@ -59,16 +59,16 @@ public class WorkStation
                 index++;
                 this.timeLeft = this.generator.next();
                 state=State.WORKING;
-                Main.log(Main.df.format(Main.globalTime)+": W1 starting");
+               // Main.log(Main.df.format(Main.globalTime)+": W1 starting");
             }
         //0 means idle
         }
         else if(buffers.get(0).getSize() > 0 && buffers.get(1).getSize() > 0)
         {
-            if(buffers.get(1).productID == 2)
-                Main.log(Main.df.format(Main.globalTime)+": W2 starting");
-            else
-                Main.log(Main.df.format(Main.globalTime)+": W3 starting");
+            // if(buffers.get(1).productID == 2)
+            //     Main.log(Main.df.format(Main.globalTime)+": W2 starting");
+            // else
+            //     Main.log(Main.df.format(Main.globalTime)+": W3 starting");
             
             buffers.get(0).removeComponent();
             buffers.get(1).removeComponent(); 
@@ -99,8 +99,8 @@ public class WorkStation
             // Main.log("produced p1");
             if(buffers.get(0).getSize() > 0)
             {
-                if(index == 300)
-                    return -2;
+                // if(index == 300)
+                //     return -2;
 
                 Main.log(Main.df.format(Main.globalTime)+": w1 starting");
                 buffers.get(0).removeComponent();

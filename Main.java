@@ -19,6 +19,11 @@ class Main
     public static double globalTime = 0;
     public static DecimalFormat df = new DecimalFormat("####0.00");
     static FileWriter myWriter;
+    static Map<Double, Double> throughputs1 = new LinkedHashMap<Double, Double>();
+    static Map<Double, Double> throughputs2 = new LinkedHashMap<Double, Double>();
+    static Map<Double, Double> throughputs3 = new LinkedHashMap<Double, Double>();
+    static Map<Double, Double> throughputs4 = new LinkedHashMap<Double, Double>();
+    static Map<Double, Double> throughputs5 = new LinkedHashMap<Double, Double>();
     public static void main(String[] args) throws FileNotFoundException, IOException 
     {
 
@@ -79,11 +84,10 @@ class Main
         Map<Double, Integer> histogramNumberInSystem1 = new LinkedHashMap<Double, Integer>();
         Map<Double, Integer> histogramNumberInSystem2 = new LinkedHashMap<Double, Integer>();
         Map<Double, Integer> histogramNumberInSystem3 = new LinkedHashMap<Double, Integer>();
-        Map<Double, Double> throughputs1 = new LinkedHashMap<Double, Double>();
-        Map<Double, Double> throughputs2 = new LinkedHashMap<Double, Double>();
-        Map<Double, Double> throughputs3 = new LinkedHashMap<Double, Double>();
-        Map<Double, Double> throughputs4 = new LinkedHashMap<Double, Double>();
-        Map<Double, Double> throughputs5 = new LinkedHashMap<Double, Double>();
+        List<Double> totallArrivals1 = new ArrayList<Double>();
+        List<Double> totallArrivals2 = new ArrayList<Double>();
+        List<Double> totallArrivals3 = new ArrayList<Double>();
+
         List<Double> arrivals1 = new ArrayList<Double>();
         List<Double> arrivals2 = new ArrayList<Double>();
         List<Double> arrivals3 = new ArrayList<Double>();
@@ -92,13 +96,20 @@ class Main
         double timeInSystem3 = 0;
         
         log("Addining Initial event for ins1 and Insp2 ");
-        fel.add(new MyEvent(1, globalTime + timeLeft1));
-        fel.add(new MyEvent(2, globalTime + timeLeft2));
+        fel.add(new MyEvent(1, globalTime + timeLeft1));        
         arrivals1.add(globalTime);
+
         if( ins2.currentComponent.getName().equals("c2"))
+        {
             arrivals2.add(globalTime);
+            fel.add(new MyEvent(2, globalTime + timeLeft2));
+        }
         else
+        {
             arrivals3.add(globalTime);
+            fel.add(new MyEvent(3, globalTime + timeLeft2));
+        }
+
         totalTime1 += timeLeft1;
         totalTime2 += timeLeft2;
 
@@ -113,23 +124,65 @@ class Main
         
         while(true)
         {
-
-            if(fel.size() == 0)
-               // && w1.index == 300 && w2.index == 300 && w3.index == 300 )
+            if(globalTime == 99000 )
             {
-                log("");
-                log("---------------------------------------------------------------------------------------------------");
-                log("No more events to process. Terminating the simulation");
-                log("---------------------------------------------------------------------------------------------------");
-                log("");
+                histogram1 = new LinkedHashMap<Double, Integer>();
+                histogram2 = new LinkedHashMap<Double, Integer>();
+                histogram3 = new LinkedHashMap<Double, Integer>();
+                histogram4 = new LinkedHashMap<Double, Integer>();
+                histogram5 = new LinkedHashMap<Double, Integer>();
+                histogramNumberInSystem1 = new LinkedHashMap<Double, Integer>();
+                histogramNumberInSystem2 = new LinkedHashMap<Double, Integer>();
+                histogramNumberInSystem3 = new LinkedHashMap<Double, Integer>();
+                throughputs1 = new LinkedHashMap<Double, Double>();
+                throughputs2 = new LinkedHashMap<Double, Double>();
+                throughputs3 = new LinkedHashMap<Double, Double>();
+                throughputs4 = new LinkedHashMap<Double, Double>();
+                throughputs5 = new LinkedHashMap<Double, Double>();
+                totallArrivals1 = new ArrayList<Double>();
+                // totallArrivals2 = new ArrayList<Double>();
+                // totallArrivals3 = new ArrayList<Double>();
+                // List<Double> arrivals1 = new ArrayList<Double>();
+                // List<Double> arrivals2 = new ArrayList<Double>();
+                // List<Double> arrivals3 = new ArrayList<Double>();
+                timeInSystem1 = 0;
+                timeInSystem2 = 0;
+                timeInSystem3 = 0;
+                totalTime1=0;
+                totalTime2=0;
+                totalTime3=0;
+                totalTime4=0;
+                totalTime5=0;
+                ins1.index=0;
+                ins2.index2=0;
+                ins2.index3=0;
+                w1.index=0;
+                w2.index=0;
+                w3.index=0;
+            }
+            if(globalTime >= 100000)
                 break;
-            }    
+
+            // if(fel.size() == 0)
+            //    // && w1.index == 300 && w2.index == 300 && w3.index == 300 )
+            // {
+            //     log("");
+            //     log("---------------------------------------------------------------------------------------------------");
+            //     log("No more events to process. Terminating the simulation");
+            //     log("---------------------------------------------------------------------------------------------------");
+            //     log("");
+            //     break;
+            // }    
 
             double min = 10000 + globalTime;
             for(MyEvent e: fel)
                 min = Math.min(min, e.getTime());
-
             
+
+            // System.out.println(arrivals1.size());
+            // System.out.println(arrivals2.size());
+            // System.out.println(arrivals3.size());
+
             //update time
             globalTime = min;
             //log("global time is"+globalTime);
@@ -152,6 +205,7 @@ class Main
                             toBeAdded.add(new MyEvent(1, (globalTime + timeLeft1)));
                             totalTime1 += timeLeft1;
                             arrivals1.add(globalTime);
+                            totallArrivals1.add(globalTime);
                         }
                         break;
 
@@ -159,21 +213,31 @@ class Main
                         toBeRemoved.add(e);
                         timeLeft2 = ins2.work();
                         // log("time2 "+timeLeft2);
+                        log("here");
                         if(timeLeft2 != 0)
                         {
                             // log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                             toBeAdded.add(new MyEvent(2, (globalTime + timeLeft2)));
                             totalTime2 += timeLeft2;
+                            
                             if( ins2.currentComponent.getName().equals("c2"))
+                            {
+                                log("added c2");
+                                totallArrivals2.add(globalTime);
                                 arrivals2.add(globalTime);
+                            }
                             else
+                            {
+                                log("added c3");
+                                totallArrivals3.add(globalTime);
                                 arrivals3.add(globalTime);
+                            }
                         }
                         break;
 
                     case 3:
                         toBeRemoved.add(e);
-                        timeInSystem1 += (globalTime - arrivals1.get(arrivals1.size()-1));
+                        timeInSystem1 += (globalTime - arrivals1.get(0));
                         arrivals1.remove(0);
 
                         timeLeft3 = w1.produce();
@@ -187,8 +251,8 @@ class Main
                         
                     case 4:
                         toBeRemoved.add(e);
-                        timeInSystem1 += (globalTime - arrivals1.get(arrivals1.size()-1));
-                        timeInSystem2 += (globalTime - arrivals2.get(arrivals2.size()-1));
+                        timeInSystem1 += (globalTime - arrivals1.get(0));
+                        timeInSystem2 += (globalTime - arrivals2.get(0));
                         arrivals1.remove(0);
                         arrivals2.remove(0);
                         timeLeft4 = w2.produce();
@@ -202,8 +266,9 @@ class Main
 
                     case 5:
                         toBeRemoved.add(e);
-                        timeInSystem1 += (globalTime - arrivals1.get(arrivals1.size()-1));
-                        timeInSystem3 += (globalTime - arrivals3.get(arrivals3.size()-1));
+                        System.out.println(globalTime);
+                        timeInSystem1 += (globalTime - arrivals1.get(0));
+                        timeInSystem3 += (globalTime - arrivals3.get(0));
                         arrivals1.remove(0);
                         arrivals3.remove(0);
 
@@ -226,7 +291,8 @@ class Main
             {
                 fel.add(e);
             }   
-      
+            
+            //if w1 was bloacked or has not started yet
             if(timeLeft3 == 0 || timeLeft3 == -1)
             {
                 if(timeLeft3 == -1)
@@ -242,6 +308,7 @@ class Main
                     fel.add(new MyEvent(3, globalTime + timeLeft3));
                 }
             }
+            //if w2 was bloacked or has not started yet
             if(timeLeft4 == 0 || timeLeft4 == -1)
             {
                 if(timeLeft4 == -1)
@@ -283,6 +350,7 @@ class Main
                 timeLeft1 = ins1.work();
                 if(timeLeft1 != 0)
                 {
+                    totallArrivals1.add(globalTime);
                     arrivals1.add(globalTime);
              //       log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                     totalTime1 += timeLeft1;
@@ -295,9 +363,15 @@ class Main
                 if(timeLeft2 != 0)
                 {
                     if( ins2.currentComponent.getName().equals("c2"))
+                    {
+                        totallArrivals2.add(globalTime);
                         arrivals2.add(globalTime);
+                    }
                     else
+                    {
+                        totallArrivals3.add(globalTime);
                         arrivals3.add(globalTime);
+                    }
                  //   log(b1.getSize()+"|"+b2.getSize()+"|"+b3.getSize()+"|"+b4.getSize()+"|"+b5.getSize()+"|");
                     totalTime2 += timeLeft2;
                     fel.add(new MyEvent(2, globalTime + timeLeft2));
@@ -326,16 +400,21 @@ class Main
             log(df.format(globalTime)+": Future Event List"+ fel);
             log("Buffer contents --> buffer1: " + b1.getSize()+" buffer2:"+b2.getSize()+" buffer3:"+b3.getSize()+" buffer4:"+b4.getSize()+" buffer5:"+b5.getSize());
             log(""+arrivals1);
-            System.out.println(timeInSystem1);
+            log(""+arrivals2);
+            log(""+arrivals3); 
             log("");
             
         }
         
-        BigDecimal BigglobalTime = new BigDecimal(globalTime);
+        BigDecimal BigglobalTime = new BigDecimal(globalTime-1000);
+        totalTime1 -= timeLeft1;
+        totalTime2 -= timeLeft2;
+        totalTime3 -= timeLeft3;
+        totalTime4 -= timeLeft4;
+        totalTime5 -= timeLeft5;
 
-        
-        log("Total Busy Percentage: \n\tInsector1: " + df.format(100*totalTime1/globalTime) + " | Insector2: "+ df.format(100*totalTime2/globalTime) 
-        + " | WorkStation1: "+ df.format(100*totalTime3/globalTime)+ " | WorkStation2: "+ df.format(100*totalTime4/globalTime) + " | WorkStation3: "
+        log("Total Busy Percentage: \n\tInsector1: " + df.format(100*totalTime1/BigglobalTime.doubleValue()) + " | Insector2: "+ df.format(100*totalTime2/BigglobalTime.doubleValue()) 
+        + " | WorkStation1: "+ df.format(100*totalTime3/BigglobalTime.doubleValue())+ " | WorkStation2: "+ df.format(100*totalTime4/BigglobalTime.doubleValue()) + " | WorkStation3: "
         + df.format(100*totalTime5/globalTime));
         log("");
         
@@ -349,9 +428,9 @@ class Main
         + " | Product1: "+ (w1.index+1) + " | Product2: " + (1+w2.index) +" | Product3: " + (1+w3.index));
         log("");
         
-        log("Throuput \n\tComponent1: "+ df.format((1+ins1.index)/(globalTime/60)) + " | Component2: "+ df.format((1+ins2.index2)/(globalTime/60)) 
-        + " | Component3: "+ df.format((1+ins2.index3)/(globalTime/60)) + " | Product1: "+ df.format((w1.index+1)/(globalTime/60)) 
-        + " | Product2: " + df.format((1+w2.index)/(globalTime/60)) +" | Product3: " + df.format((1+w3.index)/(globalTime/60)));
+        log("Throuput \n\tComponent1: "+ df.format((1+ins1.index)/(BigglobalTime.doubleValue()/60)) + " | Component2: "+ df.format((1+ins2.index2)/(BigglobalTime.doubleValue()/60)) 
+        + " | Component3: "+ df.format((1+ins2.index3)/(BigglobalTime.doubleValue()/60)) + " | Product1: "+ df.format((w1.index+1)/(BigglobalTime.doubleValue()/60)) 
+        + " | Product2: " + df.format((1+w2.index)/(BigglobalTime.doubleValue()/60)) +" | Product3: " + df.format((1+w3.index)/(BigglobalTime.doubleValue()/60)));
         log("");
 
         log("Final Buffer contents \n\tbuffer1: " + b1.getSize()+" | buffer2: "+b2.getSize()+" | buffer3: "+b3.getSize()+" | buffer4: "+b4.getSize()
@@ -362,9 +441,13 @@ class Main
         + (timeLeft3==0?"yes":"no") + " | Worstation2: "+ (timeLeft4==0?"yes":"no") + " | Worstation3: "+ (timeLeft5==0?"yes":"no"));
         log("");
 
-        log(timeInSystem1+" "+timeInSystem2+" "+timeInSystem3+" ");
-        log("Average time in system \n\ttComponent1: " + (timeInSystem1/60)/(w1.index+w2.index+w3.index) + "\tComponent2: " + (timeInSystem2/60)/w2.index + 
-            "\tComponent3: " + (timeInSystem3/60)/w3.index );
+        log("Average time in system \n\tComponent1: " + (timeInSystem1)/(w1.index+w2.index+w3.index) + "\tComponent2: " + (timeInSystem2)/w2.index + 
+            "\tComponent3: " + (timeInSystem3)/w3.index );
+        log("");
+
+        log("Arrival rate \n\tComponent1: " + (totallArrivals1.size()/(totallArrivals1.get(totallArrivals1.size()-1)-totallArrivals1.get(0))) + 
+        "\tComponent2: " + (totallArrivals2.size()/(totallArrivals2.get(totallArrivals2.size()-1)-totallArrivals2.get(0))) + 
+            "\tComponent3: " + (totallArrivals3.size()/(totallArrivals3.get(totallArrivals3.size()-1)-totallArrivals3.get(0))) );
         log("");
 
         log("avarage # in system: \n\tComponent1: "+ areaUnderHistogram(histogramNumberInSystem1).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " | Component2: "
@@ -399,7 +482,7 @@ class Main
     }
     public static void log(String s) throws IOException
     {
-        Main.myWriter = new FileWriter("verification.logs", true);
+        Main.myWriter = new FileWriter("final.logs", true);
         myWriter.write(s+"\n");
         myWriter.close();
         
