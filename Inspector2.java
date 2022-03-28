@@ -19,8 +19,8 @@ class Inspector2 extends Inspector
 
     public Inspector2(List<Buffer> buffers, List<Component> components) throws FileNotFoundException, IOException
     {
-        generator2 = new Generator(0.06);
-        generator3 = new Generator(0.05);
+         generator2 = new Generator(0.06);
+         generator3 = new Generator(0.05);
         // this.serviceTime2 = new ArrayList<Double>();
         // try (BufferedReader br = new BufferedReader(new FileReader(new File("servinsp22.dat")))) 
         // {
@@ -58,7 +58,7 @@ class Inspector2 extends Inspector
         
         state = State.WORKING;
         this.currentComponent= components.get(rand.nextInt(2));
-        if(currentComponent.getName().equalsIgnoreCase("C2"))
+        if(currentComponent.getName().equalsIgnoreCase("c2"))
         {
             //this.timeLeft = this.serviceTime2.get(index2++);
             index2++;
@@ -81,11 +81,11 @@ class Inspector2 extends Inspector
         this.timeLeft=0;
         if(this.created)
         {
-            Main.log(Main.df.format(Main.globalTime)+": ins2 inspected  "+((currentComponent.getName().equals("C2")?index2:index3)+1)+"th "+currentComponent.getName());
+            Main.log(Main.df.format(Main.globalTime)+": ins2 inspected  "+((currentComponent.getName().equals("c2")?index2:index3)+1)+"th "+currentComponent.getName());
             this.created = false;
         }
        //case of finished or blocked for C2
-       if(currentComponent.getName().equalsIgnoreCase("C2") && buffers.get(0).getSize() < 2)
+       if(currentComponent.getName().equalsIgnoreCase("c2") && buffers.get(0).getSize() < 2)
        {
             this.buffers.get(0).addComponent();
             this.currentComponent= components.get(rand.nextInt(2));
@@ -114,9 +114,9 @@ class Inspector2 extends Inspector
             this.state = State.WORKING;
             // read from file or generate statistically
             //this.timeLeft = this.serviceTime3.get(index3++);
-            index3=0;
+            index3++;
             this.timeLeft = this.generator3.next();
-            this.created = true;
+            //this.created = true;
         }
 
         // return 0 means I'm blocked!
