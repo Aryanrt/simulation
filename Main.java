@@ -76,6 +76,9 @@ class Main
         Map<Double, Integer> histogram3 = new LinkedHashMap<Double, Integer>();
         Map<Double, Integer> histogram4 = new LinkedHashMap<Double, Integer>();
         Map<Double, Integer> histogram5 = new LinkedHashMap<Double, Integer>();
+        Map<Double, Integer> histogramNumberInSystem1 = new LinkedHashMap<Double, Integer>();
+        Map<Double, Integer> histogramNumberInSystem2 = new LinkedHashMap<Double, Integer>();
+        Map<Double, Integer> histogramNumberInSystem3 = new LinkedHashMap<Double, Integer>();
         Map<Double, Double> throughputs1 = new LinkedHashMap<Double, Double>();
         Map<Double, Double> throughputs2 = new LinkedHashMap<Double, Double>();
         Map<Double, Double> throughputs3 = new LinkedHashMap<Double, Double>();
@@ -309,6 +312,10 @@ class Main
             histogram4.put(globalTime, b4.getSize());
             histogram5.put(globalTime, b5.getSize());
 
+            histogramNumberInSystem1.put(globalTime, arrivals1.size());
+            histogramNumberInSystem2.put(globalTime, arrivals2.size());
+            histogramNumberInSystem3.put(globalTime, arrivals3.size());
+
             //update throughputs
             throughputs1.put(globalTime, (1+ins1.index)/(globalTime/60));
             throughputs2.put(globalTime, (1+ins2.index2 + 1+ins2.index3)/(globalTime/60));
@@ -359,6 +366,10 @@ class Main
         log("Average time in system \n\tProduct 1: " + (timeInSystem1/60)/(w1.index+w2.index+w3.index) + "\tProduct 2: " + (timeInSystem2/60)/w2.index + 
             "\tProduct 3: " + (timeInSystem3/60)/w3.index );
         log("");
+
+        log("avarage # in system: \n\tComponent1: "+ areaUnderHistogram(histogramNumberInSystem1).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " | Component2: "
+        + areaUnderHistogram(histogramNumberInSystem2).divide(BigglobalTime,4, RoundingMode.HALF_DOWN) + " | Component3: "+ areaUnderHistogram(histogramNumberInSystem3).divide(BigglobalTime,4, RoundingMode.HALF_DOWN));
+         log("");
 
         //GraphPanel panel = new GraphPanel();
         SwingUtilities.invokeLater(new Runnable() {
