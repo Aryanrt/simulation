@@ -466,7 +466,7 @@ class Main
         //GraphPanel panel = new GraphPanel();
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                GraphPanel.createAndShowGui(throughputs1);
+                GraphPanel.createAndShowGui(throughputs5);
             }
          });
         
@@ -491,7 +491,7 @@ class Main
     }
     public static void log(String s) throws IOException
     {
-        Main.myWriter = new FileWriter("little-low.logs", true);
+        Main.myWriter = new FileWriter("replication-alt1", true);
         myWriter.write(s+"\n");
         myWriter.close();
         
